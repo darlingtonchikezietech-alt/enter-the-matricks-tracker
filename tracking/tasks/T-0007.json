@@ -1,0 +1,23 @@
+{
+  "id": "T-0007",
+  "title": "Seated rig pawn: XR origin, controller tracking, seated calibration, Forward re-anchor (P-11)",
+  "milestone": "M0",
+  "area": "player",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0005"
+  ],
+  "paths": [
+    "Source/ETM/Player/**"
+  ],
+  "acceptance": [
+    "Headset drives the camera directly; no code moves the camera",
+    "Recenter + Forward re-anchor work from pause",
+    "Controller offsets adjustable and saved"
+  ],
+  "description": "Scaffold: AXRSeatedRigPawn.",
+  "assignee": null,
+  "history": []
+}

@@ -1,0 +1,70 @@
+# Task Board
+
+_Generated 2026-11-16T20:07:14Z by `tools/agent.py render`. Do not edit by hand._
+
+**Progress:** 1/41 done (2%) · todo: 40 · in_progress: 0 · review: 0 · blocked: 0 · done: 1
+
+| Milestone | Done | Total | Progress |
+|---|---:|---:|---|
+| M0 | 1 | 8 | `█░░░░░░░░░` |
+| M1 | 0 | 8 | `░░░░░░░░░░` |
+| M2 | 0 | 9 | `░░░░░░░░░░` |
+| M3 | 0 | 8 | `░░░░░░░░░░` |
+| M4 | 0 | 5 | `░░░░░░░░░░` |
+| M5 | 0 | 3 | `░░░░░░░░░░` |
+
+## Active claims
+
+_None. Every task is free._
+
+## Todo (40)
+
+| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
+|---|---|---|---|---|---|---|---|
+| T-0002 🟢 ready | 1 | M0 | producer | tracker | Owner: set team start date and turn M0-M5 weeks into calendar dates | - |  |
+| T-0003 🟢 ready | 1 | M0 | producer | tracker | Owner: kick off naming/trademark clearance for the title (P-16) | - |  |
+| T-0005 🟢 ready | 1 | M0 | engine | game | Compile the scaffold and lock the toolchain (UE version, Meta XR/OpenXR plugin, SDK/NDK/JDK) | - |  |
+| T-0006 | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 |  |
+| T-0007 | 1 | M0 | player | game | Seated rig pawn: XR origin, controller tracking, seated calibration, Forward re-anchor (P-11) | T-0005 |  |
+| T-0004 🟢 ready | 2 | M0 | art | tracker | Revised concept art pass using the CONCEPT_ART_REVIEW brief | - |  |
+| T-0008 | 2 | M0 | art | game | Open-frame rig blockout mesh (seat, knee guard, weapon arms) | T-0006 |  |
+| T-0009 | 1 | M1 | weapons | game | Cannon component: aim envelope ±65/-30..+45, servo, cadence, muzzle trace, heat per P-01 | T-0007 |  |
+| T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 |  |
+| T-0011 | 1 | M1 | combat | game | Brace (DefenseComponent) and Integrity components | T-0005 |  |
+| T-0012 | 1 | M1 | input | game | Enhanced Input mapping with grip-vent threshold 0.85/100ms and alternative A/B mapping (P-12) | T-0007 |  |
+| T-0013 | 1 | M1 | enemies | game | Enemy base: lifecycle states, damage interface, weak points, pooling | T-0011 |  |
+| T-0014 | 1 | M1 | enemies | game | Shardling (ground) and Needle Drone (flying) prototypes | T-0013 |  |
+| T-0016 | 1 | M1 | qa | tracker | M1 gate: 3-minute combat test on Quest 2 (comfort, readability, perf capture) | T-0014, T-0015, T-0012, T-0010 |  |
+| T-0015 | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
+| T-0017 | 1 | M2 | encounters | game | Encounter director: authored phases, spawn budgets, attack tokens, early-transition rule (P-13) | T-0013 |  |
+| T-0018 | 1 | M2 | objective | game | Objective integrity, world marker, failure and retry | T-0011 |  |
+| T-0021 | 1 | M2 | boss | game | Gatebreaker boss prototype (P-02, P-09, P-10) | T-0017 |  |
+| T-0025 | 1 | M2 | qa | tracker | M2 gate: vertical slice validated on hardware | T-0020, T-0021, T-0022, T-0023, T-0024, T-0019 |  |
+| T-0019 | 2 | M2 | ui | game | Diegetic HUD presenter: heat on housings, integrity on frame, warnings at source | T-0009, T-0011 |  |
+| T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 |  |
+| T-0022 | 2 | M2 | enemies | game | Bulwark, Lance Walker, Siphon, Cradle Bomber | T-0014 |  |
+| T-0023 | 2 | M2 | save | game | Save system: settings, checkpoints incl. boss presets (P-04), results | T-0018, T-0017 |  |
+| T-0024 | 2 | M2 | perf | game | Performance capture tooling + 30-minute soak script | T-0006 |  |
+| T-0026 | 1 | M3 | encounters | game | Level 1 full schedule (51 enemies, timeline, gating P-14) | T-0025 |  |
+| T-0027 | 1 | M3 | level | game | Level 2 arena greybox | T-0025 |  |
+| T-0028 | 1 | M3 | boss | game | Conductor boss incl. pairing reset (P-07), rig sweep (P-08), emitter fallback (P-06) | T-0025 |  |
+| T-0029 | 1 | M3 | encounters | game | Level 2 full schedule + train gating (P-14) | T-0027, T-0028 |  |
+| T-0030 | 1 | M3 | platform | game | Pause, tracking loss, headset removal, resume countdown | T-0023 |  |
+| T-0033 | 1 | M3 | qa | tracker | M3 gate: both missions end to end in a packaged build | T-0026, T-0029, T-0030, T-0031 |  |
+| T-0031 | 2 | M3 | flow | game | Campaign flow: menus, relocation fade, results, ending | T-0019 |  |
+| T-0032 | 3 | M3 | audio | game | Placeholder VO (Mara, RIG-6) and subtitles with speaker labels | T-0031 |  |
+| T-0038 | 1 | M4 | qa | tracker | 10-player playtest: duration, comprehension, comfort | T-0034, T-0035, T-0036, T-0037 |  |
+| T-0034 | 2 | M4 | art | game | Final enemy and boss art + animation | T-0004, T-0033 |  |
+| T-0035 | 2 | M4 | art | game | Environment art kits for both arenas | T-0033 |  |
+| T-0036 | 2 | M4 | audio | game | Sound design and music beds | T-0033 |  |
+| T-0037 | 2 | M4 | settings | game | Accessibility and comfort settings | T-0033 |  |
+| T-0039 | 1 | M5 | perf | game | Optimization pass to §14 budgets | T-0038 |  |
+| T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
+| T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
+
+## Done (1)
+
+| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
+|---|---|---|---|---|---|---|---|
+| T-0001 | 1 | M0 | producer | tracker | Bootstrap repos, patched bible v1.1, tracker and Unreal scaffold | - | claude-bootstrap |
+

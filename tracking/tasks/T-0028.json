@@ -1,0 +1,23 @@
+{
+  "id": "T-0028",
+  "title": "Conductor boss incl. pairing reset (P-07), rig sweep (P-08), emitter fallback (P-06)",
+  "milestone": "M3",
+  "area": "boss",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0025"
+  ],
+  "paths": [
+    "Source/ETM/Bosses/Conductor/**",
+    "Content/ETM/Bosses/Conductor/**"
+  ],
+  "acceptance": [
+    "No softlock at 50% accuracy",
+    "Assisted pairing window 10s"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

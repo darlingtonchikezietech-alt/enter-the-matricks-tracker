@@ -1,0 +1,24 @@
+{
+  "id": "T-0006",
+  "title": "Package an empty VR scene and deploy it to a physical Quest 2",
+  "milestone": "M0",
+  "area": "engine",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0005"
+  ],
+  "paths": [
+    "Content/ETM/Maps/M0_**",
+    "Build/Android/**"
+  ],
+  "acceptance": [
+    "APK installs and runs on Quest 2 at 72 Hz",
+    "Head tracking correct, no judder",
+    "Steps recorded in docs/TOOLCHAIN.md (append via tracker PR)"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

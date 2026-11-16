@@ -1,0 +1,23 @@
+{
+  "id": "T-0010",
+  "title": "Automation test: cannon heat parity with tools/balance_sim.py",
+  "milestone": "M1",
+  "area": "qa",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0009"
+  ],
+  "paths": [
+    "Source/ETM/Tests/**",
+    "Tools/HeatModelTest/**"
+  ],
+  "acceptance": [
+    "Test reproduces: overheat 2.75s/12 shots, recovery ~4.0s, burst+vent > hold",
+    "Runs headless in CI-capable commandlet"
+  ],
+  "description": "A standalone g++ test already exists in Tools/HeatModelTest (runs in game-repo CI). This task adds the in-engine Unreal automation test.",
+  "assignee": null,
+  "history": []
+}

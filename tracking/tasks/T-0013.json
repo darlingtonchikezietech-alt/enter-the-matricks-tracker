@@ -1,0 +1,23 @@
+{
+  "id": "T-0013",
+  "title": "Enemy base: lifecycle states, damage interface, weak points, pooling",
+  "milestone": "M1",
+  "area": "enemies",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0011"
+  ],
+  "paths": [
+    "Source/ETM/Enemies/Base/**"
+  ],
+  "acceptance": [
+    "spawn/approach/attack/stagger/destroy states",
+    "Dying units stop dealing damage immediately",
+    "Pooled; no per-spawn allocation in steady state"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

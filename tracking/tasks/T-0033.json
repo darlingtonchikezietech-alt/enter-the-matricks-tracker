@@ -1,0 +1,25 @@
+{
+  "id": "T-0033",
+  "title": "M3 gate: both missions end to end in a packaged build",
+  "milestone": "M3",
+  "area": "qa",
+  "repo": "tracker",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0026",
+    "T-0029",
+    "T-0030",
+    "T-0031"
+  ],
+  "paths": [
+    "docs/reports/M3/**"
+  ],
+  "acceptance": [
+    "Campaign completable",
+    "Checkpoints, failure, retry, ending verified"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

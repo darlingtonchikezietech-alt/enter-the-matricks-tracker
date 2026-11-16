@@ -1,0 +1,28 @@
+{
+  "id": "T-0005",
+  "title": "Compile the scaffold and lock the toolchain (UE version, Meta XR/OpenXR plugin, SDK/NDK/JDK)",
+  "milestone": "M0",
+  "area": "engine",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [],
+  "paths": [
+    "ETM.uproject",
+    "Config/**",
+    "Source/ETM.Target.cs",
+    "Source/ETMEditor.Target.cs",
+    "Source/ETM/ETM.Build.cs",
+    "Source/ETM/ETM.cpp",
+    "Source/ETM/ETM.h",
+    "docs/TOOLCHAIN.md"
+  ],
+  "acceptance": [
+    "Scaffold compiles in Development Editor with zero errors",
+    "docs/TOOLCHAIN.md lists exact versions",
+    "Plugin chosen does not require Horizon OS features newer than v2.13 (P-15)"
+  ],
+  "description": "The scaffold was written without access to Unreal; expect small compile fixes. Fix them inside your owned paths, or note them for the owning task.",
+  "assignee": null,
+  "history": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "T-0020",
+  "title": "Level 1 arena greybox (three lanes, transfer equipment in front, P-22)",
+  "milestone": "M2",
+  "area": "level",
+  "repo": "game",
+  "status": "todo",
+  "priority": 2,
+  "depends_on": [
+    "T-0006"
+  ],
+  "paths": [
+    "Content/ETM/Maps/L1_**",
+    "Content/ETM/Environments/L1/**"
+  ],
+  "acceptance": [
+    "Lanes inside aiming envelope",
+    "Nothing essential behind the player"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

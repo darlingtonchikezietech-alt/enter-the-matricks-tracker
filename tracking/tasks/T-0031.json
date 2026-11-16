@@ -1,0 +1,22 @@
+{
+  "id": "T-0031",
+  "title": "Campaign flow: menus, relocation fade, results, ending",
+  "milestone": "M3",
+  "area": "flow",
+  "repo": "game",
+  "status": "todo",
+  "priority": 2,
+  "depends_on": [
+    "T-0019"
+  ],
+  "paths": [
+    "Source/ETM/Core/Flow/**",
+    "Content/ETM/UI/Menus/**"
+  ],
+  "acceptance": [
+    "Full loop start -> L1 -> fade -> L2 -> ending -> results"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

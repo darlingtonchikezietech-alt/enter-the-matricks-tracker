@@ -1,0 +1,24 @@
+{
+  "id": "T-0021",
+  "title": "Gatebreaker boss prototype (P-02, P-09, P-10)",
+  "milestone": "M2",
+  "area": "boss",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0017"
+  ],
+  "paths": [
+    "Source/ETM/Bosses/Gatebreaker/**",
+    "Content/ETM/Bosses/Gatebreaker/**"
+  ],
+  "acceptance": [
+    "3 phases as specified",
+    "Missed windows never softlock",
+    "Core ~2-3 exposures at 70% accuracy"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

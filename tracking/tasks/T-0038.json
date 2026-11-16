@@ -1,0 +1,25 @@
+{
+  "id": "T-0038",
+  "title": "10-player playtest: duration, comprehension, comfort",
+  "milestone": "M4",
+  "area": "qa",
+  "repo": "tracker",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0034",
+    "T-0035",
+    "T-0036",
+    "T-0037"
+  ],
+  "paths": [
+    "docs/reports/M4/**"
+  ],
+  "acceptance": [
+    "Median first run 18-24 min",
+    "8/10 learn controls uncoached"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

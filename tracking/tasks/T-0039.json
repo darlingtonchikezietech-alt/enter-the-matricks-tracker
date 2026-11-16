@@ -1,0 +1,23 @@
+{
+  "id": "T-0039",
+  "title": "Optimization pass to \u00a714 budgets",
+  "milestone": "M5",
+  "area": "perf",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0038"
+  ],
+  "paths": [
+    "Config/DeviceProfiles.ini",
+    "Tools/Perf/**"
+  ],
+  "acceptance": [
+    "<1% missed frames in active combat",
+    "30-min soak, no memory growth"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

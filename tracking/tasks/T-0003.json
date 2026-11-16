@@ -1,0 +1,20 @@
+{
+  "id": "T-0003",
+  "title": "Owner: kick off naming/trademark clearance for the title (P-16)",
+  "milestone": "M0",
+  "area": "producer",
+  "repo": "tracker",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [],
+  "paths": [
+    "docs/decisions/ADR-0002-title.md"
+  ],
+  "acceptance": [
+    "ADR records chosen path (keep/rename) and who cleared it",
+    "No public branding until resolved"
+  ],
+  "description": "Human/legal task. Repos are public; the title is phonetically close to 'Enter the Matrix' (2003).",
+  "assignee": null,
+  "history": []
+}

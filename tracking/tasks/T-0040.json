@@ -1,0 +1,22 @@
+{
+  "id": "T-0040",
+  "title": "Release candidate: regression, soak, acceptance criteria evidence",
+  "milestone": "M5",
+  "area": "qa",
+  "repo": "tracker",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0039"
+  ],
+  "paths": [
+    "docs/reports/M5/**"
+  ],
+  "acceptance": [
+    "Every \u00a717 row has evidence",
+    "Zero blocker/critical defects"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

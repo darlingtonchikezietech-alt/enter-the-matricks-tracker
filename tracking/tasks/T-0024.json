@@ -1,0 +1,21 @@
+{
+  "id": "T-0024",
+  "title": "Performance capture tooling + 30-minute soak script",
+  "milestone": "M2",
+  "area": "perf",
+  "repo": "game",
+  "status": "todo",
+  "priority": 2,
+  "depends_on": [
+    "T-0006"
+  ],
+  "paths": [
+    "Tools/Perf/**"
+  ],
+  "acceptance": [
+    "One command produces CPU/GPU p95, missed frames, memory, thermal log"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

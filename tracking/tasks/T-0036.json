@@ -1,0 +1,23 @@
+{
+  "id": "T-0036",
+  "title": "Sound design and music beds",
+  "milestone": "M4",
+  "area": "audio",
+  "repo": "game",
+  "status": "todo",
+  "priority": 2,
+  "depends_on": [
+    "T-0033"
+  ],
+  "paths": [
+    "Content/ETM/Audio/SFX/**",
+    "Content/ETM/Audio/Music/**"
+  ],
+  "acceptance": [
+    "Weapons read heavy on Quest speakers",
+    "Voice cap 24 with priority stealing"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

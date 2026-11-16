@@ -1,0 +1,21 @@
+{
+  "id": "T-0002",
+  "title": "Owner: set team start date and turn M0-M5 weeks into calendar dates",
+  "milestone": "M0",
+  "area": "producer",
+  "repo": "tracker",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [],
+  "paths": [
+    "docs/DEVELOPMENT_PLAN.md"
+  ],
+  "acceptance": [
+    "Start date recorded",
+    "Every milestone has a calendar date",
+    "Submission date is >=12 weeks before Dec 2027 cutoff (P-15/P-24)"
+  ],
+  "description": "Human decision. An AI may draft the calendar once the owner gives the start date.",
+  "assignee": null,
+  "history": []
+}

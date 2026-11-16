@@ -1,0 +1,28 @@
+{
+  "id": "T-0001",
+  "title": "Bootstrap repos, patched bible v1.1, tracker and Unreal scaffold",
+  "milestone": "M0",
+  "area": "producer",
+  "repo": "tracker",
+  "status": "done",
+  "priority": 1,
+  "depends_on": [],
+  "paths": [
+    "docs/PRODUCT_BIBLE.md",
+    "docs/PLAN_REVIEW.md"
+  ],
+  "acceptance": [
+    "Both repos pushed",
+    "balance_sim --check passes",
+    "agent.py validate passes"
+  ],
+  "description": "Done by Claude on 2026-11-16. See ACTIVITY_REPORT.",
+  "assignee": "claude-bootstrap",
+  "history": [
+    {
+      "time": "2026-11-16T20:30:00Z",
+      "agent": "claude-bootstrap",
+      "event": "completed"
+    }
+  ]
+}

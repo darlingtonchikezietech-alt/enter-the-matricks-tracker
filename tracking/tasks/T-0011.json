@@ -1,0 +1,22 @@
+{
+  "id": "T-0011",
+  "title": "Brace (DefenseComponent) and Integrity components",
+  "milestone": "M1",
+  "area": "combat",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0005"
+  ],
+  "paths": [
+    "Source/ETM/Combat/**"
+  ],
+  "acceptance": [
+    "Brace 2s/12s cooldown from end/75% rig reduction",
+    "Integrity broadcasts damage + failure events"
+  ],
+  "description": "Scaffold exists.",
+  "assignee": null,
+  "history": []
+}

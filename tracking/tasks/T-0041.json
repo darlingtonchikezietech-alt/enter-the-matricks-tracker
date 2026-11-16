@@ -1,0 +1,23 @@
+{
+  "id": "T-0041",
+  "title": "Store submission package (before Quest 2 cutoff, P-15)",
+  "milestone": "M5",
+  "area": "release",
+  "repo": "tracker",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0040",
+    "T-0003"
+  ],
+  "paths": [
+    "docs/release/**"
+  ],
+  "acceptance": [
+    "Submitted no later than the date in DEVELOPMENT_PLAN",
+    "Cleared title used"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

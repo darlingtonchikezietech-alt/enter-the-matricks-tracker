@@ -1,0 +1,23 @@
+{
+  "id": "T-0022",
+  "title": "Bulwark, Lance Walker, Siphon, Cradle Bomber",
+  "milestone": "M2",
+  "area": "enemies",
+  "repo": "game",
+  "status": "todo",
+  "priority": 2,
+  "depends_on": [
+    "T-0014"
+  ],
+  "paths": [
+    "Source/ETM/Enemies/Archetypes/**",
+    "Content/ETM/Enemies/**"
+  ],
+  "acceptance": [
+    "Values per bible \u00a77 incl. P-09",
+    "Each distinguishable by silhouette at combat distance"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

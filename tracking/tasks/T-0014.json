@@ -1,0 +1,23 @@
+{
+  "id": "T-0014",
+  "title": "Shardling (ground) and Needle Drone (flying) prototypes",
+  "milestone": "M1",
+  "area": "enemies",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0013"
+  ],
+  "paths": [
+    "Source/ETM/Enemies/Archetypes/**",
+    "Content/ETM/Enemies/**"
+  ],
+  "acceptance": [
+    "Values match bible \u00a77",
+    "Telegraphs: shape+sound, not colour only"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

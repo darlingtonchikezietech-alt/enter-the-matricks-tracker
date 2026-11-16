@@ -1,0 +1,23 @@
+{
+  "id": "T-0023",
+  "title": "Save system: settings, checkpoints incl. boss presets (P-04), results",
+  "milestone": "M2",
+  "area": "save",
+  "repo": "game",
+  "status": "todo",
+  "priority": 2,
+  "depends_on": [
+    "T-0018",
+    "T-0017"
+  ],
+  "paths": [
+    "Source/ETM/Save/**"
+  ],
+  "acceptance": [
+    "Survives app restart",
+    "Boss checkpoint restores preset, not unwinnable state"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

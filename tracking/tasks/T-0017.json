@@ -1,0 +1,23 @@
+{
+  "id": "T-0017",
+  "title": "Encounter director: authored phases, spawn budgets, attack tokens, early-transition rule (P-13)",
+  "milestone": "M2",
+  "area": "encounters",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0013"
+  ],
+  "paths": [
+    "Source/ETM/Encounters/**"
+  ],
+  "acceptance": [
+    "Respects active caps (8; boss+4)",
+    "Max 2 simultaneous dangerous attacks",
+    "Never deletes visible enemies"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "T-0019",
+  "title": "Diegetic HUD presenter: heat on housings, integrity on frame, warnings at source",
+  "milestone": "M2",
+  "area": "ui",
+  "repo": "game",
+  "status": "todo",
+  "priority": 2,
+  "depends_on": [
+    "T-0009",
+    "T-0011"
+  ],
+  "paths": [
+    "Source/ETM/UI/**",
+    "Content/ETM/UI/HUD/**"
+  ],
+  "acceptance": [
+    "Placement per \u00a711 table",
+    "Critical warnings override secondary text"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

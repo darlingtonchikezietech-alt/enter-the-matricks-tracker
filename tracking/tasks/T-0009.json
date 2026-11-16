@@ -1,0 +1,23 @@
+{
+  "id": "T-0009",
+  "title": "Cannon component: aim envelope \u00b165/-30..+45, servo, cadence, muzzle trace, heat per P-01",
+  "milestone": "M1",
+  "area": "weapons",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0007"
+  ],
+  "paths": [
+    "Source/ETM/Weapons/**"
+  ],
+  "acceptance": [
+    "Each cannon aims/fires/heats/vents/overheats independently",
+    "No venting during lock",
+    "Shots never pass through frame (obstruction check)"
+  ],
+  "description": "Scaffold: UCannonComponent has the heat model; wire aim/servo and traces.",
+  "assignee": null,
+  "history": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "T-0029",
+  "title": "Level 2 full schedule + train gating (P-14)",
+  "milestone": "M3",
+  "area": "encounters",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0027",
+    "T-0028"
+  ],
+  "paths": [
+    "Content/ETM/Encounters/L2/**"
+  ],
+  "acceptance": [
+    "Matches \u00a710 storyboard",
+    "Last carriage leaves only after core destroyed"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

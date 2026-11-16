@@ -1,0 +1,22 @@
+{
+  "id": "T-0026",
+  "title": "Level 1 full schedule (51 enemies, timeline, gating P-14)",
+  "milestone": "M3",
+  "area": "encounters",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0025"
+  ],
+  "paths": [
+    "Content/ETM/Encounters/L1/**"
+  ],
+  "acceptance": [
+    "Matches \u00a79 storyboard",
+    "Railway progress capped 90% until boss dies"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

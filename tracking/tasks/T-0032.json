@@ -1,0 +1,22 @@
+{
+  "id": "T-0032",
+  "title": "Placeholder VO (Mara, RIG-6) and subtitles with speaker labels",
+  "milestone": "M3",
+  "area": "audio",
+  "repo": "game",
+  "status": "todo",
+  "priority": 3,
+  "depends_on": [
+    "T-0031"
+  ],
+  "paths": [
+    "Content/ETM/Audio/VO/**"
+  ],
+  "acceptance": [
+    "35-45 lines placed",
+    "Radio ducking works"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

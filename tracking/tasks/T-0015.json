@@ -1,0 +1,24 @@
+{
+  "id": "T-0015",
+  "title": "Weapon feel: muzzle, tracer, impact, haptics, placeholder audio",
+  "milestone": "M1",
+  "area": "vfx",
+  "repo": "game",
+  "status": "todo",
+  "priority": 2,
+  "depends_on": [
+    "T-0009"
+  ],
+  "paths": [
+    "Content/ETM/Weapons/**",
+    "Content/ETM/VFX/**"
+  ],
+  "acceptance": [
+    "7-part shot presentation from \u00a75",
+    "No camera shake/recoil on camera",
+    "Effects within budget on device"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

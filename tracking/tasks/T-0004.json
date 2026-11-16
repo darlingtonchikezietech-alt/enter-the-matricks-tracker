@@ -1,0 +1,21 @@
+{
+  "id": "T-0004",
+  "title": "Revised concept art pass using the CONCEPT_ART_REVIEW brief",
+  "milestone": "M0",
+  "area": "art",
+  "repo": "tracker",
+  "status": "todo",
+  "priority": 2,
+  "depends_on": [],
+  "paths": [
+    "docs/concept-art/v2/**"
+  ],
+  "acceptance": [
+    "3+ images: open frame, single-barrel cannons, heat-only UI, Veyr mineral enemies",
+    "No franchise terms, no tentacles/red eyes",
+    "Reviewed against CONCEPT_ART_REVIEW table"
+  ],
+  "description": "Can run in parallel with all engineering. Store results under docs/concept-art/v2/.",
+  "assignee": null,
+  "history": []
+}

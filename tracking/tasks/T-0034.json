@@ -1,0 +1,24 @@
+{
+  "id": "T-0034",
+  "title": "Final enemy and boss art + animation",
+  "milestone": "M4",
+  "area": "art",
+  "repo": "game",
+  "status": "todo",
+  "priority": 2,
+  "depends_on": [
+    "T-0004",
+    "T-0033"
+  ],
+  "paths": [
+    "Content/ETM/Enemies/Art/**",
+    "Content/ETM/Bosses/Art/**"
+  ],
+  "acceptance": [
+    "Silhouette readability on headset",
+    "Budgets respected"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

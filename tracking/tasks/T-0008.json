@@ -1,0 +1,22 @@
+{
+  "id": "T-0008",
+  "title": "Open-frame rig blockout mesh (seat, knee guard, weapon arms)",
+  "milestone": "M0",
+  "area": "art",
+  "repo": "game",
+  "status": "todo",
+  "priority": 2,
+  "depends_on": [
+    "T-0006"
+  ],
+  "paths": [
+    "Content/ETM/Player/**"
+  ],
+  "acceptance": [
+    "Matches bible \u00a74 open frame (no canopy)",
+    "Readable scale on headset"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

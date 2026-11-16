@@ -1,0 +1,27 @@
+{
+  "id": "T-0025",
+  "title": "M2 gate: vertical slice validated on hardware",
+  "milestone": "M2",
+  "area": "qa",
+  "repo": "tracker",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0020",
+    "T-0021",
+    "T-0022",
+    "T-0023",
+    "T-0024",
+    "T-0019"
+  ],
+  "paths": [
+    "docs/reports/M2/**"
+  ],
+  "acceptance": [
+    "Sustained 72 Hz in representative combat",
+    "Weapon feel validated with testers"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

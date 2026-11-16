@@ -1,0 +1,22 @@
+{
+  "id": "T-0018",
+  "title": "Objective integrity, world marker, failure and retry",
+  "milestone": "M2",
+  "area": "objective",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0011"
+  ],
+  "paths": [
+    "Source/ETM/Objectives/**"
+  ],
+  "acceptance": [
+    "Objective damage only from designated attackers",
+    "Failure -> retry most recent checkpoint"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

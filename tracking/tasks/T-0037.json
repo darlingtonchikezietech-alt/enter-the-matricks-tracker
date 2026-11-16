@@ -1,0 +1,22 @@
+{
+  "id": "T-0037",
+  "title": "Accessibility and comfort settings",
+  "milestone": "M4",
+  "area": "settings",
+  "repo": "game",
+  "status": "todo",
+  "priority": 2,
+  "depends_on": [
+    "T-0033"
+  ],
+  "paths": [
+    "Source/ETM/Settings/**",
+    "Content/ETM/UI/Settings/**"
+  ],
+  "acceptance": [
+    "All \u00a711 options present and saved"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

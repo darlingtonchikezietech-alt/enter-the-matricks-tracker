@@ -1,0 +1,25 @@
+{
+  "id": "T-0016",
+  "title": "M1 gate: 3-minute combat test on Quest 2 (comfort, readability, perf capture)",
+  "milestone": "M1",
+  "area": "qa",
+  "repo": "tracker",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0014",
+    "T-0015",
+    "T-0012",
+    "T-0010"
+  ],
+  "paths": [
+    "docs/reports/M1/**"
+  ],
+  "acceptance": [
+    "Report with CPU/GPU p95, missed frames, comfort notes",
+    "Stop/go decision recorded"
+  ],
+  "description": "Bible \u00a716 stop/go gate.",
+  "assignee": null,
+  "history": []
+}

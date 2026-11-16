@@ -1,0 +1,22 @@
+{
+  "id": "T-0035",
+  "title": "Environment art kits for both arenas",
+  "milestone": "M4",
+  "area": "art",
+  "repo": "game",
+  "status": "todo",
+  "priority": 2,
+  "depends_on": [
+    "T-0033"
+  ],
+  "paths": [
+    "Content/ETM/Environments/Kit/**"
+  ],
+  "acceptance": [
+    "~24 modules, ~20 props",
+    "Baked lighting"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}

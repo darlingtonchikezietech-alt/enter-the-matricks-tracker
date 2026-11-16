@@ -1,0 +1,22 @@
+{
+  "id": "T-0030",
+  "title": "Pause, tracking loss, headset removal, resume countdown",
+  "milestone": "M3",
+  "area": "platform",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0023"
+  ],
+  "paths": [
+    "Source/ETM/Platform/**"
+  ],
+  "acceptance": [
+    "Timers and damage stop on interruption",
+    "Valid state after resume"
+  ],
+  "description": "",
+  "assignee": null,
+  "history": []
+}
