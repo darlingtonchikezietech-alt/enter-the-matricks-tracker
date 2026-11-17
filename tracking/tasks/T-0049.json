@@ -1,0 +1,28 @@
+{
+  "id": "T-0049",
+  "title": "Test worlds: run garbage collection after destroying them, so reserved GPU memory stops climbing during the test run",
+  "milestone": "M2",
+  "area": "qa",
+  "repo": "game",
+  "status": "todo",
+  "priority": 3,
+  "depends_on": [],
+  "paths": [
+    "Source/ETM/Combat/Tests/**",
+    "Source/ETM/Enemies/Base/Tests/**",
+    "Source/ETM/Enemies/Archetypes/Tests/**",
+    "Source/ETM/Objectives/Tests/**",
+    "Source/ETM/Encounters/Tests/**",
+    "Source/ETM/Bosses/Gatebreaker/Tests/**",
+    "Source/ETM/Weapons/Tests/**",
+    "Source/ETM/Weapons/Feedback/Tests/**",
+    "Source/ETM/Input/Tests/**"
+  ],
+  "acceptance": [
+    "A full ETM test run logs no LogRHICore 'exceeds the budget' warning",
+    "One shared test-world helper replaces the per-file copies"
+  ],
+  "description": "Seen from T-0021 on: around the 40th test world, LogRHICore warns that reserved resource virtual size (258 GB) exceeds its budget (256 GB). Each test file creates and destroys its own world; the cannon tests also never end play. Not a test failure and not seen in the game.",
+  "assignee": null,
+  "history": []
+}

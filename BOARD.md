@@ -1,14 +1,14 @@
 # Task Board
 
-_Generated 2026-11-17T13:22:06Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T13:22:09Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 14/48 done (29%) · todo: 31 · in_progress: 0 · review: 2 · blocked: 1 · done: 14
+**Progress:** 14/49 done (29%) · todo: 32 · in_progress: 0 · review: 2 · blocked: 1 · done: 14
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 8 | `████░░░░░░` |
 | M1 | 7 | 13 | `█████░░░░░` |
-| M2 | 4 | 11 | `████░░░░░░` |
+| M2 | 4 | 12 | `███░░░░░░░` |
 | M3 | 0 | 8 | `░░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
 | M5 | 0 | 3 | `░░░░░░░░░░` |
@@ -30,7 +30,7 @@ _None. Every task is free._
 |---|---|---|---|---|---|---|---|
 | T-0015 | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 
-## Todo (31)
+## Todo (32)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -49,6 +49,7 @@ _None. Every task is free._
 | T-0022 🟢 ready | 2 | M2 | enemies | game | Bulwark, Lance Walker, Siphon, Cradle Bomber | T-0014 |  |
 | T-0023 🟢 ready | 2 | M2 | save | game | Save system: settings, checkpoints incl. boss presets (P-04), results | T-0018, T-0017 |  |
 | T-0024 | 2 | M2 | perf | game | Performance capture tooling + 30-minute soak script | T-0006 |  |
+| T-0049 🟢 ready | 3 | M2 | qa | game | Test worlds: run garbage collection after destroying them, so reserved GPU memory stops climbing during the test run | - |  |
 | T-0026 | 1 | M3 | encounters | game | Level 1 full schedule (51 enemies, timeline, gating P-14) | T-0025 |  |
 | T-0027 | 1 | M3 | level | game | Level 2 arena greybox | T-0025 |  |
 | T-0028 | 1 | M3 | boss | game | Conductor boss incl. pairing reset (P-07), rig sweep (P-08), emitter fallback (P-06) | T-0025 |  |
