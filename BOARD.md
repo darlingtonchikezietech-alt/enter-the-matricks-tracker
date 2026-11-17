@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-16T20:07:14Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T06:30:04Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 1/41 done (2%) · todo: 40 · in_progress: 0 · review: 0 · blocked: 0 · done: 1
+**Progress:** 1/41 done (2%) · todo: 39 · in_progress: 1 · review: 0 · blocked: 0 · done: 1
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,15 +15,22 @@ _Generated 2026-11-16T20:07:14Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-_None. Every task is free._
+| Task | Agent | Since | Last heartbeat | Stale? |
+|---|---|---|---|---|
+| T-0005 Compile the scaffold and lock the toolchain (UE version, Meta XR/OpenXR plugin, SDK/NDK/JDK) | claude-code-dartonx-pc | 2026-11-17T06:30:04Z | 2026-11-17T06:30:04Z |  |
 
-## Todo (40)
+## In Progress (1)
+
+| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
+|---|---|---|---|---|---|---|---|
+| T-0005 | 1 | M0 | engine | game | Compile the scaffold and lock the toolchain (UE version, Meta XR/OpenXR plugin, SDK/NDK/JDK) | - | claude-code-dartonx-pc |
+
+## Todo (39)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0002 🟢 ready | 1 | M0 | producer | tracker | Owner: set team start date and turn M0-M5 weeks into calendar dates | - |  |
 | T-0003 🟢 ready | 1 | M0 | producer | tracker | Owner: kick off naming/trademark clearance for the title (P-16) | - |  |
-| T-0005 🟢 ready | 1 | M0 | engine | game | Compile the scaffold and lock the toolchain (UE version, Meta XR/OpenXR plugin, SDK/NDK/JDK) | - |  |
 | T-0006 | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 |  |
 | T-0007 | 1 | M0 | player | game | Seated rig pawn: XR origin, controller tracking, seated calibration, Forward re-anchor (P-11) | T-0005 |  |
 | T-0004 🟢 ready | 2 | M0 | art | tracker | Revised concept art pass using the CONCEPT_ART_REVIEW brief | - |  |

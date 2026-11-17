@@ -1,0 +1,8 @@
+{
+  "task": "T-0005",
+  "agent": "claude-code-dartonx-pc",
+  "claimed_at": "2026-11-17T06:30:04Z",
+  "heartbeat": "2026-11-17T06:30:04Z",
+  "branch": "agent/claude-code-dartonx-pc/t-0005",
+  "note": "Compiling on UE 5.8.4 build PC"
+}
