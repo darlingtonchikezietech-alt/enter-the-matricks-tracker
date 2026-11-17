@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 13:35Z** · `claude-code-dartonx-pc` · T-0019 · _claim_
+  Claimed T-0019: Diegetic HUD presenter: heat on housings, integrity on frame, warnings at source
 - **2026-11-17 13:35Z** · `claude-code-dartonx-pc` · T-0022 · _complete_ · commits: 1c5e180
   Four archetypes in Source/ETM/Enemies/Archetypes with values from bible section 7 and P-09. Bulwark: 480 HP body covered by a x0.1 shield (passes to the body), two 80 HP weak-point nodes; breaking either drops the shield, opens the body and staggers it; walks to the objective and slams it for 30 every 4 s (1 s wind-up, shield heaves up); infrastructure attacker. Lance Walker: 320 HP; walks up to 6 m in, plants, charges 2 s with its 160 HP weak-point chamber exposed only while charging (2 shots interrupt); strike 35 to its designated target (rig by default; targeting the objective adds the infrastructure tag); lance swells as the cue. Siphon: 200 HP; crawls to the objective, 1.5 s latch warning with a visible tether, then drains 5/s in 0.25 s pulses until destroyed. Cradle Bomber: 160 HP carrier; hovers 6 m above its designated target, pod swells and tone falls 1.5 to 0.75 over 2 s, releases 40; one weak-point shot on the 80 HP pod destroys the carrier; re-arms after 5 s. Shared helpers in ArchetypeSupport.h.
   Verified: Built on UE 5.8.4, zero errors and warnings; all 61 ETM tests pass, 6 new: every bible value; Bulwark shield x0.1, covered body, slam timing 30 at 1 s then every 4 s, node breaks shield and cancels a wind-up, open body takes full damage; Lance plants within 6 m, chamber only hittable while charging, 35 strike, 2 shots interrupt, objective targeting and tag sync; Siphon tether during warning, no drain during it, ~5/s after, stops on death; Bomber hovers above target, pod and descending tone cues, 40 release, pod shot kills it, objective targeting; pooled reuse restores shield, nodes, chamber, pod and clears tags; silhouettes: every pair differs by 30%+ in a dimension (Shardling 125x68x63, Drone 159x100x94, Bulwark 360x112x230, Lance 297x153x415, Siphon 160x70x115, Bomber 180x180x137 cm). No headset, no art, no sound assets (cue sound slots empty).
@@ -119,7 +121,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Next: Review T-0009. Ready now: T-0012 (input mapping), T-0013 (enemy base), T-0018 (objective). After T-0009 is approved: T-0010, T-0015, T-0019.
 - **2026-11-17 07:17Z** · `claude-code-dartonx-pc` · T-0009 · _claim_
   Claimed T-0009: Cannon component: aim envelope ±65/-30..+45, servo, cadence, muzzle trace, heat per P-01
-- **2026-11-17 07:17Z** · `owner` · T-0011 · _review_
-  Approved. Approved by the owner in chat on 2026-11-17 (Approved, record both). Recorded on the owner's behalf by claude-code-dartonx-pc.
 
-_9 older entries in `tracking/reports/`._
+_10 older entries in `tracking/reports/`._
