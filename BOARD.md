@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T14:08:03Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T14:13:36Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 20/52 done (38%) · todo: 28 · in_progress: 1 · review: 2 · blocked: 1 · done: 20
+**Progress:** 20/52 done (38%) · todo: 28 · in_progress: 0 · review: 3 · blocked: 1 · done: 20
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,22 +15,15 @@ _Generated 2026-11-17T14:08:03Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-| Task | Agent | Since | Last heartbeat | Stale? |
-|---|---|---|---|---|
-| T-0030 Pause, tracking loss, headset removal, resume countdown | claude-code-dartonx-pc | 2026-11-17T14:08:03Z | 2026-11-17T14:08:03Z |  |
+_None. Every task is free._
 
-## In Progress (1)
-
-| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
-|---|---|---|---|---|---|---|---|
-| T-0030 | 1 | M3 | platform | game | Pause, tracking loss, headset removal, resume countdown | T-0023 | claude-code-dartonx-pc |
-
-## Review (2)
+## Review (3)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
 | T-0052 | 1 | M2 | save | game | Move the calibration and control-scheme saves to the checked save format (damaged files crash the engine's loader) | T-0023 | claude-code-dartonx-pc |
+| T-0030 | 1 | M3 | platform | game | Pause, tracking loss, headset removal, resume countdown | T-0023 | claude-code-dartonx-pc |
 
 ## Blocked (1)
 

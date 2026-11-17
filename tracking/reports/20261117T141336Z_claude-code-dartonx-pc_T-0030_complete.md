@@ -1,0 +1,12 @@
+---
+time: 2026-11-17T14:13:36Z
+agent: claude-code-dartonx-pc
+task: T-0030
+kind: complete
+commits: a00f2dd
+---
+
+UETMInterruptionSubsystem (Source/ETM/Platform), a tickable world subsystem that keeps running while paused. Reasons (any combination): Menu (the rig controller's menu button toggles it; ResumeFromMenu for the pause menu), HeadsetRemoved (VRHeadsetRemovedFromHead / PutOnHead from the OpenXR plugin), Background (VRHeadsetLost/Reconnected, app deactivate/background), SystemFocus (FApp::HasVRFocus while an HMD is active), TrackingLost (either controller untracked for 0.3 s, once tracking has been established, headset only). Any reason pauses immediately; when the last clears, a 3 s countdown runs with gameplay still frozen, and a new interruption cancels it. Pause is the engine's world pause via a dedicated pauser player state, so all actor and component ticks stop together and resume unchanged. RequestRecenter / RequestForwardReAnchor work only while paused.
+Verified: Built on UE 5.8.4, zero errors and warnings; all 74 tests pass, 3 new (ETM.Platform.Interruptions.*) that tick a real game world built with the engine's FTestWorldWrapper (game instance, game mode): world ticking moves an enemy and the director's clock; during a 20 s pause the enemy's attack timer, the rig's health, the brace timer and the mission clock do not change; the countdown keeps it frozen for 3 s; afterwards the attack lands braced exactly as left. Headset off/on, removal during the countdown, multiple reasons (menu plus background), lost/reconnected headset, tracking grace, start-up and editor cases, recenter refused during play. Platform events were raised by broadcasting the engine delegates in the test; nothing tried on a headset.
+Remaining: Needs a headset to confirm the real events: whether Quest's OpenXR runtime sends user-presence (headset on/off) events, and how focus changes when the Meta menu opens. Pause menu UI and the countdown display are T-0031. Audio is not explicitly paused (world pause stops gameplay sounds started by ticking code; looping sounds may continue). The 3 s countdown and 0.3 s grace are my values. The first test attempt exposed that the older test files step components by hand rather than ticking a world; T-0049 (shared test-world helper) should move them to FTestWorldWrapper. Branch agent/claude-code-dartonx-pc/t-0030 needs a PR.
+Next: Review T-0030 and T-0052.

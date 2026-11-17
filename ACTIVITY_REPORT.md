@@ -2,6 +2,11 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 14:13Z** · `claude-code-dartonx-pc` · T-0030 · _complete_ · commits: a00f2dd
+  UETMInterruptionSubsystem (Source/ETM/Platform), a tickable world subsystem that keeps running while paused. Reasons (any combination): Menu (the rig controller's menu button toggles it; ResumeFromMenu for the pause menu), HeadsetRemoved (VRHeadsetRemovedFromHead / PutOnHead from the OpenXR plugin), Background (VRHeadsetLost/Reconnected, app deactivate/background), SystemFocus (FApp::HasVRFocus while an HMD is active), TrackingLost (either controller untracked for 0.3 s, once tracking has been established, headset only). Any reason pauses immediately; when the last clears, a 3 s countdown runs with gameplay still frozen, and a new interruption cancels it. Pause is the engine's world pause via a dedicated pauser player state, so all actor and component ticks stop together and resume unchanged. RequestRecenter / RequestForwardReAnchor work only while paused.
+  Verified: Built on UE 5.8.4, zero errors and warnings; all 74 tests pass, 3 new (ETM.Platform.Interruptions.*) that tick a real game world built with the engine's FTestWorldWrapper (game instance, game mode): world ticking moves an enemy and the director's clock; during a 20 s pause the enemy's attack timer, the rig's health, the brace timer and the mission clock do not change; the countdown keeps it frozen for 3 s; afterwards the attack lands braced exactly as left. Headset off/on, removal during the countdown, multiple reasons (menu plus background), lost/reconnected headset, tracking grace, start-up and editor cases, recenter refused during play. Platform events were raised by broadcasting the engine delegates in the test; nothing tried on a headset.
+  Remaining: Needs a headset to confirm the real events: whether Quest's OpenXR runtime sends user-presence (headset on/off) events, and how focus changes when the Meta menu opens. Pause menu UI and the countdown display are T-0031. Audio is not explicitly paused (world pause stops gameplay sounds started by ticking code; looping sounds may continue). The 3 s countdown and 0.3 s grace are my values. The first test attempt exposed that the older test files step components by hand rather than ticking a world; T-0049 (shared test-world helper) should move them to FTestWorldWrapper. Branch agent/claude-code-dartonx-pc/t-0030 needs a PR.
+  Next: Review T-0030 and T-0052.
 - **2026-11-17 14:08Z** · `claude-code-dartonx-pc` · T-0030 · _claim_
   Claimed T-0030: Pause, tracking loss, headset removal, resume countdown
 - **2026-11-17 14:07Z** · `claude-code-dartonx-pc` · T-0052 · _complete_ · commits: 93e2da5
@@ -119,7 +124,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Verified: From an empty worktree of main (25 source files): builds clean both with and without the fix, 15 tests pass. On the T-0014 tree (38 source files, Intermediate for ETM deleted): fails without the fix with C2374/C2011 redefinitions, builds clean with it, all 24 tests pass.
   Remaining: Merge this before T-0014 and before the other pending branches; merging those first would push main past 32 files and break clean builds. Renaming the helpers per file would also work, but touches six test files owned by other tasks.
   Next: Merge order: T-0044, then T-0009, T-0012, T-0018, T-0010, then T-0014 (stacked on T-0018).
-- **2026-11-17 10:37Z** · `claude-code-dartonx-pc` · T-0044 · _claim_
-  Blocks T-0014: main does not build clean
 
-_25 older entries in `tracking/reports/`._
+_26 older entries in `tracking/reports/`._
