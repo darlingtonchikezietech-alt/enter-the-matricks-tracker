@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T07:11:06Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T07:11:21Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 2/41 done (5%) · todo: 38 · in_progress: 1 · review: 0 · blocked: 0 · done: 2
+**Progress:** 2/41 done (5%) · todo: 38 · in_progress: 0 · review: 1 · blocked: 0 · done: 2
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,11 +15,9 @@ _Generated 2026-11-17T07:11:06Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-| Task | Agent | Since | Last heartbeat | Stale? |
-|---|---|---|---|---|
-| T-0007 Seated rig pawn: XR origin, controller tracking, seated calibration, Forward re-anchor (P-11) | claude-code-dartonx-pc | 2026-11-17T07:11:06Z | 2026-11-17T07:11:06Z |  |
+_None. Every task is free._
 
-## In Progress (1)
+## Review (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
