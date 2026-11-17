@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 13:43Z** · `owner` · T-0019 · _review_
+  Approved. Approved by the owner in chat on 2026-11-17 (Approve all three). Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-17 13:43Z** · `owner` · T-0022 · _review_
   Approved. Approved by the owner in chat on 2026-11-17 (Approve all three). Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-17 13:42Z** · `claude-code-dartonx-pc` · T-0050 · _complete_ · commits: 003668d
@@ -119,7 +121,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Verified: Built ETMEditor Win64 Development on UE 5.8.4, zero errors and warnings. 5 new automation tests (ETM.Input.*) pass in a headless editor: grip gate timing, both schemes, edge-triggered brace/confirm/pause, vent statistics, mapping context contents, scheme save round-trip. NOT verified: reading real controller values through Enhanced Input (needs a local player and a headset), and the full path controller to pawn to cannon in a running game.
   Remaining: Two of the three acceptance items are NOT met and cannot be met in code: the accidental-vent rate measurement and the ADR. They need the M1 playtest (T-0016), which depends on this task, so I split them into a new follow-up task. Also: no input assets were made under Content/ETM/Core/Input (mappings live in code); a game mode must set ARigPlayerController and AXRSeatedRigPawn as defaults (Config or a GameMode class, outside this task's paths); the settings UI that calls SetControlScheme is T-0037; a 0.75 release point and 0.5/0.4 trigger thresholds are my additions, not bible values.
   Next: Review T-0012 with the split in mind. Reviewer should reject if the playtest and ADR must stay inside this task.
-- **2026-11-17 07:32Z** · `claude-code-dartonx-pc` · T-0012 · _claim_
-  Claimed T-0012: Enhanced Input mapping with grip-vent threshold 0.85/100ms and alternative A/B mapping (P-12)
 
-_14 older entries in `tracking/reports/`._
+_15 older entries in `tracking/reports/`._

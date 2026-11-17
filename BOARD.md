@@ -1,14 +1,14 @@
 # Task Board
 
-_Generated 2026-11-17T13:43:21Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T13:43:26Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 16/50 done (32%) · todo: 30 · in_progress: 0 · review: 3 · blocked: 1 · done: 16
+**Progress:** 17/50 done (34%) · todo: 30 · in_progress: 0 · review: 2 · blocked: 1 · done: 17
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 8 | `████░░░░░░` |
 | M1 | 8 | 13 | `██████░░░░` |
-| M2 | 5 | 13 | `████░░░░░░` |
+| M2 | 6 | 13 | `█████░░░░░` |
 | M3 | 0 | 8 | `░░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
 | M5 | 0 | 3 | `░░░░░░░░░░` |
@@ -17,12 +17,11 @@ _Generated 2026-11-17T13:43:21Z by `tools/agent.py render`. Do not edit by hand.
 
 _None. Every task is free._
 
-## Review (3)
+## Review (2)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
-| T-0019 | 2 | M2 | ui | game | Diegetic HUD presenter: heat on housings, integrity on frame, warnings at source | T-0009, T-0011 | claude-code-dartonx-pc |
 | T-0050 | 2 | M2 | ui | game | Wire the HUD presenter into the rig pawn (for T-0019) | - | claude-code-dartonx-pc |
 
 ## Blocked (1)
@@ -55,7 +54,7 @@ _None. Every task is free._
 | T-0029 | 1 | M3 | encounters | game | Level 2 full schedule + train gating (P-14) | T-0027, T-0028 |  |
 | T-0030 | 1 | M3 | platform | game | Pause, tracking loss, headset removal, resume countdown | T-0023 |  |
 | T-0033 | 1 | M3 | qa | tracker | M3 gate: both missions end to end in a packaged build | T-0026, T-0029, T-0030, T-0031 |  |
-| T-0031 | 2 | M3 | flow | game | Campaign flow: menus, relocation fade, results, ending | T-0019 |  |
+| T-0031 🟢 ready | 2 | M3 | flow | game | Campaign flow: menus, relocation fade, results, ending | T-0019 |  |
 | T-0032 | 3 | M3 | audio | game | Placeholder VO (Mara, RIG-6) and subtitles with speaker labels | T-0031 |  |
 | T-0038 | 1 | M4 | qa | tracker | 10-player playtest: duration, comprehension, comfort | T-0034, T-0035, T-0036, T-0037 |  |
 | T-0034 | 2 | M4 | art | game | Final enemy and boss art + animation | T-0004, T-0033 |  |
@@ -66,7 +65,7 @@ _None. Every task is free._
 | T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
 | T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
 
-## Done (16)
+## Done (17)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -85,5 +84,6 @@ _None. Every task is free._
 | T-0018 | 1 | M2 | objective | game | Objective integrity, world marker, failure and retry | T-0011 | claude-code-dartonx-pc |
 | T-0021 | 1 | M2 | boss | game | Gatebreaker boss prototype (P-02, P-09, P-10) | T-0017 | claude-code-dartonx-pc |
 | T-0045 | 1 | M2 | enemies | game | Attack tokens in the enemy base: cap simultaneous attacks (bible section 14: max 2 dangerous attacks) | - | claude-code-dartonx-pc |
+| T-0019 | 2 | M2 | ui | game | Diegetic HUD presenter: heat on housings, integrity on frame, warnings at source | T-0009, T-0011 | claude-code-dartonx-pc |
 | T-0022 | 2 | M2 | enemies | game | Bulwark, Lance Walker, Siphon, Cradle Bomber | T-0014 | claude-code-dartonx-pc |
 
