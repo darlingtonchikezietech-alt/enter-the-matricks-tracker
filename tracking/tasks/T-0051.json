@@ -1,0 +1,20 @@
+{
+  "id": "T-0051",
+  "title": "Mission state: resume from a saved checkpoint after an app restart (for T-0023)",
+  "milestone": "M2",
+  "area": "objective",
+  "repo": "game",
+  "status": "todo",
+  "priority": 2,
+  "depends_on": [],
+  "paths": [
+    "Source/ETM/Objectives/MissionStateSubsystem.h",
+    "Source/ETM/Objectives/MissionStateSubsystem.cpp"
+  ],
+  "acceptance": [
+    "ResumeFromCheckpoint restores health (boss preset on boss checkpoints), parks enemies and rebuilds the checkpoint phase, without counting a retry"
+  ],
+  "description": "T-0023 owns Source/ETM/Save only. Done on the T-0023 branch.",
+  "assignee": null,
+  "history": []
+}

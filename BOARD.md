@@ -1,14 +1,14 @@
 # Task Board
 
-_Generated 2026-11-17T13:52:17Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T13:52:57Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 18/50 done (36%) · todo: 29 · in_progress: 1 · review: 1 · blocked: 1 · done: 18
+**Progress:** 18/51 done (35%) · todo: 30 · in_progress: 1 · review: 1 · blocked: 1 · done: 18
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 8 | `████░░░░░░` |
 | M1 | 8 | 13 | `██████░░░░` |
-| M2 | 7 | 13 | `█████░░░░░` |
+| M2 | 7 | 14 | `█████░░░░░` |
 | M3 | 0 | 8 | `░░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
 | M5 | 0 | 3 | `░░░░░░░░░░` |
@@ -37,7 +37,7 @@ _Generated 2026-11-17T13:52:17Z by `tools/agent.py render`. Do not edit by hand.
 |---|---|---|---|---|---|---|---|
 | T-0015 | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 
-## Todo (29)
+## Todo (30)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -53,6 +53,7 @@ _Generated 2026-11-17T13:52:17Z by `tools/agent.py render`. Do not edit by hand.
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
 | T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 |  |
 | T-0024 | 2 | M2 | perf | game | Performance capture tooling + 30-minute soak script | T-0006 |  |
+| T-0051 🟢 ready | 2 | M2 | objective | game | Mission state: resume from a saved checkpoint after an app restart (for T-0023) | - |  |
 | T-0049 🟢 ready | 3 | M2 | qa | game | Test worlds: run garbage collection after destroying them, so reserved GPU memory stops climbing during the test run | - |  |
 | T-0026 | 1 | M3 | encounters | game | Level 1 full schedule (51 enemies, timeline, gating P-14) | T-0025 |  |
 | T-0027 | 1 | M3 | level | game | Level 2 arena greybox | T-0025 |  |
