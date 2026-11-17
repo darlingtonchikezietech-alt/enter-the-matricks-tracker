@@ -13,8 +13,9 @@
     "docs/reports/M5/**"
   ],
   "acceptance": [
-    "Every \u00a717 row has evidence",
-    "Zero blocker/critical defects"
+    "Every §17 row has evidence",
+    "Zero blocker/critical defects",
+    "30-minute soak and section 17 performance evidence repeated on Quest 3 or 3S (P-31)"
   ],
   "description": "",
   "assignee": null,

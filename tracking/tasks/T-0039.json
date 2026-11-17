@@ -1,6 +1,6 @@
 {
   "id": "T-0039",
-  "title": "Optimization pass to \u00a714 budgets",
+  "title": "Optimization pass to §14 budgets",
   "milestone": "M5",
   "area": "perf",
   "repo": "game",
@@ -15,7 +15,8 @@
   ],
   "acceptance": [
     "<1% missed frames in active combat",
-    "30-min soak, no memory growth"
+    "30-min soak, no memory growth",
+    "Same budgets met on Quest 3 or 3S with the Quest 2 settings (P-31)"
   ],
   "description": "",
   "assignee": null,

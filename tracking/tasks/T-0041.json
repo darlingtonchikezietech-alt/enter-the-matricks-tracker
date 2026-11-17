@@ -15,7 +15,8 @@
   ],
   "acceptance": [
     "Submitted no later than the date in DEVELOPMENT_PLAN",
-    "Cleared title used"
+    "Cleared title used",
+    "Store listing names Quest 2, Quest 3 and Quest 3S; decide whether Quest Pro stays in the manifest (ADR-0003)"
   ],
   "description": "",
   "assignee": null,
