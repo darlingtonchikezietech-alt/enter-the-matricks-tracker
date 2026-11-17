@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T10:44:50Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T10:46:34Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 10/45 done (22%) · todo: 32 · in_progress: 2 · review: 1 · blocked: 0 · done: 10
+**Progress:** 10/45 done (22%) · todo: 32 · in_progress: 1 · review: 2 · blocked: 0 · done: 10
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -18,20 +18,19 @@ _Generated 2026-11-17T10:44:50Z by `tools/agent.py render`. Do not edit by hand.
 | Task | Agent | Since | Last heartbeat | Stale? |
 |---|---|---|---|---|
 | T-0017 Encounter director: authored phases, spawn budgets, attack tokens, early-transition rule (P-13) | claude-code-dartonx-pc | 2026-11-17T10:43:30Z | 2026-11-17T10:43:30Z |  |
-| T-0045 Attack tokens in the enemy base: cap simultaneous attacks (bible section 14: max 2 dangerous attacks) | claude-code-dartonx-pc | 2026-11-17T10:44:50Z | 2026-11-17T10:44:50Z |  |
 
-## In Progress (2)
+## In Progress (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0017 | 1 | M2 | encounters | game | Encounter director: authored phases, spawn budgets, attack tokens, early-transition rule (P-13) | T-0013 | claude-code-dartonx-pc |
-| T-0045 | 1 | M2 | enemies | game | Attack tokens in the enemy base: cap simultaneous attacks (bible section 14: max 2 dangerous attacks) | - | claude-code-dartonx-pc |
 
-## Review (1)
+## Review (2)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
+| T-0045 | 1 | M2 | enemies | game | Attack tokens in the enemy base: cap simultaneous attacks (bible section 14: max 2 dangerous attacks) | - | claude-code-dartonx-pc |
 
 ## Todo (32)
 
