@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 14:02Z** · `owner` · T-0023 · _review_
+  Approved. Approved by the owner in chat on 2026-11-17 (Approve both). Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-17 14:00Z** · `claude-code-dartonx-pc` · T-0051 · _complete_ · commits: 6d38507
   UMissionStateSubsystem::ResumeFromCheckpoint(checkpoint): restores exactly like a retry (enemies parked, brace reset, health or the P-04 boss preset, OnRetryStarted so the director rebuilds the phase) without counting as a retry. Retry and resume share one private RestoreLastCheckpoint.
   Verified: Covered by ETM.Save.Checkpoint.BossPresetAfterRestart (director jumps to the phase, preset applied, retry count 0) and the existing ETM.Objectives tests; all 71 pass.
@@ -119,7 +121,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Claimed T-0010: Automation test: cannon heat parity with tools/balance_sim.py
 - **2026-11-17 10:28Z** · `owner` · T-0018 · _review_
   Approved. Approved by the owner in chat on 2026-11-17 (Approve all four). Recorded on the owner's behalf by claude-code-dartonx-pc.
-- **2026-11-17 10:28Z** · `owner` · T-0013 · _review_
-  Approved. Approved by the owner in chat on 2026-11-17 (Approve all four). Recorded on the owner's behalf by claude-code-dartonx-pc.
 
-_20 older entries in `tracking/reports/`._
+_21 older entries in `tracking/reports/`._

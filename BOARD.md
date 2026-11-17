@@ -1,14 +1,14 @@
 # Task Board
 
-_Generated 2026-11-17T14:00:41Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T14:02:30Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 18/52 done (35%) · todo: 30 · in_progress: 0 · review: 3 · blocked: 1 · done: 18
+**Progress:** 19/52 done (37%) · todo: 30 · in_progress: 0 · review: 2 · blocked: 1 · done: 19
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 8 | `████░░░░░░` |
 | M1 | 8 | 13 | `██████░░░░` |
-| M2 | 7 | 15 | `█████░░░░░` |
+| M2 | 8 | 15 | `█████░░░░░` |
 | M3 | 0 | 8 | `░░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
 | M5 | 0 | 3 | `░░░░░░░░░░` |
@@ -17,12 +17,11 @@ _Generated 2026-11-17T14:00:41Z by `tools/agent.py render`. Do not edit by hand.
 
 _None. Every task is free._
 
-## Review (3)
+## Review (2)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
-| T-0023 | 2 | M2 | save | game | Save system: settings, checkpoints incl. boss presets (P-04), results | T-0018, T-0017 | claude-code-dartonx-pc |
 | T-0051 | 2 | M2 | objective | game | Mission state: resume from a saved checkpoint after an app restart (for T-0023) | - | claude-code-dartonx-pc |
 
 ## Blocked (1)
@@ -45,7 +44,7 @@ _None. Every task is free._
 | T-0043 | 2 | M1 | weapons | game | Heat model: carry fire-cooldown remainder so cadence does not drift at 72 Hz | T-0010 |  |
 | T-0025 | 1 | M2 | qa | tracker | M2 gate: vertical slice validated on hardware | T-0020, T-0021, T-0022, T-0023, T-0024, T-0019 |  |
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
-| T-0052 | 1 | M2 | save | game | Move the calibration and control-scheme saves to the checked save format (damaged files crash the engine's loader) | T-0023 |  |
+| T-0052 🟢 ready | 1 | M2 | save | game | Move the calibration and control-scheme saves to the checked save format (damaged files crash the engine's loader) | T-0023 |  |
 | T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 |  |
 | T-0024 | 2 | M2 | perf | game | Performance capture tooling + 30-minute soak script | T-0006 |  |
 | T-0049 🟢 ready | 3 | M2 | qa | game | Test worlds: run garbage collection after destroying them, so reserved GPU memory stops climbing during the test run | - |  |
@@ -53,7 +52,7 @@ _None. Every task is free._
 | T-0027 | 1 | M3 | level | game | Level 2 arena greybox | T-0025 |  |
 | T-0028 | 1 | M3 | boss | game | Conductor boss incl. pairing reset (P-07), rig sweep (P-08), emitter fallback (P-06) | T-0025 |  |
 | T-0029 | 1 | M3 | encounters | game | Level 2 full schedule + train gating (P-14) | T-0027, T-0028 |  |
-| T-0030 | 1 | M3 | platform | game | Pause, tracking loss, headset removal, resume countdown | T-0023 |  |
+| T-0030 🟢 ready | 1 | M3 | platform | game | Pause, tracking loss, headset removal, resume countdown | T-0023 |  |
 | T-0033 | 1 | M3 | qa | tracker | M3 gate: both missions end to end in a packaged build | T-0026, T-0029, T-0030, T-0031 |  |
 | T-0031 🟢 ready | 2 | M3 | flow | game | Campaign flow: menus, relocation fade, results, ending | T-0019 |  |
 | T-0032 | 3 | M3 | audio | game | Placeholder VO (Mara, RIG-6) and subtitles with speaker labels | T-0031 |  |
@@ -66,7 +65,7 @@ _None. Every task is free._
 | T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
 | T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
 
-## Done (18)
+## Done (19)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -87,5 +86,6 @@ _None. Every task is free._
 | T-0045 | 1 | M2 | enemies | game | Attack tokens in the enemy base: cap simultaneous attacks (bible section 14: max 2 dangerous attacks) | - | claude-code-dartonx-pc |
 | T-0019 | 2 | M2 | ui | game | Diegetic HUD presenter: heat on housings, integrity on frame, warnings at source | T-0009, T-0011 | claude-code-dartonx-pc |
 | T-0022 | 2 | M2 | enemies | game | Bulwark, Lance Walker, Siphon, Cradle Bomber | T-0014 | claude-code-dartonx-pc |
+| T-0023 | 2 | M2 | save | game | Save system: settings, checkpoints incl. boss presets (P-04), results | T-0018, T-0017 | claude-code-dartonx-pc |
 | T-0050 | 2 | M2 | ui | game | Wire the HUD presenter into the rig pawn (for T-0019) | - | claude-code-dartonx-pc |
 
