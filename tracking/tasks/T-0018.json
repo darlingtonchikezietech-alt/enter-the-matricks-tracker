@@ -4,7 +4,7 @@
   "milestone": "M2",
   "area": "objective",
   "repo": "game",
-  "status": "review",
+  "status": "done",
   "priority": 1,
   "depends_on": [
     "T-0011"
@@ -28,6 +28,12 @@
       "time": "2026-11-17T10:26:51Z",
       "agent": "claude-code-dartonx-pc",
       "event": "completed"
+    },
+    {
+      "time": "2026-11-17T10:28:05Z",
+      "agent": "owner",
+      "event": "approved",
+      "note": "Approved by the owner in chat on 2026-11-17 (Approve all four). Recorded on the owner's behalf by claude-code-dartonx-pc."
     }
   ],
   "result": {

@@ -1,14 +1,14 @@
 # Task Board
 
-_Generated 2026-11-17T10:28:01Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T10:28:05Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 7/42 done (17%) · todo: 34 · in_progress: 0 · review: 1 · blocked: 0 · done: 7
+**Progress:** 8/42 done (19%) · todo: 34 · in_progress: 0 · review: 0 · blocked: 0 · done: 8
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 8 | `████░░░░░░` |
 | M1 | 4 | 8 | `█████░░░░░` |
-| M2 | 0 | 10 | `░░░░░░░░░░` |
+| M2 | 1 | 10 | `█░░░░░░░░░` |
 | M3 | 0 | 8 | `░░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
 | M5 | 0 | 3 | `░░░░░░░░░░` |
@@ -16,12 +16,6 @@ _Generated 2026-11-17T10:28:01Z by `tools/agent.py render`. Do not edit by hand.
 ## Active claims
 
 _None. Every task is free._
-
-## Review (1)
-
-| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
-|---|---|---|---|---|---|---|---|
-| T-0018 | 1 | M2 | objective | game | Objective integrity, world marker, failure and retry | T-0011 | claude-code-dartonx-pc |
 
 ## Todo (34)
 
@@ -62,7 +56,7 @@ _None. Every task is free._
 | T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
 | T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
 
-## Done (7)
+## Done (8)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -73,4 +67,5 @@ _None. Every task is free._
 | T-0011 | 1 | M1 | combat | game | Brace (DefenseComponent) and Integrity components | T-0005 | claude-code-dartonx-pc |
 | T-0012 | 1 | M1 | input | game | Enhanced Input mapping with grip-vent threshold 0.85/100ms and alternative A/B mapping (P-12) | T-0007 | claude-code-dartonx-pc |
 | T-0013 | 1 | M1 | enemies | game | Enemy base: lifecycle states, damage interface, weak points, pooling | T-0011 | claude-code-dartonx-pc |
+| T-0018 | 1 | M2 | objective | game | Objective integrity, world marker, failure and retry | T-0011 | claude-code-dartonx-pc |
 
