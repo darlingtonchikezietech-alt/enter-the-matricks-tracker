@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T07:17:35Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T07:21:32Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 4/41 done (10%) · todo: 36 · in_progress: 1 · review: 0 · blocked: 0 · done: 4
+**Progress:** 4/41 done (10%) · todo: 36 · in_progress: 0 · review: 1 · blocked: 0 · done: 4
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,11 +15,9 @@ _Generated 2026-11-17T07:17:35Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-| Task | Agent | Since | Last heartbeat | Stale? |
-|---|---|---|---|---|
-| T-0009 Cannon component: aim envelope ±65/-30..+45, servo, cadence, muzzle trace, heat per P-01 | claude-code-dartonx-pc | 2026-11-17T07:17:35Z | 2026-11-17T07:17:35Z |  |
+_None. Every task is free._
 
-## In Progress (1)
+## Review (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
