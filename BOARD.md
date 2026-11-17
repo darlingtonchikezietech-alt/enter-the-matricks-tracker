@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T13:17:53Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T13:22:03Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 14/48 done (29%) · todo: 31 · in_progress: 2 · review: 1 · blocked: 0 · done: 14
+**Progress:** 14/48 done (29%) · todo: 31 · in_progress: 1 · review: 2 · blocked: 0 · done: 14
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -18,20 +18,19 @@ _Generated 2026-11-17T13:17:53Z by `tools/agent.py render`. Do not edit by hand.
 | Task | Agent | Since | Last heartbeat | Stale? |
 |---|---|---|---|---|
 | T-0015 Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | claude-code-dartonx-pc | 2026-11-17T13:16:42Z | 2026-11-17T13:16:42Z |  |
-| T-0048 Shot feedback component in C++: recoil, muzzle flash, tracer, impact flash, haptics, placeholder sound (for T-0015) | claude-code-dartonx-pc | 2026-11-17T13:17:53Z | 2026-11-17T13:17:53Z |  |
 
-## In Progress (2)
+## In Progress (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0015 | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 | claude-code-dartonx-pc |
-| T-0048 | 2 | M1 | vfx | game | Shot feedback component in C++: recoil, muzzle flash, tracer, impact flash, haptics, placeholder sound (for T-0015) | T-0009 | claude-code-dartonx-pc |
 
-## Review (1)
+## Review (2)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
+| T-0048 | 2 | M1 | vfx | game | Shot feedback component in C++: recoil, muzzle flash, tracer, impact flash, haptics, placeholder sound (for T-0015) | T-0009 | claude-code-dartonx-pc |
 
 ## Todo (31)
 
