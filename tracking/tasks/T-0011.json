@@ -4,7 +4,7 @@
   "milestone": "M1",
   "area": "combat",
   "repo": "game",
-  "status": "todo",
+  "status": "in_progress",
   "priority": 1,
   "depends_on": [
     "T-0005"
@@ -17,6 +17,12 @@
     "Integrity broadcasts damage + failure events"
   ],
   "description": "Scaffold exists.",
-  "assignee": null,
-  "history": []
+  "assignee": "claude-code-dartonx-pc",
+  "history": [
+    {
+      "time": "2026-11-17T07:13:02Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "claimed"
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T07:11:21Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T07:13:02Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 2/41 done (5%) · todo: 38 · in_progress: 0 · review: 1 · blocked: 0 · done: 2
+**Progress:** 2/41 done (5%) · todo: 37 · in_progress: 1 · review: 1 · blocked: 0 · done: 2
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,7 +15,15 @@ _Generated 2026-11-17T07:11:21Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-_None. Every task is free._
+| Task | Agent | Since | Last heartbeat | Stale? |
+|---|---|---|---|---|
+| T-0011 Brace (DefenseComponent) and Integrity components | claude-code-dartonx-pc | 2026-11-17T07:13:02Z | 2026-11-17T07:13:02Z |  |
+
+## In Progress (1)
+
+| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
+|---|---|---|---|---|---|---|---|
+| T-0011 | 1 | M1 | combat | game | Brace (DefenseComponent) and Integrity components | T-0005 | claude-code-dartonx-pc |
 
 ## Review (1)
 
@@ -23,7 +31,7 @@ _None. Every task is free._
 |---|---|---|---|---|---|---|---|
 | T-0007 | 1 | M0 | player | game | Seated rig pawn: XR origin, controller tracking, seated calibration, Forward re-anchor (P-11) | T-0005 | claude-code-dartonx-pc |
 
-## Todo (38)
+## Todo (37)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -34,7 +42,6 @@ _None. Every task is free._
 | T-0008 | 2 | M0 | art | game | Open-frame rig blockout mesh (seat, knee guard, weapon arms) | T-0006 |  |
 | T-0009 | 1 | M1 | weapons | game | Cannon component: aim envelope ±65/-30..+45, servo, cadence, muzzle trace, heat per P-01 | T-0007 |  |
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 |  |
-| T-0011 🟢 ready | 1 | M1 | combat | game | Brace (DefenseComponent) and Integrity components | T-0005 |  |
 | T-0012 | 1 | M1 | input | game | Enhanced Input mapping with grip-vent threshold 0.85/100ms and alternative A/B mapping (P-12) | T-0007 |  |
 | T-0013 | 1 | M1 | enemies | game | Enemy base: lifecycle states, damage interface, weak points, pooling | T-0011 |  |
 | T-0014 | 1 | M1 | enemies | game | Shardling (ground) and Needle Drone (flying) prototypes | T-0013 |  |

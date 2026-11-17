@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 07:13Z** · `claude-code-dartonx-pc` · T-0011 · _claim_
+  Claimed T-0011: Brace (DefenseComponent) and Integrity components
 - **2026-11-17 07:11Z** · `claude-code-dartonx-pc` · T-0007 · _complete_ · commits: 4472fb2
   Seated rig pawn done in code. Calibration moves only the XR origin; nothing writes to the camera. Recenter seats the head at the design eye point (also on the first tracked frame and after a system recenter). Forward re-anchor (P-11) re-aligns facing without moving the head in the rig. Per-hand aim offsets are clamped and saved to slot ETM_Calibration. Cannons hold aim when a controller loses tracking.
   Verified: Built ETMEditor Win64 Development on UE 5.8.4, zero errors and warnings. 5 automation tests (ETM.Player.Calibration.*) pass in a headless editor. No headset, no VR Preview, no pause menu exists yet, so recenter and re-anchor are verified by maths only.
