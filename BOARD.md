@@ -1,15 +1,15 @@
 # Task Board
 
-_Generated 2026-11-17T14:16:50Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T14:16:53Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 21/52 done (40%) · todo: 28 · in_progress: 0 · review: 2 · blocked: 1 · done: 21
+**Progress:** 22/52 done (42%) · todo: 28 · in_progress: 0 · review: 1 · blocked: 1 · done: 22
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 8 | `████░░░░░░` |
 | M1 | 8 | 13 | `██████░░░░` |
 | M2 | 10 | 15 | `███████░░░` |
-| M3 | 0 | 8 | `░░░░░░░░░░` |
+| M3 | 1 | 8 | `█░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
 | M5 | 0 | 3 | `░░░░░░░░░░` |
 
@@ -17,12 +17,11 @@ _Generated 2026-11-17T14:16:50Z by `tools/agent.py render`. Do not edit by hand.
 
 _None. Every task is free._
 
-## Review (2)
+## Review (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
-| T-0030 | 1 | M3 | platform | game | Pause, tracking loss, headset removal, resume countdown | T-0023 | claude-code-dartonx-pc |
 
 ## Blocked (1)
 
@@ -63,7 +62,7 @@ _None. Every task is free._
 | T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
 | T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
 
-## Done (21)
+## Done (22)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -88,4 +87,5 @@ _None. Every task is free._
 | T-0023 | 2 | M2 | save | game | Save system: settings, checkpoints incl. boss presets (P-04), results | T-0018, T-0017 | claude-code-dartonx-pc |
 | T-0050 | 2 | M2 | ui | game | Wire the HUD presenter into the rig pawn (for T-0019) | - | claude-code-dartonx-pc |
 | T-0051 | 2 | M2 | objective | game | Mission state: resume from a saved checkpoint after an app restart (for T-0023) | - | claude-code-dartonx-pc |
+| T-0030 | 1 | M3 | platform | game | Pause, tracking loss, headset removal, resume countdown | T-0023 | claude-code-dartonx-pc |
 
