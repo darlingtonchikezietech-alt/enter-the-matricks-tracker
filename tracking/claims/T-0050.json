@@ -1,0 +1,8 @@
+{
+  "task": "T-0050",
+  "agent": "claude-code-dartonx-pc",
+  "claimed_at": "2026-11-17T13:36:40Z",
+  "heartbeat": "2026-11-17T13:36:40Z",
+  "branch": "agent/claude-code-dartonx-pc/t-0050",
+  "note": "Wiring for T-0019, same branch"
+}
