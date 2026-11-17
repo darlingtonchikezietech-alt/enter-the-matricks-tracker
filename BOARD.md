@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T10:43:26Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T10:43:30Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 10/44 done (23%) · todo: 33 · in_progress: 0 · review: 1 · blocked: 0 · done: 10
+**Progress:** 10/44 done (23%) · todo: 32 · in_progress: 1 · review: 1 · blocked: 0 · done: 10
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,7 +15,15 @@ _Generated 2026-11-17T10:43:26Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-_None. Every task is free._
+| Task | Agent | Since | Last heartbeat | Stale? |
+|---|---|---|---|---|
+| T-0017 Encounter director: authored phases, spawn budgets, attack tokens, early-transition rule (P-13) | claude-code-dartonx-pc | 2026-11-17T10:43:30Z | 2026-11-17T10:43:30Z |  |
+
+## In Progress (1)
+
+| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
+|---|---|---|---|---|---|---|---|
+| T-0017 | 1 | M2 | encounters | game | Encounter director: authored phases, spawn budgets, attack tokens, early-transition rule (P-13) | T-0013 | claude-code-dartonx-pc |
 
 ## Review (1)
 
@@ -23,7 +31,7 @@ _None. Every task is free._
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
 
-## Todo (33)
+## Todo (32)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -35,7 +43,6 @@ _None. Every task is free._
 | T-0016 | 1 | M1 | qa | tracker | M1 gate: 3-minute combat test on Quest 2 (comfort, readability, perf capture) | T-0014, T-0015, T-0012, T-0010 |  |
 | T-0015 🟢 ready | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 | T-0043 | 2 | M1 | weapons | game | Heat model: carry fire-cooldown remainder so cadence does not drift at 72 Hz | T-0010 |  |
-| T-0017 🟢 ready | 1 | M2 | encounters | game | Encounter director: authored phases, spawn budgets, attack tokens, early-transition rule (P-13) | T-0013 |  |
 | T-0021 | 1 | M2 | boss | game | Gatebreaker boss prototype (P-02, P-09, P-10) | T-0017 |  |
 | T-0025 | 1 | M2 | qa | tracker | M2 gate: vertical slice validated on hardware | T-0020, T-0021, T-0022, T-0023, T-0024, T-0019 |  |
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
