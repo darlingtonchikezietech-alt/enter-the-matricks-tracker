@@ -1,0 +1,12 @@
+---
+time: 2026-11-17T10:52:21Z
+agent: claude-code-dartonx-pc
+task: T-0017
+kind: complete
+commits: c687803
+---
+
+AEncounterDirector (Source/ETM/Encounters): authored FEncounterPhase rows of FEncounterSpawnGroup (class, count, entrance, delay, interval), spawned from level entrance actors through the enemy pool with seeded scatter. Caps: phase MaxActive, global 8, boss phases 4 adds; spawns held back while the budget is full, one per group per tick; reinforcements stop when groups are spent. Attack-token limit set per phase (default 2, via T-0045). P-13: a finished phase moves on only after 60% of its slot and with no required dialogue pending; unfinished phases extend; boss phases end via CompletePhase. Never removes enemies; survivors carry over and count against the next cap. Refuses to start if an entrance is missing or more than 110 degrees from rig forward. Mission integration: StartMission, midpoint repair then checkpoint, suspends on failure, rebuilds the checkpoint phase with the same seed on retry without a second repair. Pool prewarm covers live plus dying enemies.
+Verified: Built ETMEditor Win64 Development on UE 5.8.4, zero errors and warnings. 5 new automation tests (ETM.Encounters.Director.*) pass in a test world with the real pool, tokens, mission state, objective and rig health: caps 3/8/4 never exceeded, held-back trickle, P-13 60% and dialogue hold, unfinished phase extends, carry-over not deleted and counted, repair 260 then checkpoint, suspend on failure, retry restores phase/seed/position without a second repair, entrance validation. Pool never grows. All 25 tests on this branch pass. Enemies were plain AEnemyBase actors killed by the test, not archetypes with AI; no level, no headset.
+Remaining: No real Level 1 or Level 2 schedule yet (T-0026, T-0029). The pause flow (T-0030) must stop the director's tick. The behind-the-player limit (110 degrees) is my choice. Dialogue is a single pending flag the VO system (T-0032) must set. The boss controller (T-0021) must call CompletePhase. Branch is built from T-0018 with T-0044 and T-0045 merged in: merge those three first.
+Next: Review T-0017 and T-0045. Then T-0021 (Gatebreaker) or T-0022 (Bulwark, Lance, Siphon, Cradle) or T-0026 (Level 1 schedule).
