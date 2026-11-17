@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T14:07:58Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T14:08:03Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 20/52 done (38%) · todo: 29 · in_progress: 0 · review: 2 · blocked: 1 · done: 20
+**Progress:** 20/52 done (38%) · todo: 28 · in_progress: 1 · review: 2 · blocked: 1 · done: 20
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,7 +15,15 @@ _Generated 2026-11-17T14:07:58Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-_None. Every task is free._
+| Task | Agent | Since | Last heartbeat | Stale? |
+|---|---|---|---|---|
+| T-0030 Pause, tracking loss, headset removal, resume countdown | claude-code-dartonx-pc | 2026-11-17T14:08:03Z | 2026-11-17T14:08:03Z |  |
+
+## In Progress (1)
+
+| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
+|---|---|---|---|---|---|---|---|
+| T-0030 | 1 | M3 | platform | game | Pause, tracking loss, headset removal, resume countdown | T-0023 | claude-code-dartonx-pc |
 
 ## Review (2)
 
@@ -30,7 +38,7 @@ _None. Every task is free._
 |---|---|---|---|---|---|---|---|
 | T-0015 | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 
-## Todo (29)
+## Todo (28)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -51,7 +59,6 @@ _None. Every task is free._
 | T-0027 | 1 | M3 | level | game | Level 2 arena greybox | T-0025 |  |
 | T-0028 | 1 | M3 | boss | game | Conductor boss incl. pairing reset (P-07), rig sweep (P-08), emitter fallback (P-06) | T-0025 |  |
 | T-0029 | 1 | M3 | encounters | game | Level 2 full schedule + train gating (P-14) | T-0027, T-0028 |  |
-| T-0030 🟢 ready | 1 | M3 | platform | game | Pause, tracking loss, headset removal, resume countdown | T-0023 |  |
 | T-0033 | 1 | M3 | qa | tracker | M3 gate: both missions end to end in a packaged build | T-0026, T-0029, T-0030, T-0031 |  |
 | T-0031 🟢 ready | 2 | M3 | flow | game | Campaign flow: menus, relocation fade, results, ending | T-0019 |  |
 | T-0032 | 3 | M3 | audio | game | Placeholder VO (Mara, RIG-6) and subtitles with speaker labels | T-0031 |  |

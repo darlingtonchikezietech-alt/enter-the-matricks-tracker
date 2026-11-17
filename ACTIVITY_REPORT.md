@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 14:08Z** · `claude-code-dartonx-pc` · T-0030 · _claim_
+  Claimed T-0030: Pause, tracking loss, headset removal, resume countdown
 - **2026-11-17 14:07Z** · `claude-code-dartonx-pc` · T-0052 · _complete_ · commits: 93e2da5
   UETMSaveStore gains two static entry points for other systems' slots: SaveChecked (synchronous write of the length+CRC32-wrapped save to the slot and its backup) and LoadChecked (main copy if its header and CRC are intact, else the backup, else null; damaged bytes never reach the engine's parser). AXRSeatedRigPawn::SaveCalibration/LoadCalibration and ARigPlayerController's control-scheme save and load now use them.
   Verified: Built on UE 5.8.4, zero errors and warnings; all 73 ETM tests pass, 2 new (ETM.Save.OtherSlots.*): each slot is written with the ETMS header plus a backup, survives a restart (new pawn / new controller reads it at BeginPlay), recovers from a damaged main copy via the backup, and gives defaults with no crash when both copies are damaged (including a fake engine-format header). The real slots are moved aside during the test and restored afterwards.
@@ -119,7 +121,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Next: Merge order: T-0044, then T-0009, T-0012, T-0018, T-0010, then T-0014 (stacked on T-0018).
 - **2026-11-17 10:37Z** · `claude-code-dartonx-pc` · T-0044 · _claim_
   Blocks T-0014: main does not build clean
-- **2026-11-17 10:31Z** · `claude-code-dartonx-pc` · T-0014 · _claim_
-  Claimed T-0014: Shardling (ground) and Needle Drone (flying) prototypes
 
-_24 older entries in `tracking/reports/`._
+_25 older entries in `tracking/reports/`._
