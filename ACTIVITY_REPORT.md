@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 07:17Z** · `claude-code-dartonx-pc` · T-0009 · _claim_
+  Claimed T-0009: Cannon component: aim envelope ±65/-30..+45, servo, cadence, muzzle trace, heat per P-01
 - **2026-11-17 07:17Z** · `owner` · T-0011 · _review_
   Approved. Approved by the owner in chat on 2026-11-17 (Approved, record both). Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-17 07:17Z** · `owner` · T-0007 · _review_

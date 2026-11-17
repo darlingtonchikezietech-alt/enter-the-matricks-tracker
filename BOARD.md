@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T07:17:31Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T07:17:35Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 4/41 done (10%) · todo: 37 · in_progress: 0 · review: 0 · blocked: 0 · done: 4
+**Progress:** 4/41 done (10%) · todo: 36 · in_progress: 1 · review: 0 · blocked: 0 · done: 4
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,9 +15,17 @@ _Generated 2026-11-17T07:17:31Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-_None. Every task is free._
+| Task | Agent | Since | Last heartbeat | Stale? |
+|---|---|---|---|---|
+| T-0009 Cannon component: aim envelope ±65/-30..+45, servo, cadence, muzzle trace, heat per P-01 | claude-code-dartonx-pc | 2026-11-17T07:17:35Z | 2026-11-17T07:17:35Z |  |
 
-## Todo (37)
+## In Progress (1)
+
+| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
+|---|---|---|---|---|---|---|---|
+| T-0009 | 1 | M1 | weapons | game | Cannon component: aim envelope ±65/-30..+45, servo, cadence, muzzle trace, heat per P-01 | T-0007 | claude-code-dartonx-pc |
+
+## Todo (36)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -26,7 +34,6 @@ _None. Every task is free._
 | T-0006 🟢 ready | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 |  |
 | T-0004 🟢 ready | 2 | M0 | art | tracker | Revised concept art pass using the CONCEPT_ART_REVIEW brief | - |  |
 | T-0008 | 2 | M0 | art | game | Open-frame rig blockout mesh (seat, knee guard, weapon arms) | T-0006 |  |
-| T-0009 🟢 ready | 1 | M1 | weapons | game | Cannon component: aim envelope ±65/-30..+45, servo, cadence, muzzle trace, heat per P-01 | T-0007 |  |
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 |  |
 | T-0012 🟢 ready | 1 | M1 | input | game | Enhanced Input mapping with grip-vent threshold 0.85/100ms and alternative A/B mapping (P-12) | T-0007 |  |
 | T-0013 🟢 ready | 1 | M1 | enemies | game | Enemy base: lifecycle states, damage interface, weak points, pooling | T-0011 |  |
