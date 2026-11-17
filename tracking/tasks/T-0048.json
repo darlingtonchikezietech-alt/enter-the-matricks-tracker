@@ -4,7 +4,7 @@
   "milestone": "M1",
   "area": "vfx",
   "repo": "game",
-  "status": "review",
+  "status": "done",
   "priority": 2,
   "depends_on": [
     "T-0009"
@@ -32,6 +32,12 @@
       "time": "2026-11-17T13:22:03Z",
       "agent": "claude-code-dartonx-pc",
       "event": "completed"
+    },
+    {
+      "time": "2026-11-17T13:25:15Z",
+      "agent": "owner",
+      "event": "approved",
+      "note": "Approved by the owner in chat on 2026-11-17 (Approve T-0048). Recorded on the owner's behalf by claude-code-dartonx-pc."
     }
   ],
   "result": {

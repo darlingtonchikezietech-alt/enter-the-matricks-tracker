@@ -1,13 +1,13 @@
 # Task Board
 
-_Generated 2026-11-17T13:22:09Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T13:25:15Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 14/49 done (29%) · todo: 32 · in_progress: 0 · review: 2 · blocked: 1 · done: 14
+**Progress:** 15/49 done (31%) · todo: 32 · in_progress: 0 · review: 1 · blocked: 1 · done: 15
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 8 | `████░░░░░░` |
-| M1 | 7 | 13 | `█████░░░░░` |
+| M1 | 8 | 13 | `██████░░░░` |
 | M2 | 4 | 12 | `███░░░░░░░` |
 | M3 | 0 | 8 | `░░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
@@ -17,12 +17,11 @@ _Generated 2026-11-17T13:22:09Z by `tools/agent.py render`. Do not edit by hand.
 
 _None. Every task is free._
 
-## Review (2)
+## Review (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
-| T-0048 | 2 | M1 | vfx | game | Shot feedback component in C++: recoil, muzzle flash, tracer, impact flash, haptics, placeholder sound (for T-0015) | T-0009 | claude-code-dartonx-pc |
 
 ## Blocked (1)
 
@@ -67,7 +66,7 @@ _None. Every task is free._
 | T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
 | T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
 
-## Done (14)
+## Done (15)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -81,6 +80,7 @@ _None. Every task is free._
 | T-0014 | 1 | M1 | enemies | game | Shardling (ground) and Needle Drone (flying) prototypes | T-0013 | claude-code-dartonx-pc |
 | T-0044 | 1 | M1 | engine | game | Keep the ETM module building once it passes 32 source files (unity-build name clashes in tests) | - | claude-code-dartonx-pc |
 | T-0046 | 1 | M1 | engine | game | Quest 3/3S: pin device profiles to the Quest 2 baseline and document supported headsets (P-31) | - | claude-code-dartonx-pc |
+| T-0048 | 2 | M1 | vfx | game | Shot feedback component in C++: recoil, muzzle flash, tracer, impact flash, haptics, placeholder sound (for T-0015) | T-0009 | claude-code-dartonx-pc |
 | T-0017 | 1 | M2 | encounters | game | Encounter director: authored phases, spawn budgets, attack tokens, early-transition rule (P-13) | T-0013 | claude-code-dartonx-pc |
 | T-0018 | 1 | M2 | objective | game | Objective integrity, world marker, failure and retry | T-0011 | claude-code-dartonx-pc |
 | T-0021 | 1 | M2 | boss | game | Gatebreaker boss prototype (P-02, P-09, P-10) | T-0017 | claude-code-dartonx-pc |
