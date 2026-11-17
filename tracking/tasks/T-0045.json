@@ -4,7 +4,7 @@
   "milestone": "M2",
   "area": "enemies",
   "repo": "game",
-  "status": "todo",
+  "status": "in_progress",
   "priority": 1,
   "depends_on": [],
   "paths": [
@@ -16,6 +16,12 @@
     "The limit is adjustable at runtime (the encounter director sets it)"
   ],
   "description": "Split out of T-0017. Enemies start their own attacks, so the director cannot enforce the 2-attack cap without a gate in AEnemyBase::BeginAttack.",
-  "assignee": null,
-  "history": []
+  "assignee": "claude-code-dartonx-pc",
+  "history": [
+    {
+      "time": "2026-11-17T10:44:50Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "claimed"
+    }
+  ]
 }
