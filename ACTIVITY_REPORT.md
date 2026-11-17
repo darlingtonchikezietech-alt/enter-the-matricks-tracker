@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 13:17Z** · `claude-code-dartonx-pc` · T-0048 · _claim_
+  Code half of T-0015
 - **2026-11-17 13:16Z** · `claude-code-dartonx-pc` · T-0015 · _claim_
   Claimed T-0015: Weapon feel: muzzle, tracer, impact, haptics, placeholder audio
 - **2026-11-17 13:04Z** · `owner` · T-0021 · _review_
@@ -119,7 +121,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Next: Review T-0007. Ready now: T-0011 (brace and integrity), T-0009 and T-0012 after T-0007 is approved, T-0006 once the engine has the Android target and the Quest 2 has Developer Mode.
 - **2026-11-17 07:11Z** · `claude-code-dartonx-pc` · T-0007 · _claim_
   Claimed T-0007: Seated rig pawn: XR origin, controller tracking, seated calibration, Forward re-anchor (P-11)
-- **2026-11-17 07:10Z** · `owner` · T-0005 · _review_
-  Approved. Approved by the owner in chat on 2026-11-17 (You merge and approve). Recorded on the owner's behalf by claude-code-dartonx-pc, which also fast-forwarded game main to cddd03b. No pull request was opened.
 
-_3 older entries in `tracking/reports/`._
+_4 older entries in `tracking/reports/`._

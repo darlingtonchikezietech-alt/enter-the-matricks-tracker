@@ -4,7 +4,7 @@
   "milestone": "M1",
   "area": "vfx",
   "repo": "game",
-  "status": "todo",
+  "status": "in_progress",
   "priority": 2,
   "depends_on": [
     "T-0009"
@@ -21,6 +21,12 @@
     "Pooled: no allocation per shot"
   ],
   "description": "Split from T-0015, whose paths cover only content. Placeholder geometry and engine materials/sounds until art and audio exist (T-0034, T-0036).",
-  "assignee": null,
-  "history": []
+  "assignee": "claude-code-dartonx-pc",
+  "history": [
+    {
+      "time": "2026-11-17T13:17:53Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "claimed"
+    }
+  ]
 }
