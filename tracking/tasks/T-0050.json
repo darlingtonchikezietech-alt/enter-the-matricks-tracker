@@ -6,9 +6,7 @@
   "repo": "game",
   "status": "todo",
   "priority": 2,
-  "depends_on": [
-    "T-0019"
-  ],
+  "depends_on": [],
   "paths": [
     "Source/ETM/Player/XRSeatedRigPawn.h",
     "Source/ETM/Player/XRSeatedRigPawn.cpp"
@@ -16,7 +14,7 @@
   "acceptance": [
     "AXRSeatedRigPawn creates one UHUDPresenterComponent"
   ],
-  "description": "T-0019 owns Source/ETM/UI only; the pawn lives in Source/ETM/Player.",
+  "description": "T-0019 owns Source/ETM/UI only; the pawn lives in Source/ETM/Player. Done on the T-0019 branch together with it, so it has no dependency.",
   "assignee": null,
   "history": []
 }
