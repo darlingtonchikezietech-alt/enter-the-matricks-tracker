@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T13:52:57Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T13:53:02Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 18/51 done (35%) · todo: 30 · in_progress: 1 · review: 1 · blocked: 1 · done: 18
+**Progress:** 18/51 done (35%) · todo: 29 · in_progress: 2 · review: 1 · blocked: 1 · done: 18
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -18,12 +18,14 @@ _Generated 2026-11-17T13:52:57Z by `tools/agent.py render`. Do not edit by hand.
 | Task | Agent | Since | Last heartbeat | Stale? |
 |---|---|---|---|---|
 | T-0023 Save system: settings, checkpoints incl. boss presets (P-04), results | claude-code-dartonx-pc | 2026-11-17T13:52:17Z | 2026-11-17T13:52:17Z |  |
+| T-0051 Mission state: resume from a saved checkpoint after an app restart (for T-0023) | claude-code-dartonx-pc | 2026-11-17T13:53:02Z | 2026-11-17T13:53:02Z |  |
 
-## In Progress (1)
+## In Progress (2)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0023 | 2 | M2 | save | game | Save system: settings, checkpoints incl. boss presets (P-04), results | T-0018, T-0017 | claude-code-dartonx-pc |
+| T-0051 | 2 | M2 | objective | game | Mission state: resume from a saved checkpoint after an app restart (for T-0023) | - | claude-code-dartonx-pc |
 
 ## Review (1)
 
@@ -37,7 +39,7 @@ _Generated 2026-11-17T13:52:57Z by `tools/agent.py render`. Do not edit by hand.
 |---|---|---|---|---|---|---|---|
 | T-0015 | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 
-## Todo (30)
+## Todo (29)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -53,7 +55,6 @@ _Generated 2026-11-17T13:52:57Z by `tools/agent.py render`. Do not edit by hand.
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
 | T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 |  |
 | T-0024 | 2 | M2 | perf | game | Performance capture tooling + 30-minute soak script | T-0006 |  |
-| T-0051 🟢 ready | 2 | M2 | objective | game | Mission state: resume from a saved checkpoint after an app restart (for T-0023) | - |  |
 | T-0049 🟢 ready | 3 | M2 | qa | game | Test worlds: run garbage collection after destroying them, so reserved GPU memory stops climbing during the test run | - |  |
 | T-0026 | 1 | M3 | encounters | game | Level 1 full schedule (51 enemies, timeline, gating P-14) | T-0025 |  |
 | T-0027 | 1 | M3 | level | game | Level 2 arena greybox | T-0025 |  |
