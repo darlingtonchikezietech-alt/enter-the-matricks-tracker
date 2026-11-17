@@ -1,13 +1,13 @@
 # Task Board
 
-_Generated 2026-11-17T10:43:23Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T10:43:26Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 9/44 done (20%) · todo: 33 · in_progress: 0 · review: 2 · blocked: 0 · done: 9
+**Progress:** 10/44 done (23%) · todo: 33 · in_progress: 0 · review: 1 · blocked: 0 · done: 10
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 8 | `████░░░░░░` |
-| M1 | 5 | 10 | `█████░░░░░` |
+| M1 | 6 | 10 | `██████░░░░` |
 | M2 | 1 | 10 | `█░░░░░░░░░` |
 | M3 | 0 | 8 | `░░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
@@ -17,12 +17,11 @@ _Generated 2026-11-17T10:43:23Z by `tools/agent.py render`. Do not edit by hand.
 
 _None. Every task is free._
 
-## Review (2)
+## Review (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
-| T-0044 | 1 | M1 | engine | game | Keep the ETM module building once it passes 32 source files (unity-build name clashes in tests) | - | claude-code-dartonx-pc |
 
 ## Todo (33)
 
@@ -62,7 +61,7 @@ _None. Every task is free._
 | T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
 | T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
 
-## Done (9)
+## Done (10)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -74,5 +73,6 @@ _None. Every task is free._
 | T-0012 | 1 | M1 | input | game | Enhanced Input mapping with grip-vent threshold 0.85/100ms and alternative A/B mapping (P-12) | T-0007 | claude-code-dartonx-pc |
 | T-0013 | 1 | M1 | enemies | game | Enemy base: lifecycle states, damage interface, weak points, pooling | T-0011 | claude-code-dartonx-pc |
 | T-0014 | 1 | M1 | enemies | game | Shardling (ground) and Needle Drone (flying) prototypes | T-0013 | claude-code-dartonx-pc |
+| T-0044 | 1 | M1 | engine | game | Keep the ETM module building once it passes 32 source files (unity-build name clashes in tests) | - | claude-code-dartonx-pc |
 | T-0018 | 1 | M2 | objective | game | Objective integrity, world marker, failure and retry | T-0011 | claude-code-dartonx-pc |
 

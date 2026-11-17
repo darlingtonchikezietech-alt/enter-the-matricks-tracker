@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 10:43Z** · `owner` · T-0044 · _review_
+  Approved. Approved by the owner in chat on 2026-11-17 (Approve both). Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-17 10:43Z** · `owner` · T-0014 · _review_
   Approved. Approved by the owner in chat on 2026-11-17 (Approve both). Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-17 10:42Z** · `claude-code-dartonx-pc` · T-0014 · _complete_ · commits: 56bd975
