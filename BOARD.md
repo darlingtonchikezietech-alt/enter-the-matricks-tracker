@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T10:31:11Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T10:31:57Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 8/43 done (19%) · todo: 34 · in_progress: 0 · review: 1 · blocked: 0 · done: 8
+**Progress:** 8/43 done (19%) · todo: 33 · in_progress: 1 · review: 1 · blocked: 0 · done: 8
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,7 +15,15 @@ _Generated 2026-11-17T10:31:11Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-_None. Every task is free._
+| Task | Agent | Since | Last heartbeat | Stale? |
+|---|---|---|---|---|
+| T-0014 Shardling (ground) and Needle Drone (flying) prototypes | claude-code-dartonx-pc | 2026-11-17T10:31:57Z | 2026-11-17T10:31:57Z |  |
+
+## In Progress (1)
+
+| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
+|---|---|---|---|---|---|---|---|
+| T-0014 | 1 | M1 | enemies | game | Shardling (ground) and Needle Drone (flying) prototypes | T-0013 | claude-code-dartonx-pc |
 
 ## Review (1)
 
@@ -23,7 +31,7 @@ _None. Every task is free._
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
 
-## Todo (34)
+## Todo (33)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -32,7 +40,6 @@ _None. Every task is free._
 | T-0006 🟢 ready | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 |  |
 | T-0004 🟢 ready | 2 | M0 | art | tracker | Revised concept art pass using the CONCEPT_ART_REVIEW brief | - |  |
 | T-0008 | 2 | M0 | art | game | Open-frame rig blockout mesh (seat, knee guard, weapon arms) | T-0006 |  |
-| T-0014 🟢 ready | 1 | M1 | enemies | game | Shardling (ground) and Needle Drone (flying) prototypes | T-0013 |  |
 | T-0016 | 1 | M1 | qa | tracker | M1 gate: 3-minute combat test on Quest 2 (comfort, readability, perf capture) | T-0014, T-0015, T-0012, T-0010 |  |
 | T-0015 🟢 ready | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 | T-0043 | 2 | M1 | weapons | game | Heat model: carry fire-cooldown remainder so cadence does not drift at 72 Hz | T-0010 |  |

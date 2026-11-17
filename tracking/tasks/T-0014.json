@@ -4,7 +4,7 @@
   "milestone": "M1",
   "area": "enemies",
   "repo": "game",
-  "status": "todo",
+  "status": "in_progress",
   "priority": 1,
   "depends_on": [
     "T-0013"
@@ -14,10 +14,16 @@
     "Content/ETM/Enemies/**"
   ],
   "acceptance": [
-    "Values match bible \u00a77",
+    "Values match bible §7",
     "Telegraphs: shape+sound, not colour only"
   ],
   "description": "",
-  "assignee": null,
-  "history": []
+  "assignee": "claude-code-dartonx-pc",
+  "history": [
+    {
+      "time": "2026-11-17T10:31:57Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "claimed"
+    }
+  ]
 }

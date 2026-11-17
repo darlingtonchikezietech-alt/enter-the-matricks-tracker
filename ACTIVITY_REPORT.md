@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 10:31Z** · `claude-code-dartonx-pc` · T-0014 · _claim_
+  Claimed T-0014: Shardling (ground) and Needle Drone (flying) prototypes
 - **2026-11-17 10:31Z** · `claude-code-dartonx-pc` · T-0010 · _complete_ · commits: 576eb6b
   Added Source/ETM/Tests/HeatParityTest.cpp: 3 automation tests that run the heat model through balance_sim.py's policies (hold, hold-then-vent, burst+vent) and check overheat 12 shots / 2.75 s, recovery 4.0 s, vent-during-lock gives nothing (P-01), 60 vs 91 dps; once at the sim's 1 ms step and once at 72 Hz with UCannonComponent's 1/240 s sub-steps; plus a check that FCannonTuning defaults equal the sim constants. Finding: at 72 Hz the cadence drifts (overheat 2.792 s, burst+vent 89.33 dps) because StepHeat resets the fire cooldown instead of carrying the remainder; filed T-0043, and the 72 Hz test allows 3 frames and 2% with a comment saying to tighten it.
   Verified: Built ETMEditor Win64 Development on UE 5.8.4, zero errors and warnings. All 18 tests on this branch pass headless via UnrealEditor-Cmd -ExecCmds Automation RunTests with -testexit (the CI-capable commandlet form). The g++ test in Tools/HeatModelTest was not changed and not run here: no g++ on this PC; it still runs in GitHub CI.
