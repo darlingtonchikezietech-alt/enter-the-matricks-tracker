@@ -1,6 +1,6 @@
 {
   "id": "T-0044",
-  "title": "Fix clean builds: test helper names collide when Unreal merges .cpp files (unity build)",
+  "title": "Keep the ETM module building once it passes 32 source files (unity-build name clashes in tests)",
   "milestone": "M1",
   "area": "engine",
   "repo": "game",
@@ -11,10 +11,10 @@
     "Source/ETM/ETM.Build.cs"
   ],
   "acceptance": [
-    "A clean build of main (no Intermediate folder) compiles with zero errors",
+    "A clean build (no Intermediate folder) compiles with zero errors with more than 32 source files in the module",
     "All ETM automation tests pass after the clean build"
   ],
-  "description": "Found during T-0014. The test files each define file-local helpers (Frame72, FTestWorld) in anonymous namespaces. Unreal's unity build merges committed .cpp files into Module.ETM.cpp, so CombatComponentsTest.cpp and EnemyBaseTest.cpp collide and main does not compile from a clean checkout. Earlier builds passed only because UBT compiles files with uncommitted changes separately (adaptive non-unity). Fix: bUseUnity = false for the ETM module.",
+  "description": "Found during T-0014. Unreal merges a game module's .cpp files into combined unity files once the module has 32 or more source files (TargetRules.MinGameModuleSourceFilesForUnityBuild = 32). The test files each define helpers with the same names (Frame72, FTestWorld) in anonymous namespaces, so they clash once merged. main has 25 files today and builds clean (checked 17 Nov 2026 from an empty worktree); the T-0014 tree has 38 and fails, and merging the pending branches would push main past 32 too. Fix: bUseUnity = false for the ETM module.",
   "assignee": "claude-code-dartonx-pc",
   "history": [
     {
