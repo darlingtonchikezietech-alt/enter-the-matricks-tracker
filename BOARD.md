@@ -1,13 +1,13 @@
 # Task Board
 
-_Generated 2026-11-17T13:16:42Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T13:17:48Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 14/47 done (30%) · todo: 31 · in_progress: 1 · review: 1 · blocked: 0 · done: 14
+**Progress:** 14/48 done (29%) · todo: 32 · in_progress: 1 · review: 1 · blocked: 0 · done: 14
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 8 | `████░░░░░░` |
-| M1 | 7 | 12 | `██████░░░░` |
+| M1 | 7 | 13 | `█████░░░░░` |
 | M2 | 4 | 11 | `████░░░░░░` |
 | M3 | 0 | 8 | `░░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
@@ -31,7 +31,7 @@ _Generated 2026-11-17T13:16:42Z by `tools/agent.py render`. Do not edit by hand.
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
 
-## Todo (31)
+## Todo (32)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -43,6 +43,7 @@ _Generated 2026-11-17T13:16:42Z by `tools/agent.py render`. Do not edit by hand.
 | T-0016 | 1 | M1 | qa | tracker | M1 gate: 3-minute combat test on Quest 2 (comfort, readability, perf capture) | T-0014, T-0015, T-0012, T-0010 |  |
 | T-0047 | 1 | M1 | qa | tracker | Verify on a physical Quest 3 or 3S: install, tracking, Touch Plus input, 72 Hz, short combat test (P-31) | T-0006, T-0046 |  |
 | T-0043 | 2 | M1 | weapons | game | Heat model: carry fire-cooldown remainder so cadence does not drift at 72 Hz | T-0010 |  |
+| T-0048 🟢 ready | 2 | M1 | vfx | game | Shot feedback component in C++: recoil, muzzle flash, tracer, impact flash, haptics, placeholder sound (for T-0015) | T-0009 |  |
 | T-0025 | 1 | M2 | qa | tracker | M2 gate: vertical slice validated on hardware | T-0020, T-0021, T-0022, T-0023, T-0024, T-0019 |  |
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
 | T-0019 🟢 ready | 2 | M2 | ui | game | Diegetic HUD presenter: heat on housings, integrity on frame, warnings at source | T-0009, T-0011 |  |

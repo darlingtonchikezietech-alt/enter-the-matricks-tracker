@@ -1,0 +1,26 @@
+{
+  "id": "T-0048",
+  "title": "Shot feedback component in C++: recoil, muzzle flash, tracer, impact flash, haptics, placeholder sound (for T-0015)",
+  "milestone": "M1",
+  "area": "vfx",
+  "repo": "game",
+  "status": "todo",
+  "priority": 2,
+  "depends_on": [
+    "T-0009"
+  ],
+  "paths": [
+    "Source/ETM/Weapons/Feedback/**",
+    "Source/ETM/Player/XRSeatedRigPawn.h",
+    "Source/ETM/Player/XRSeatedRigPawn.cpp"
+  ],
+  "acceptance": [
+    "Every shot drives barrel/mount recoil, muzzle discharge, a cosmetic tracer from muzzle to end, an impact flash on hits, a haptic pulse on that hand and a report sound",
+    "Nothing moves the camera",
+    "Haptic strength (0 = off) and reduced flash respected",
+    "Pooled: no allocation per shot"
+  ],
+  "description": "Split from T-0015, whose paths cover only content. Placeholder geometry and engine materials/sounds until art and audio exist (T-0034, T-0036).",
+  "assignee": null,
+  "history": []
+}
