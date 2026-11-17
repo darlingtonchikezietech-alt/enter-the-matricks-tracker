@@ -1,14 +1,14 @@
 # Task Board
 
-_Generated 2026-11-17T10:52:21Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T11:05:42Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 10/45 done (22%) · todo: 32 · in_progress: 0 · review: 3 · blocked: 0 · done: 10
+**Progress:** 11/45 done (24%) · todo: 32 · in_progress: 0 · review: 2 · blocked: 0 · done: 11
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 8 | `████░░░░░░` |
 | M1 | 6 | 10 | `██████░░░░` |
-| M2 | 1 | 11 | `█░░░░░░░░░` |
+| M2 | 2 | 11 | `██░░░░░░░░` |
 | M3 | 0 | 8 | `░░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
 | M5 | 0 | 3 | `░░░░░░░░░░` |
@@ -17,12 +17,11 @@ _Generated 2026-11-17T10:52:21Z by `tools/agent.py render`. Do not edit by hand.
 
 _None. Every task is free._
 
-## Review (3)
+## Review (2)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
-| T-0017 | 1 | M2 | encounters | game | Encounter director: authored phases, spawn budgets, attack tokens, early-transition rule (P-13) | T-0013 | claude-code-dartonx-pc |
 | T-0045 | 1 | M2 | enemies | game | Attack tokens in the enemy base: cap simultaneous attacks (bible section 14: max 2 dangerous attacks) | - | claude-code-dartonx-pc |
 
 ## Todo (32)
@@ -37,13 +36,13 @@ _None. Every task is free._
 | T-0016 | 1 | M1 | qa | tracker | M1 gate: 3-minute combat test on Quest 2 (comfort, readability, perf capture) | T-0014, T-0015, T-0012, T-0010 |  |
 | T-0015 🟢 ready | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 | T-0043 | 2 | M1 | weapons | game | Heat model: carry fire-cooldown remainder so cadence does not drift at 72 Hz | T-0010 |  |
-| T-0021 | 1 | M2 | boss | game | Gatebreaker boss prototype (P-02, P-09, P-10) | T-0017 |  |
+| T-0021 🟢 ready | 1 | M2 | boss | game | Gatebreaker boss prototype (P-02, P-09, P-10) | T-0017 |  |
 | T-0025 | 1 | M2 | qa | tracker | M2 gate: vertical slice validated on hardware | T-0020, T-0021, T-0022, T-0023, T-0024, T-0019 |  |
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
 | T-0019 🟢 ready | 2 | M2 | ui | game | Diegetic HUD presenter: heat on housings, integrity on frame, warnings at source | T-0009, T-0011 |  |
 | T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 |  |
 | T-0022 🟢 ready | 2 | M2 | enemies | game | Bulwark, Lance Walker, Siphon, Cradle Bomber | T-0014 |  |
-| T-0023 | 2 | M2 | save | game | Save system: settings, checkpoints incl. boss presets (P-04), results | T-0018, T-0017 |  |
+| T-0023 🟢 ready | 2 | M2 | save | game | Save system: settings, checkpoints incl. boss presets (P-04), results | T-0018, T-0017 |  |
 | T-0024 | 2 | M2 | perf | game | Performance capture tooling + 30-minute soak script | T-0006 |  |
 | T-0026 | 1 | M3 | encounters | game | Level 1 full schedule (51 enemies, timeline, gating P-14) | T-0025 |  |
 | T-0027 | 1 | M3 | level | game | Level 2 arena greybox | T-0025 |  |
@@ -62,7 +61,7 @@ _None. Every task is free._
 | T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
 | T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
 
-## Done (10)
+## Done (11)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -75,5 +74,6 @@ _None. Every task is free._
 | T-0013 | 1 | M1 | enemies | game | Enemy base: lifecycle states, damage interface, weak points, pooling | T-0011 | claude-code-dartonx-pc |
 | T-0014 | 1 | M1 | enemies | game | Shardling (ground) and Needle Drone (flying) prototypes | T-0013 | claude-code-dartonx-pc |
 | T-0044 | 1 | M1 | engine | game | Keep the ETM module building once it passes 32 source files (unity-build name clashes in tests) | - | claude-code-dartonx-pc |
+| T-0017 | 1 | M2 | encounters | game | Encounter director: authored phases, spawn budgets, attack tokens, early-transition rule (P-13) | T-0013 | claude-code-dartonx-pc |
 | T-0018 | 1 | M2 | objective | game | Objective integrity, world marker, failure and retry | T-0011 | claude-code-dartonx-pc |
 
