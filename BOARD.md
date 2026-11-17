@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T07:10:52Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T07:11:06Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 2/41 done (5%) · todo: 39 · in_progress: 0 · review: 0 · blocked: 0 · done: 2
+**Progress:** 2/41 done (5%) · todo: 38 · in_progress: 1 · review: 0 · blocked: 0 · done: 2
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,16 +15,23 @@ _Generated 2026-11-17T07:10:52Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-_None. Every task is free._
+| Task | Agent | Since | Last heartbeat | Stale? |
+|---|---|---|---|---|
+| T-0007 Seated rig pawn: XR origin, controller tracking, seated calibration, Forward re-anchor (P-11) | claude-code-dartonx-pc | 2026-11-17T07:11:06Z | 2026-11-17T07:11:06Z |  |
 
-## Todo (39)
+## In Progress (1)
+
+| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
+|---|---|---|---|---|---|---|---|
+| T-0007 | 1 | M0 | player | game | Seated rig pawn: XR origin, controller tracking, seated calibration, Forward re-anchor (P-11) | T-0005 | claude-code-dartonx-pc |
+
+## Todo (38)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0002 🟢 ready | 1 | M0 | producer | tracker | Owner: set team start date and turn M0-M5 weeks into calendar dates | - |  |
 | T-0003 🟢 ready | 1 | M0 | producer | tracker | Owner: kick off naming/trademark clearance for the title (P-16) | - |  |
 | T-0006 🟢 ready | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 |  |
-| T-0007 🟢 ready | 1 | M0 | player | game | Seated rig pawn: XR origin, controller tracking, seated calibration, Forward re-anchor (P-11) | T-0005 |  |
 | T-0004 🟢 ready | 2 | M0 | art | tracker | Revised concept art pass using the CONCEPT_ART_REVIEW brief | - |  |
 | T-0008 | 2 | M0 | art | game | Open-frame rig blockout mesh (seat, knee guard, weapon arms) | T-0006 |  |
 | T-0009 | 1 | M1 | weapons | game | Cannon component: aim envelope ±65/-30..+45, servo, cadence, muzzle trace, heat per P-01 | T-0007 |  |

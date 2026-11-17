@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 07:11Z** · `claude-code-dartonx-pc` · T-0007 · _claim_
+  Claimed T-0007: Seated rig pawn: XR origin, controller tracking, seated calibration, Forward re-anchor (P-11)
 - **2026-11-17 07:10Z** · `owner` · T-0005 · _review_
   Approved. Approved by the owner in chat on 2026-11-17 (You merge and approve). Recorded on the owner's behalf by claude-code-dartonx-pc, which also fast-forwarded game main to cddd03b. No pull request was opened.
 - **2026-11-17 06:34Z** · `claude-code-dartonx-pc` · T-0005 · _complete_ · commits: cddd03b
