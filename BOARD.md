@@ -1,13 +1,13 @@
 # Task Board
 
-_Generated 2026-11-17T14:16:53Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T14:30:18Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 22/52 done (42%) · todo: 28 · in_progress: 0 · review: 1 · blocked: 1 · done: 22
+**Progress:** 23/52 done (44%) · todo: 28 · in_progress: 0 · review: 0 · blocked: 1 · done: 23
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 8 | `████░░░░░░` |
-| M1 | 8 | 13 | `██████░░░░` |
+| M1 | 9 | 13 | `███████░░░` |
 | M2 | 10 | 15 | `███████░░░` |
 | M3 | 1 | 8 | `█░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
@@ -16,12 +16,6 @@ _Generated 2026-11-17T14:16:53Z by `tools/agent.py render`. Do not edit by hand.
 ## Active claims
 
 _None. Every task is free._
-
-## Review (1)
-
-| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
-|---|---|---|---|---|---|---|---|
-| T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
 
 ## Blocked (1)
 
@@ -40,7 +34,7 @@ _None. Every task is free._
 | T-0008 | 2 | M0 | art | game | Open-frame rig blockout mesh (seat, knee guard, weapon arms) | T-0006 |  |
 | T-0016 | 1 | M1 | qa | tracker | M1 gate: 3-minute combat test on Quest 2 (comfort, readability, perf capture) | T-0014, T-0015, T-0012, T-0010 |  |
 | T-0047 | 1 | M1 | qa | tracker | Verify on a physical Quest 3 or 3S: install, tracking, Touch Plus input, 72 Hz, short combat test (P-31) | T-0006, T-0046 |  |
-| T-0043 | 2 | M1 | weapons | game | Heat model: carry fire-cooldown remainder so cadence does not drift at 72 Hz | T-0010 |  |
+| T-0043 🟢 ready | 2 | M1 | weapons | game | Heat model: carry fire-cooldown remainder so cadence does not drift at 72 Hz | T-0010 |  |
 | T-0025 | 1 | M2 | qa | tracker | M2 gate: vertical slice validated on hardware | T-0020, T-0021, T-0022, T-0023, T-0024, T-0019 |  |
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
 | T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 |  |
@@ -62,7 +56,7 @@ _None. Every task is free._
 | T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
 | T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
 
-## Done (22)
+## Done (23)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -70,6 +64,7 @@ _None. Every task is free._
 | T-0005 | 1 | M0 | engine | game | Compile the scaffold and lock the toolchain (UE version, Meta XR/OpenXR plugin, SDK/NDK/JDK) | - | claude-code-dartonx-pc |
 | T-0007 | 1 | M0 | player | game | Seated rig pawn: XR origin, controller tracking, seated calibration, Forward re-anchor (P-11) | T-0005 | claude-code-dartonx-pc |
 | T-0009 | 1 | M1 | weapons | game | Cannon component: aim envelope ±65/-30..+45, servo, cadence, muzzle trace, heat per P-01 | T-0007 | claude-code-dartonx-pc |
+| T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
 | T-0011 | 1 | M1 | combat | game | Brace (DefenseComponent) and Integrity components | T-0005 | claude-code-dartonx-pc |
 | T-0012 | 1 | M1 | input | game | Enhanced Input mapping with grip-vent threshold 0.85/100ms and alternative A/B mapping (P-12) | T-0007 | claude-code-dartonx-pc |
 | T-0013 | 1 | M1 | enemies | game | Enemy base: lifecycle states, damage interface, weak points, pooling | T-0011 | claude-code-dartonx-pc |
