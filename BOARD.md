@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T06:30:04Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T06:34:34Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 1/41 done (2%) · todo: 39 · in_progress: 1 · review: 0 · blocked: 0 · done: 1
+**Progress:** 1/41 done (2%) · todo: 39 · in_progress: 0 · review: 1 · blocked: 0 · done: 1
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,11 +15,9 @@ _Generated 2026-11-17T06:30:04Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-| Task | Agent | Since | Last heartbeat | Stale? |
-|---|---|---|---|---|
-| T-0005 Compile the scaffold and lock the toolchain (UE version, Meta XR/OpenXR plugin, SDK/NDK/JDK) | claude-code-dartonx-pc | 2026-11-17T06:30:04Z | 2026-11-17T06:30:04Z |  |
+_None. Every task is free._
 
-## In Progress (1)
+## Review (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
