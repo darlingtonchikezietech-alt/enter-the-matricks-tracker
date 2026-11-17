@@ -4,7 +4,7 @@
   "milestone": "M2",
   "area": "objective",
   "repo": "game",
-  "status": "in_progress",
+  "status": "review",
   "priority": 2,
   "depends_on": [],
   "paths": [
@@ -21,6 +21,19 @@
       "time": "2026-11-17T13:53:02Z",
       "agent": "claude-code-dartonx-pc",
       "event": "claimed"
+    },
+    {
+      "time": "2026-11-17T14:00:38Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "completed"
     }
-  ]
+  ],
+  "result": {
+    "summary": "UMissionStateSubsystem::ResumeFromCheckpoint(checkpoint): restores exactly like a retry (enemies parked, brace reset, health or the P-04 boss preset, OnRetryStarted so the director rebuilds the phase) without counting as a retry. Retry and resume share one private RestoreLastCheckpoint.",
+    "commits": "6d38507",
+    "verification": "Covered by ETM.Save.Checkpoint.BossPresetAfterRestart (director jumps to the phase, preset applied, retry count 0) and the existing ETM.Objectives tests; all 71 pass.",
+    "remaining": "None. Merge with T-0023 (same branch).",
+    "next": "Review with T-0023.",
+    "completed_at": "2026-11-17T14:00:38Z"
+  }
 }

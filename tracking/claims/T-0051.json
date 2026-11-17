@@ -1,8 +1,0 @@
-{
-  "task": "T-0051",
-  "agent": "claude-code-dartonx-pc",
-  "claimed_at": "2026-11-17T13:53:02Z",
-  "heartbeat": "2026-11-17T13:53:02Z",
-  "branch": "agent/claude-code-dartonx-pc/t-0051",
-  "note": "Resume entry point for T-0023, same branch"
-}

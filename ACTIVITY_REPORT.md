@@ -2,6 +2,11 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 14:00Z** · `claude-code-dartonx-pc` · T-0051 · _complete_ · commits: 6d38507
+  UMissionStateSubsystem::ResumeFromCheckpoint(checkpoint): restores exactly like a retry (enemies parked, brace reset, health or the P-04 boss preset, OnRetryStarted so the director rebuilds the phase) without counting as a retry. Retry and resume share one private RestoreLastCheckpoint.
+  Verified: Covered by ETM.Save.Checkpoint.BossPresetAfterRestart (director jumps to the phase, preset applied, retry count 0) and the existing ETM.Objectives tests; all 71 pass.
+  Remaining: None. Merge with T-0023 (same branch).
+  Next: Review with T-0023.
 - **2026-11-17 14:00Z** · `claude-code-dartonx-pc` · T-0023 · _complete_ · commits: 8ae601b
   Source/ETM/Save. FETMSettings (difficulty, haptics, reduced flash, three volumes, subtitles and size, aim smoothing, target assistance, toggle-to-vent, hand swap; sanitised on load), FETMSavedCheckpoint (map, FMissionCheckpoint with phase, time, seed, boss flag and health, difficulty, time saved), FETMMissionResult (completion, duration, shots, hits, weak-point hits, damage prevented, retries, score) with last and best completed run per level. UETMSaveStore reads and writes them; UETMSaveSubsystem (game instance) loads at startup, applies settings when a world begins play (feedback haptics and flash, Assisted boss floor 80% and reduced incoming damage), and binds to the mission so every checkpoint is saved. ResumeInto restores a saved checkpoint after restart via the mission (T-0051): boss checkpoints give the P-04 preset. Every slot is written as length+CRC32 header around the engine's save data, to the slot and a backup slot, on a worker thread (stale queued writes dropped). Loading checks the header before the engine parses anything, falls back to the backup, then to defaults.
   Verified: Built on UE 5.8.4, zero errors and warnings; all 71 tests on this branch pass, 5 new (ETM.Save.*), restarts simulated by a fresh store reading the files back from disk: every setting survives and out-of-range values are clamped; checkpoint saved automatically through the mission, survives restart with phase/seed/boss flag/health/difficulty, resumes into a director at the boss phase with rig 300 and objective 60% (80% on Assisted), not a retry; a midpoint resumes exact values; cleared checkpoint stays cleared; results keep best and last with P-30 stats; settings applied to a real rig pawn and mission. Found and fixed: a damaged save file made the engine assert (crash) inside LoadGameFromSlot; now garbage, truncated and fake-engine-header files fall back to the backup or defaults with no crash. Async writes are not exercised by the tests (they write synchronously); nothing tested on a headset's storage.
@@ -116,7 +121,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Approved. Approved by the owner in chat on 2026-11-17 (Approve all four). Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-17 10:28Z** · `owner` · T-0013 · _review_
   Approved. Approved by the owner in chat on 2026-11-17 (Approve all four). Recorded on the owner's behalf by claude-code-dartonx-pc.
-- **2026-11-17 10:27Z** · `owner` · T-0012 · _review_
-  Approved. Approved by the owner in chat on 2026-11-17 (Approve all four). Recorded on the owner's behalf by claude-code-dartonx-pc.
 
-_19 older entries in `tracking/reports/`._
+_20 older entries in `tracking/reports/`._
