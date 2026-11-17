@@ -1,13 +1,13 @@
 # Task Board
 
-_Generated 2026-11-17T10:31:57Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T10:37:26Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 8/43 done (19%) · todo: 33 · in_progress: 1 · review: 1 · blocked: 0 · done: 8
+**Progress:** 8/44 done (18%) · todo: 34 · in_progress: 1 · review: 1 · blocked: 0 · done: 8
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 8 | `████░░░░░░` |
-| M1 | 4 | 9 | `████░░░░░░` |
+| M1 | 4 | 10 | `████░░░░░░` |
 | M2 | 1 | 10 | `█░░░░░░░░░` |
 | M3 | 0 | 8 | `░░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
@@ -31,7 +31,7 @@ _Generated 2026-11-17T10:31:57Z by `tools/agent.py render`. Do not edit by hand.
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
 
-## Todo (33)
+## Todo (34)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -41,6 +41,7 @@ _Generated 2026-11-17T10:31:57Z by `tools/agent.py render`. Do not edit by hand.
 | T-0004 🟢 ready | 2 | M0 | art | tracker | Revised concept art pass using the CONCEPT_ART_REVIEW brief | - |  |
 | T-0008 | 2 | M0 | art | game | Open-frame rig blockout mesh (seat, knee guard, weapon arms) | T-0006 |  |
 | T-0016 | 1 | M1 | qa | tracker | M1 gate: 3-minute combat test on Quest 2 (comfort, readability, perf capture) | T-0014, T-0015, T-0012, T-0010 |  |
+| T-0044 🟢 ready | 1 | M1 | engine | game | Fix clean builds: test helper names collide when Unreal merges .cpp files (unity build) | - |  |
 | T-0015 🟢 ready | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 | T-0043 | 2 | M1 | weapons | game | Heat model: carry fire-cooldown remainder so cadence does not drift at 72 Hz | T-0010 |  |
 | T-0017 🟢 ready | 1 | M2 | encounters | game | Encounter director: authored phases, spawn budgets, attack tokens, early-transition rule (P-13) | T-0013 |  |
