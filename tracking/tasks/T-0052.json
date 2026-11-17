@@ -1,0 +1,25 @@
+{
+  "id": "T-0052",
+  "title": "Move the calibration and control-scheme saves to the checked save format (damaged files crash the engine's loader)",
+  "milestone": "M2",
+  "area": "save",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0023"
+  ],
+  "paths": [
+    "Source/ETM/Player/XRSeatedRigPawn.cpp",
+    "Source/ETM/Player/CalibrationSaveGame.h",
+    "Source/ETM/Input/RigPlayerController.cpp",
+    "Source/ETM/Input/RigInputSaveGame.h"
+  ],
+  "acceptance": [
+    "Both slots load through UETMSaveStore's checked reader (header, CRC, backup)",
+    "A damaged ETM_Calibration or ETM_Input file gives defaults, not a crash"
+  ],
+  "description": "Found in T-0023: the engine asserts inside LoadGameFromSlot on some damaged save files. ETM_Calibration (T-0007) and ETM_Input (T-0012) still load that way, so a power cut while either is written could crash every later launch.",
+  "assignee": null,
+  "history": []
+}

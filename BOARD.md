@@ -1,14 +1,14 @@
 # Task Board
 
-_Generated 2026-11-17T14:00:38Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T14:00:41Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 18/51 done (35%) · todo: 29 · in_progress: 0 · review: 3 · blocked: 1 · done: 18
+**Progress:** 18/52 done (35%) · todo: 30 · in_progress: 0 · review: 3 · blocked: 1 · done: 18
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 8 | `████░░░░░░` |
 | M1 | 8 | 13 | `██████░░░░` |
-| M2 | 7 | 14 | `█████░░░░░` |
+| M2 | 7 | 15 | `█████░░░░░` |
 | M3 | 0 | 8 | `░░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
 | M5 | 0 | 3 | `░░░░░░░░░░` |
@@ -31,7 +31,7 @@ _None. Every task is free._
 |---|---|---|---|---|---|---|---|
 | T-0015 | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 
-## Todo (29)
+## Todo (30)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -45,6 +45,7 @@ _None. Every task is free._
 | T-0043 | 2 | M1 | weapons | game | Heat model: carry fire-cooldown remainder so cadence does not drift at 72 Hz | T-0010 |  |
 | T-0025 | 1 | M2 | qa | tracker | M2 gate: vertical slice validated on hardware | T-0020, T-0021, T-0022, T-0023, T-0024, T-0019 |  |
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
+| T-0052 | 1 | M2 | save | game | Move the calibration and control-scheme saves to the checked save format (damaged files crash the engine's loader) | T-0023 |  |
 | T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 |  |
 | T-0024 | 2 | M2 | perf | game | Performance capture tooling + 30-minute soak script | T-0006 |  |
 | T-0049 🟢 ready | 3 | M2 | qa | game | Test worlds: run garbage collection after destroying them, so reserved GPU memory stops climbing during the test run | - |  |
