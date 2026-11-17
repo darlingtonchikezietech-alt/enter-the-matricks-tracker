@@ -2,6 +2,11 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 12:58Z** · `claude-code-dartonx-pc` · T-0021 · _complete_ · commits: a441bca
+  AGatebreaker (Source/ETM/Bosses/Gatebreaker), built on AEnemyBase parts. Phase 1 Anchor: two 600 HP shoulder nodes open one at a time in 5 s windows with 1.5 s gaps, alternating; phase ends when both break. Every phase: a furnace attack charges 2 s, exposing a 240 HP chamber; breaking it interrupts (stagger) and the blast (45 to the rig) never lands; the chamber is rebuilt each time. Phase 2 Breach: after every furnace the 3000 HP core opens, 6 s if interrupted, 4 s if fired (P-10), then a 5 s gap to vent. Phase 3 Collapse from core <= 900: artillery (35, 2 s warning, barrel rises) alternates with the furnace (my reading, logged as P-32). All targets are weak points; the hull and any closed target are immune and raise OnDeflected. Placeholder silhouette with shutters over closed targets. The boss activates when the director starts the 'Gatebreaker' phase, calls CompletePhase on death, and is parked (not destroyed) so a retry restores it at full health. Uses no attack token.
+  Verified: Built on UE 5.8.4, zero errors and warnings; all 51 ETM tests pass, 7 new (ETM.Bosses.Gatebreaker.*). They check bible values, immune armour and closed targets, alternating and repeating node windows, phase-1 furnace hits 45 with no core window, phase-2 windows 4 s fired / 6 s interrupted, interrupted blast never lands, chamber rebuilt, phase 3 at 900 with artillery 35 and core still opening, braced blast 11.25, death parks the wreck; two real heat-model cannons at 70% expected accuracy destroy the core in 2-3 exposures; 2 minutes of ignoring targets in each phase never softlocks; director activation, retry to full health (P-04 preset) and phase completion on death. No headset, level, art or audio. One run logged an RHI warning (reserved virtual memory over its 256 GB budget) during the tests, not investigated.
+  Remaining: P-32 (artillery cadence) and P-33 (P-13 60% wait after a fast boss kill) need the owner. Node window 5 s, gap 1.5 s, attack interval 5 s and artillery warning 2 s are my prototype values. The Level 1 boss phase must set MaxConcurrentAttacks to 1 for adds (the boss bypasses tokens) and cap adds at 3 (bible section 9); that is T-0026. 'Sequential leg locks' on entry are presentation only (spawn time 3 s). No sound assets; charge sound slots are empty. Branch agent/claude-code-dartonx-pc/t-0021 needs a PR.
+  Next: Review T-0021 and answer P-32/P-33. Then T-0022 (other enemies) or T-0026 (Level 1 schedule).
 - **2026-11-17 12:52Z** · `claude-code-dartonx-pc` · T-0021 · _claim_
   Claimed T-0021: Gatebreaker boss prototype (P-02, P-09, P-10)
 - **2026-11-17 12:47Z** · `owner` · T-0046 · _review_
@@ -119,5 +124,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Next: Owner or another agent reviews T-0005. Then T-0006 (needs the engine's Android target and Quest 2 Developer Mode), T-0007 and T-0011 can start.
 - **2026-11-17 06:30Z** · `claude-code-dartonx-pc` · T-0005 · _claim_
   Compiling on UE 5.8.4 build PC
-- **2026-11-16 20:02Z** · `claude-bootstrap` · T-0001 · _complete_
-  Bootstrapped both repos. Bible patched v1.0 -> v1.1 (22 fixes, see PLAN_REVIEW). Seeded 41 tasks M0-M5. Unreal scaffold added to game repo, NOT yet compiled (no Unreal in this environment). Next: owner sets start date (T-0002) + title clearance (T-0003); an engineering agent takes T-0005.
+
+_1 older entries in `tracking/reports/`._

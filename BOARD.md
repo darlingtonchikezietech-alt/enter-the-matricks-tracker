@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T12:52:26Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T12:58:22Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 13/47 done (28%) · todo: 32 · in_progress: 1 · review: 1 · blocked: 0 · done: 13
+**Progress:** 13/47 done (28%) · todo: 32 · in_progress: 0 · review: 2 · blocked: 0 · done: 13
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,21 +15,14 @@ _Generated 2026-11-17T12:52:26Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-| Task | Agent | Since | Last heartbeat | Stale? |
-|---|---|---|---|---|
-| T-0021 Gatebreaker boss prototype (P-02, P-09, P-10) | claude-code-dartonx-pc | 2026-11-17T12:52:26Z | 2026-11-17T12:52:26Z |  |
+_None. Every task is free._
 
-## In Progress (1)
-
-| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
-|---|---|---|---|---|---|---|---|
-| T-0021 | 1 | M2 | boss | game | Gatebreaker boss prototype (P-02, P-09, P-10) | T-0017 | claude-code-dartonx-pc |
-
-## Review (1)
+## Review (2)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
+| T-0021 | 1 | M2 | boss | game | Gatebreaker boss prototype (P-02, P-09, P-10) | T-0017 | claude-code-dartonx-pc |
 
 ## Todo (32)
 
