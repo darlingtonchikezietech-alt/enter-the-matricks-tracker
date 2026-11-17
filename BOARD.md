@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T07:13:02Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T07:16:50Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 2/41 done (5%) · todo: 37 · in_progress: 1 · review: 1 · blocked: 0 · done: 2
+**Progress:** 2/41 done (5%) · todo: 37 · in_progress: 0 · review: 2 · blocked: 0 · done: 2
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,21 +15,14 @@ _Generated 2026-11-17T07:13:02Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-| Task | Agent | Since | Last heartbeat | Stale? |
-|---|---|---|---|---|
-| T-0011 Brace (DefenseComponent) and Integrity components | claude-code-dartonx-pc | 2026-11-17T07:13:02Z | 2026-11-17T07:13:02Z |  |
+_None. Every task is free._
 
-## In Progress (1)
-
-| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
-|---|---|---|---|---|---|---|---|
-| T-0011 | 1 | M1 | combat | game | Brace (DefenseComponent) and Integrity components | T-0005 | claude-code-dartonx-pc |
-
-## Review (1)
+## Review (2)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0007 | 1 | M0 | player | game | Seated rig pawn: XR origin, controller tracking, seated calibration, Forward re-anchor (P-11) | T-0005 | claude-code-dartonx-pc |
+| T-0011 | 1 | M1 | combat | game | Brace (DefenseComponent) and Integrity components | T-0005 | claude-code-dartonx-pc |
 
 ## Todo (37)
 
