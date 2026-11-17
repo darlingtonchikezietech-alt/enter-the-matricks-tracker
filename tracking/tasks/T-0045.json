@@ -1,0 +1,21 @@
+{
+  "id": "T-0045",
+  "title": "Attack tokens in the enemy base: cap simultaneous attacks (bible section 14: max 2 dangerous attacks)",
+  "milestone": "M2",
+  "area": "enemies",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [],
+  "paths": [
+    "Source/ETM/Enemies/Base/**"
+  ],
+  "acceptance": [
+    "BeginAttack is refused while the world's token limit is in use, and succeeds once a token is free",
+    "Tokens are released when an attack resolves, is interrupted, the enemy dies, is parked, or is destroyed",
+    "The limit is adjustable at runtime (the encounter director sets it)"
+  ],
+  "description": "Split out of T-0017. Enemies start their own attacks, so the director cannot enforce the 2-attack cap without a gate in AEnemyBase::BeginAttack.",
+  "assignee": null,
+  "history": []
+}

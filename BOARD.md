@@ -1,14 +1,14 @@
 # Task Board
 
-_Generated 2026-11-17T10:43:30Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T10:44:44Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 10/44 done (23%) · todo: 32 · in_progress: 1 · review: 1 · blocked: 0 · done: 10
+**Progress:** 10/45 done (22%) · todo: 33 · in_progress: 1 · review: 1 · blocked: 0 · done: 10
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 8 | `████░░░░░░` |
 | M1 | 6 | 10 | `██████░░░░` |
-| M2 | 1 | 10 | `█░░░░░░░░░` |
+| M2 | 1 | 11 | `█░░░░░░░░░` |
 | M3 | 0 | 8 | `░░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
 | M5 | 0 | 3 | `░░░░░░░░░░` |
@@ -31,7 +31,7 @@ _Generated 2026-11-17T10:43:30Z by `tools/agent.py render`. Do not edit by hand.
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
 
-## Todo (32)
+## Todo (33)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -46,6 +46,7 @@ _Generated 2026-11-17T10:43:30Z by `tools/agent.py render`. Do not edit by hand.
 | T-0021 | 1 | M2 | boss | game | Gatebreaker boss prototype (P-02, P-09, P-10) | T-0017 |  |
 | T-0025 | 1 | M2 | qa | tracker | M2 gate: vertical slice validated on hardware | T-0020, T-0021, T-0022, T-0023, T-0024, T-0019 |  |
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
+| T-0045 🟢 ready | 1 | M2 | enemies | game | Attack tokens in the enemy base: cap simultaneous attacks (bible section 14: max 2 dangerous attacks) | - |  |
 | T-0019 🟢 ready | 2 | M2 | ui | game | Diegetic HUD presenter: heat on housings, integrity on frame, warnings at source | T-0009, T-0011 |  |
 | T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 |  |
 | T-0022 🟢 ready | 2 | M2 | enemies | game | Bulwark, Lance Walker, Siphon, Cradle Bomber | T-0014 |  |
