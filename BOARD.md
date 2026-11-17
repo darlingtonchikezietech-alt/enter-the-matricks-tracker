@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T13:53:02Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T14:00:35Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 18/51 done (35%) · todo: 29 · in_progress: 2 · review: 1 · blocked: 1 · done: 18
+**Progress:** 18/51 done (35%) · todo: 29 · in_progress: 1 · review: 2 · blocked: 1 · done: 18
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -17,21 +17,20 @@ _Generated 2026-11-17T13:53:02Z by `tools/agent.py render`. Do not edit by hand.
 
 | Task | Agent | Since | Last heartbeat | Stale? |
 |---|---|---|---|---|
-| T-0023 Save system: settings, checkpoints incl. boss presets (P-04), results | claude-code-dartonx-pc | 2026-11-17T13:52:17Z | 2026-11-17T13:52:17Z |  |
 | T-0051 Mission state: resume from a saved checkpoint after an app restart (for T-0023) | claude-code-dartonx-pc | 2026-11-17T13:53:02Z | 2026-11-17T13:53:02Z |  |
 
-## In Progress (2)
+## In Progress (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
-| T-0023 | 2 | M2 | save | game | Save system: settings, checkpoints incl. boss presets (P-04), results | T-0018, T-0017 | claude-code-dartonx-pc |
 | T-0051 | 2 | M2 | objective | game | Mission state: resume from a saved checkpoint after an app restart (for T-0023) | - | claude-code-dartonx-pc |
 
-## Review (1)
+## Review (2)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
+| T-0023 | 2 | M2 | save | game | Save system: settings, checkpoints incl. boss presets (P-04), results | T-0018, T-0017 | claude-code-dartonx-pc |
 
 ## Blocked (1)
 
