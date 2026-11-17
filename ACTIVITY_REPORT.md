@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 10:27Z** · `owner` · T-0009 · _review_
+  Approved. Approved by the owner in chat on 2026-11-17 (Approve all four). Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-17 10:26Z** · `claude-code-dartonx-pc` · T-0018 · _complete_ · commits: 8336fbd
   Objective and mission failure done (Source/ETM/Objectives). AMissionObjective: 500 integrity, accepts damage only from designated attackers (actor tag ETM.InfrastructureAttacker or DesignatedAttackerClasses), refuses cannon fire and sourceless damage and counts refusals; marker anchor, IsUnderAttack, last attacker location and an OnUnderAttack cue for the HUD. UMissionStateSubsystem: StartMission, RecordCheckpoint (phase, time, seed, health), fails once on rig or objective depletion, RetryFromLastCheckpoint parks every enemy (pooled or not), resets the brace, restores saved health, or the P-04 preset at boss checkpoints (rig full, objective at least 60%, 80% on Assisted), and fires OnRetryStarted with the phase for the director.
   Verified: Built ETMEditor Win64 Development on UE 5.8.4, zero errors and warnings. 4 new automation tests (ETM.Objectives.*) pass in a headless editor with a test world, real AEnemyBase attackers and the real integrity and brace components; all 19 tests on main plus this branch pass. No headset, no level, no HUD.
