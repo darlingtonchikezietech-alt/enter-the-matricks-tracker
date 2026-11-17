@@ -1,8 +1,9 @@
 # ENTER THE MATRICKS
-### VR Game Product Bible · Version 1.2
+### VR Game Product Bible · Version 1.3
 
 > v1.1 (2026-11-16) applies the patches logged in `docs/PLAN_REVIEW.md`. Patched passages carry a `[P-xx]` tag. The original is preserved at `docs/archive/PRODUCT_BIBLE_v1.0.md`.
 > v1.2 (2026-11-17) adds P-31: Quest 3 and 3S ship in the first release, from the same build as Quest 2.
+> v1.3 (2026-11-17) adds P-32 (Gatebreaker artillery) and P-33 (early-transition rule in boss phases).
 **Quest 2, 3 and 3S · Quest 2 sets the performance floor · Unreal Engine · Single-player survival shooter** **[P-31]**
 
 > **Two cannons. One evacuation. Hold until the last signal.**
@@ -373,7 +374,7 @@ The following storyboards target a successful **Standard** run of approximately 
 - Timings include short in-world narrative beats.
 - Loading, menus, pauses, and retries are excluded.
 - Boss completion is gameplay-driven; the timeline is a pacing target.
-- Finished phases may transition early after their narrative minimum, defined as **60% of the phase's storyboard slot** and every required line of phase dialogue finished. **[P-13]**
+- Finished phases may transition early after their narrative minimum, defined as **60% of the phase's storyboard slot** and every required line of phase dialogue finished. **[P-13]** This includes boss phases: after a fast boss kill, the collapse sequence and narrative fill the time until 60% of the boss slot. **[P-33]**
 - Unfinished encounters may extend the run.
 - Target first-successful-run range: **18–24 minutes** after onboarding comprehension is established.
 
@@ -420,7 +421,7 @@ The transfer equipment sits **in front of and below** the player's rig in the ce
 |---|---|---|
 | **1 — Anchor** | Two shoulder shield nodes are exposed in alternating windows. Furnace attacks charge for 2 seconds. Ends when both nodes are destroyed. | Destroy both nodes; interrupt charge chambers when available. |
 | **2 — Breach** | After **every** furnace attack, the core opens: **6 s if the attack was interrupted**, 4 s if it fired. **[P-10]** | Concentrate fire, then vent during closure. |
-| **3 — Collapse** | Starts when the core falls to **≤30% (900 HP)**. The core keeps opening as in phase 2; one telegraphed artillery attack (35 rig damage) must still be respected. **[P-10]** | Finish the core while preserving rig integrity. |
+| **3 — Collapse** | Starts when the core falls to **≤30% (900 HP)**. The core keeps opening as in phase 2; one telegraphed artillery attack (35 rig damage) must still be respected. **[P-10]** Artillery alternates with the furnace attack; it has a 2-second warning (the barrel rises), cannot be interrupted, can be braced, and does not open the core. **[P-32]** | Finish the core while preserving rig integrity. |
 
 Prototype damage pools:
 
