@@ -4,7 +4,7 @@
   "milestone": "M2",
   "area": "enemies",
   "repo": "game",
-  "status": "todo",
+  "status": "in_progress",
   "priority": 2,
   "depends_on": [
     "T-0014"
@@ -14,10 +14,16 @@
     "Content/ETM/Enemies/**"
   ],
   "acceptance": [
-    "Values per bible \u00a77 incl. P-09",
+    "Values per bible §7 incl. P-09",
     "Each distinguishable by silhouette at combat distance"
   ],
   "description": "",
-  "assignee": null,
-  "history": []
+  "assignee": "claude-code-dartonx-pc",
+  "history": [
+    {
+      "time": "2026-11-17T13:29:55Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "claimed"
+    }
+  ]
 }
