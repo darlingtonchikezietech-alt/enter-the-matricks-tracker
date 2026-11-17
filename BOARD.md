@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T13:29:55Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T13:35:06Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 15/49 done (31%) · todo: 31 · in_progress: 1 · review: 1 · blocked: 1 · done: 15
+**Progress:** 15/49 done (31%) · todo: 31 · in_progress: 0 · review: 2 · blocked: 1 · done: 15
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,21 +15,14 @@ _Generated 2026-11-17T13:29:55Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-| Task | Agent | Since | Last heartbeat | Stale? |
-|---|---|---|---|---|
-| T-0022 Bulwark, Lance Walker, Siphon, Cradle Bomber | claude-code-dartonx-pc | 2026-11-17T13:29:55Z | 2026-11-17T13:29:55Z |  |
+_None. Every task is free._
 
-## In Progress (1)
-
-| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
-|---|---|---|---|---|---|---|---|
-| T-0022 | 2 | M2 | enemies | game | Bulwark, Lance Walker, Siphon, Cradle Bomber | T-0014 | claude-code-dartonx-pc |
-
-## Review (1)
+## Review (2)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
+| T-0022 | 2 | M2 | enemies | game | Bulwark, Lance Walker, Siphon, Cradle Bomber | T-0014 | claude-code-dartonx-pc |
 
 ## Blocked (1)
 
@@ -55,7 +48,7 @@ _Generated 2026-11-17T13:29:55Z by `tools/agent.py render`. Do not edit by hand.
 | T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 |  |
 | T-0023 🟢 ready | 2 | M2 | save | game | Save system: settings, checkpoints incl. boss presets (P-04), results | T-0018, T-0017 |  |
 | T-0024 | 2 | M2 | perf | game | Performance capture tooling + 30-minute soak script | T-0006 |  |
-| T-0049 | 3 | M2 | qa | game | Test worlds: run garbage collection after destroying them, so reserved GPU memory stops climbing during the test run | - |  |
+| T-0049 🟢 ready | 3 | M2 | qa | game | Test worlds: run garbage collection after destroying them, so reserved GPU memory stops climbing during the test run | - |  |
 | T-0026 | 1 | M3 | encounters | game | Level 1 full schedule (51 enemies, timeline, gating P-14) | T-0025 |  |
 | T-0027 | 1 | M3 | level | game | Level 2 arena greybox | T-0025 |  |
 | T-0028 | 1 | M3 | boss | game | Conductor boss incl. pairing reset (P-07), rig sweep (P-08), emitter fallback (P-06) | T-0025 |  |

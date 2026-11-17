@@ -2,6 +2,11 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 13:35Z** · `claude-code-dartonx-pc` · T-0022 · _complete_ · commits: 1c5e180
+  Four archetypes in Source/ETM/Enemies/Archetypes with values from bible section 7 and P-09. Bulwark: 480 HP body covered by a x0.1 shield (passes to the body), two 80 HP weak-point nodes; breaking either drops the shield, opens the body and staggers it; walks to the objective and slams it for 30 every 4 s (1 s wind-up, shield heaves up); infrastructure attacker. Lance Walker: 320 HP; walks up to 6 m in, plants, charges 2 s with its 160 HP weak-point chamber exposed only while charging (2 shots interrupt); strike 35 to its designated target (rig by default; targeting the objective adds the infrastructure tag); lance swells as the cue. Siphon: 200 HP; crawls to the objective, 1.5 s latch warning with a visible tether, then drains 5/s in 0.25 s pulses until destroyed. Cradle Bomber: 160 HP carrier; hovers 6 m above its designated target, pod swells and tone falls 1.5 to 0.75 over 2 s, releases 40; one weak-point shot on the 80 HP pod destroys the carrier; re-arms after 5 s. Shared helpers in ArchetypeSupport.h.
+  Verified: Built on UE 5.8.4, zero errors and warnings; all 61 ETM tests pass, 6 new: every bible value; Bulwark shield x0.1, covered body, slam timing 30 at 1 s then every 4 s, node breaks shield and cancels a wind-up, open body takes full damage; Lance plants within 6 m, chamber only hittable while charging, 35 strike, 2 shots interrupt, objective targeting and tag sync; Siphon tether during warning, no drain during it, ~5/s after, stops on death; Bomber hovers above target, pod and descending tone cues, 40 release, pod shot kills it, objective targeting; pooled reuse restores shield, nodes, chamber, pod and clears tags; silhouettes: every pair differs by 30%+ in a dimension (Shardling 125x68x63, Drone 159x100x94, Bulwark 360x112x230, Lance 297x153x415, Siphon 160x70x115, Bomber 180x180x137 cm). No headset, no art, no sound assets (cue sound slots empty).
+  Remaining: Prototype values not in the bible: Bulwark 1 s wind-up, 120 cm/s, 2 m contact; Lance 6 m advance, 0.6 s plant, 4 s cooldown; Siphon 1.5 s latch warning, 200 cm/s; Bomber 5 s re-arm, 6 m hover, 300 cm/s. Bomber release hits instantly (no falling pod). Bulwark shield's x0.1 is applied by the enemy, so the cannon's shot result still reports x1 there. Silhouette distinctness is measured by bounding size, not seen at 5-45 m in a headset. Branch agent/claude-code-dartonx-pc/t-0022 needs a PR.
+  Next: Review T-0022. T-0019 next (HUD), then T-0026 (Level 1 schedule) is unblocked once T-0022 is approved.
 - **2026-11-17 13:29Z** · `claude-code-dartonx-pc` · T-0022 · _claim_
   Claimed T-0022: Bulwark, Lance Walker, Siphon, Cradle Bomber
 - **2026-11-17 13:25Z** · `owner` · T-0048 · _review_
@@ -116,7 +121,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Claimed T-0009: Cannon component: aim envelope ±65/-30..+45, servo, cadence, muzzle trace, heat per P-01
 - **2026-11-17 07:17Z** · `owner` · T-0011 · _review_
   Approved. Approved by the owner in chat on 2026-11-17 (Approved, record both). Recorded on the owner's behalf by claude-code-dartonx-pc.
-- **2026-11-17 07:17Z** · `owner` · T-0007 · _review_
-  Approved. Approved by the owner in chat on 2026-11-17 (Approved, record both). Recorded on the owner's behalf by claude-code-dartonx-pc.
 
-_8 older entries in `tracking/reports/`._
+_9 older entries in `tracking/reports/`._
