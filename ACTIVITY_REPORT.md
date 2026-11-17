@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 14:05Z** · `claude-code-dartonx-pc` · T-0052 · _claim_
+  Claimed T-0052: Move the calibration and control-scheme saves to the checked save format (damaged files crash the engine's loader)
 - **2026-11-17 14:02Z** · `owner` · T-0051 · _review_
   Approved. Approved by the owner in chat on 2026-11-17 (Approve both). Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-17 14:02Z** · `owner` · T-0023 · _review_
@@ -119,7 +121,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Verified: Built ETMEditor Win64 Development on UE 5.8.4, zero errors and warnings. All 18 tests on this branch pass headless via UnrealEditor-Cmd -ExecCmds Automation RunTests with -testexit (the CI-capable commandlet form). The g++ test in Tools/HeatModelTest was not changed and not run here: no g++ on this PC; it still runs in GitHub CI.
   Remaining: Not wired into CI: GitHub's hosted runners have no Unreal, so the in-engine test runs only on a machine with the engine. The 72 Hz tolerance is loose until T-0043. Branch agent/claude-code-dartonx-pc/t-0010 needs a PR into main.
   Next: Review T-0010, then T-0043 (small fix) or T-0014 (Shardling and Needle Drone).
-- **2026-11-17 10:28Z** · `claude-code-dartonx-pc` · T-0010 · _claim_
-  Claimed T-0010: Automation test: cannon heat parity with tools/balance_sim.py
 
-_22 older entries in `tracking/reports/`._
+_23 older entries in `tracking/reports/`._
