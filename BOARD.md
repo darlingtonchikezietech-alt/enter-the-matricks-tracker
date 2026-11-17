@@ -1,13 +1,13 @@
 # Task Board
 
-_Generated 2026-11-17T10:42:27Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T10:43:23Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 8/44 done (18%) · todo: 33 · in_progress: 0 · review: 3 · blocked: 0 · done: 8
+**Progress:** 9/44 done (20%) · todo: 33 · in_progress: 0 · review: 2 · blocked: 0 · done: 9
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 8 | `████░░░░░░` |
-| M1 | 4 | 10 | `████░░░░░░` |
+| M1 | 5 | 10 | `█████░░░░░` |
 | M2 | 1 | 10 | `█░░░░░░░░░` |
 | M3 | 0 | 8 | `░░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
@@ -17,12 +17,11 @@ _Generated 2026-11-17T10:42:27Z by `tools/agent.py render`. Do not edit by hand.
 
 _None. Every task is free._
 
-## Review (3)
+## Review (2)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
-| T-0014 | 1 | M1 | enemies | game | Shardling (ground) and Needle Drone (flying) prototypes | T-0013 | claude-code-dartonx-pc |
 | T-0044 | 1 | M1 | engine | game | Keep the ETM module building once it passes 32 source files (unity-build name clashes in tests) | - | claude-code-dartonx-pc |
 
 ## Todo (33)
@@ -43,7 +42,7 @@ _None. Every task is free._
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
 | T-0019 🟢 ready | 2 | M2 | ui | game | Diegetic HUD presenter: heat on housings, integrity on frame, warnings at source | T-0009, T-0011 |  |
 | T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 |  |
-| T-0022 | 2 | M2 | enemies | game | Bulwark, Lance Walker, Siphon, Cradle Bomber | T-0014 |  |
+| T-0022 🟢 ready | 2 | M2 | enemies | game | Bulwark, Lance Walker, Siphon, Cradle Bomber | T-0014 |  |
 | T-0023 | 2 | M2 | save | game | Save system: settings, checkpoints incl. boss presets (P-04), results | T-0018, T-0017 |  |
 | T-0024 | 2 | M2 | perf | game | Performance capture tooling + 30-minute soak script | T-0006 |  |
 | T-0026 | 1 | M3 | encounters | game | Level 1 full schedule (51 enemies, timeline, gating P-14) | T-0025 |  |
@@ -63,7 +62,7 @@ _None. Every task is free._
 | T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
 | T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
 
-## Done (8)
+## Done (9)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -74,5 +73,6 @@ _None. Every task is free._
 | T-0011 | 1 | M1 | combat | game | Brace (DefenseComponent) and Integrity components | T-0005 | claude-code-dartonx-pc |
 | T-0012 | 1 | M1 | input | game | Enhanced Input mapping with grip-vent threshold 0.85/100ms and alternative A/B mapping (P-12) | T-0007 | claude-code-dartonx-pc |
 | T-0013 | 1 | M1 | enemies | game | Enemy base: lifecycle states, damage interface, weak points, pooling | T-0011 | claude-code-dartonx-pc |
+| T-0014 | 1 | M1 | enemies | game | Shardling (ground) and Needle Drone (flying) prototypes | T-0013 | claude-code-dartonx-pc |
 | T-0018 | 1 | M2 | objective | game | Objective integrity, world marker, failure and retry | T-0011 | claude-code-dartonx-pc |
 
