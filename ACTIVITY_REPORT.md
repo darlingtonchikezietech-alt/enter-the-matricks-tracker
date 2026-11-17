@@ -2,6 +2,11 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 14:07Z** · `claude-code-dartonx-pc` · T-0052 · _complete_ · commits: 93e2da5
+  UETMSaveStore gains two static entry points for other systems' slots: SaveChecked (synchronous write of the length+CRC32-wrapped save to the slot and its backup) and LoadChecked (main copy if its header and CRC are intact, else the backup, else null; damaged bytes never reach the engine's parser). AXRSeatedRigPawn::SaveCalibration/LoadCalibration and ARigPlayerController's control-scheme save and load now use them.
+  Verified: Built on UE 5.8.4, zero errors and warnings; all 73 ETM tests pass, 2 new (ETM.Save.OtherSlots.*): each slot is written with the ETMS header plus a backup, survives a restart (new pawn / new controller reads it at BeginPlay), recovers from a damaged main copy via the backup, and gives defaults with no crash when both copies are damaged (including a fake engine-format header). The real slots are moved aside during the test and restored afterwards.
+  Remaining: Raw-format calibration or input files left from earlier development are now treated as damaged and give defaults once (no migration, on purpose: reading them is the crash path). The T-0007 calibration save test still round-trips the save class through the engine's plain functions on its own test slot; harmless, not changed (outside these paths).
+  Next: Review T-0052. T-0030 next.
 - **2026-11-17 14:05Z** · `claude-code-dartonx-pc` · T-0052 · _claim_
   Claimed T-0052: Move the calibration and control-scheme saves to the checked save format (damaged files crash the engine's loader)
 - **2026-11-17 14:02Z** · `owner` · T-0051 · _review_
@@ -116,10 +121,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Blocks T-0014: main does not build clean
 - **2026-11-17 10:31Z** · `claude-code-dartonx-pc` · T-0014 · _claim_
   Claimed T-0014: Shardling (ground) and Needle Drone (flying) prototypes
-- **2026-11-17 10:31Z** · `claude-code-dartonx-pc` · T-0010 · _complete_ · commits: 576eb6b
-  Added Source/ETM/Tests/HeatParityTest.cpp: 3 automation tests that run the heat model through balance_sim.py's policies (hold, hold-then-vent, burst+vent) and check overheat 12 shots / 2.75 s, recovery 4.0 s, vent-during-lock gives nothing (P-01), 60 vs 91 dps; once at the sim's 1 ms step and once at 72 Hz with UCannonComponent's 1/240 s sub-steps; plus a check that FCannonTuning defaults equal the sim constants. Finding: at 72 Hz the cadence drifts (overheat 2.792 s, burst+vent 89.33 dps) because StepHeat resets the fire cooldown instead of carrying the remainder; filed T-0043, and the 72 Hz test allows 3 frames and 2% with a comment saying to tighten it.
-  Verified: Built ETMEditor Win64 Development on UE 5.8.4, zero errors and warnings. All 18 tests on this branch pass headless via UnrealEditor-Cmd -ExecCmds Automation RunTests with -testexit (the CI-capable commandlet form). The g++ test in Tools/HeatModelTest was not changed and not run here: no g++ on this PC; it still runs in GitHub CI.
-  Remaining: Not wired into CI: GitHub's hosted runners have no Unreal, so the in-engine test runs only on a machine with the engine. The 72 Hz tolerance is loose until T-0043. Branch agent/claude-code-dartonx-pc/t-0010 needs a PR into main.
-  Next: Review T-0010, then T-0043 (small fix) or T-0014 (Shardling and Needle Drone).
 
-_23 older entries in `tracking/reports/`._
+_24 older entries in `tracking/reports/`._
