@@ -4,7 +4,7 @@
   "milestone": "M2",
   "area": "boss",
   "repo": "game",
-  "status": "todo",
+  "status": "in_progress",
   "priority": 1,
   "depends_on": [
     "T-0017"
@@ -19,6 +19,12 @@
     "Core ~2-3 exposures at 70% accuracy"
   ],
   "description": "",
-  "assignee": null,
-  "history": []
+  "assignee": "claude-code-dartonx-pc",
+  "history": [
+    {
+      "time": "2026-11-17T12:52:26Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "claimed"
+    }
+  ]
 }
