@@ -1,8 +1,0 @@
-{
-  "task": "T-0044",
-  "agent": "claude-code-dartonx-pc",
-  "claimed_at": "2026-11-17T10:37:44Z",
-  "heartbeat": "2026-11-17T10:37:44Z",
-  "branch": "agent/claude-code-dartonx-pc/t-0044",
-  "note": "Blocks T-0014: main does not build clean"
-}
