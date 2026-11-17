@@ -1,12 +1,12 @@
 # Task Board
 
-_Generated 2026-11-17T07:16:50Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T07:17:28Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 2/41 done (5%) · todo: 37 · in_progress: 0 · review: 2 · blocked: 0 · done: 2
+**Progress:** 3/41 done (7%) · todo: 37 · in_progress: 0 · review: 1 · blocked: 0 · done: 3
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
-| M0 | 2 | 8 | `██░░░░░░░░` |
+| M0 | 3 | 8 | `████░░░░░░` |
 | M1 | 0 | 8 | `░░░░░░░░░░` |
 | M2 | 0 | 9 | `░░░░░░░░░░` |
 | M3 | 0 | 8 | `░░░░░░░░░░` |
@@ -17,11 +17,10 @@ _Generated 2026-11-17T07:16:50Z by `tools/agent.py render`. Do not edit by hand.
 
 _None. Every task is free._
 
-## Review (2)
+## Review (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
-| T-0007 | 1 | M0 | player | game | Seated rig pawn: XR origin, controller tracking, seated calibration, Forward re-anchor (P-11) | T-0005 | claude-code-dartonx-pc |
 | T-0011 | 1 | M1 | combat | game | Brace (DefenseComponent) and Integrity components | T-0005 | claude-code-dartonx-pc |
 
 ## Todo (37)
@@ -33,9 +32,9 @@ _None. Every task is free._
 | T-0006 🟢 ready | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 |  |
 | T-0004 🟢 ready | 2 | M0 | art | tracker | Revised concept art pass using the CONCEPT_ART_REVIEW brief | - |  |
 | T-0008 | 2 | M0 | art | game | Open-frame rig blockout mesh (seat, knee guard, weapon arms) | T-0006 |  |
-| T-0009 | 1 | M1 | weapons | game | Cannon component: aim envelope ±65/-30..+45, servo, cadence, muzzle trace, heat per P-01 | T-0007 |  |
+| T-0009 🟢 ready | 1 | M1 | weapons | game | Cannon component: aim envelope ±65/-30..+45, servo, cadence, muzzle trace, heat per P-01 | T-0007 |  |
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 |  |
-| T-0012 | 1 | M1 | input | game | Enhanced Input mapping with grip-vent threshold 0.85/100ms and alternative A/B mapping (P-12) | T-0007 |  |
+| T-0012 🟢 ready | 1 | M1 | input | game | Enhanced Input mapping with grip-vent threshold 0.85/100ms and alternative A/B mapping (P-12) | T-0007 |  |
 | T-0013 | 1 | M1 | enemies | game | Enemy base: lifecycle states, damage interface, weak points, pooling | T-0011 |  |
 | T-0014 | 1 | M1 | enemies | game | Shardling (ground) and Needle Drone (flying) prototypes | T-0013 |  |
 | T-0016 | 1 | M1 | qa | tracker | M1 gate: 3-minute combat test on Quest 2 (comfort, readability, perf capture) | T-0014, T-0015, T-0012, T-0010 |  |
@@ -66,10 +65,11 @@ _None. Every task is free._
 | T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
 | T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
 
-## Done (2)
+## Done (3)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0001 | 1 | M0 | producer | tracker | Bootstrap repos, patched bible v1.1, tracker and Unreal scaffold | - | claude-bootstrap |
 | T-0005 | 1 | M0 | engine | game | Compile the scaffold and lock the toolchain (UE version, Meta XR/OpenXR plugin, SDK/NDK/JDK) | - | claude-code-dartonx-pc |
+| T-0007 | 1 | M0 | player | game | Seated rig pawn: XR origin, controller tracking, seated calibration, Forward re-anchor (P-11) | T-0005 | claude-code-dartonx-pc |
 

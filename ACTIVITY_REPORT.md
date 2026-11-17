@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 07:17Z** · `owner` · T-0007 · _review_
+  Approved. Approved by the owner in chat on 2026-11-17 (Approved, record both). Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-17 07:16Z** · `claude-code-dartonx-pc` · T-0011 · _complete_ · commits: 25bd2db
   Brace and integrity components finished to spec. Brace maths is a pure model (Combat/BraceModel.h): 2 s field, 12 s cooldown from the end, 75% rig reduction, frame-rate independent. UDefenseComponent adds OnBraceReady and OnBraceAbsorbedDamage, GetReadiness for the HUD, ResetBrace for retries, and ticks only when needed. UIntegrityComponent binds to the owner's engine damage, broadcasts OnDamaged (applied, prevented, causer), OnIntegrityChanged and a once-only OnDepleted, and adds RestoreCheckpoint (P-04) and IncomingDamageScale (Assisted).
   Verified: Built ETMEditor Win64 Development on UE 5.8.4, zero errors and warnings. 5 new automation tests (ETM.Combat.*) pass in a headless editor, plus the 5 existing ETM.Player tests. Components were tested as standalone objects: no actor, no level, no headset.
