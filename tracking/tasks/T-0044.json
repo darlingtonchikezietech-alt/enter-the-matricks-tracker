@@ -4,7 +4,7 @@
   "milestone": "M1",
   "area": "engine",
   "repo": "game",
-  "status": "todo",
+  "status": "in_progress",
   "priority": 1,
   "depends_on": [],
   "paths": [
@@ -15,6 +15,12 @@
     "All ETM automation tests pass after the clean build"
   ],
   "description": "Found during T-0014. The test files each define file-local helpers (Frame72, FTestWorld) in anonymous namespaces. Unreal's unity build merges committed .cpp files into Module.ETM.cpp, so CombatComponentsTest.cpp and EnemyBaseTest.cpp collide and main does not compile from a clean checkout. Earlier builds passed only because UBT compiles files with uncommitted changes separately (adaptive non-unity). Fix: bUseUnity = false for the ETM module.",
-  "assignee": null,
-  "history": []
+  "assignee": "claude-code-dartonx-pc",
+  "history": [
+    {
+      "time": "2026-11-17T10:37:44Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "claimed"
+    }
+  ]
 }

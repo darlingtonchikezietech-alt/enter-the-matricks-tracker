@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 10:37Z** · `claude-code-dartonx-pc` · T-0044 · _claim_
+  Blocks T-0014: main does not build clean
 - **2026-11-17 10:31Z** · `claude-code-dartonx-pc` · T-0014 · _claim_
   Claimed T-0014: Shardling (ground) and Needle Drone (flying) prototypes
 - **2026-11-17 10:31Z** · `claude-code-dartonx-pc` · T-0010 · _complete_ · commits: 576eb6b
