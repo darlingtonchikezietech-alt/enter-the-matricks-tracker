@@ -4,7 +4,7 @@
   "milestone": "M2",
   "area": "ui",
   "repo": "game",
-  "status": "in_progress",
+  "status": "review",
   "priority": 2,
   "depends_on": [],
   "paths": [
@@ -21,6 +21,19 @@
       "time": "2026-11-17T13:36:40Z",
       "agent": "claude-code-dartonx-pc",
       "event": "claimed"
+    },
+    {
+      "time": "2026-11-17T13:42:10Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "completed"
     }
-  ]
+  ],
+  "result": {
+    "summary": "AXRSeatedRigPawn creates a UHUDPresenterComponent ('HUD') attached to its root.",
+    "commits": "003668d",
+    "verification": "Covered by the ETM.UI.Presenter tests, which use the real rig pawn's HUD; all 60 tests pass.",
+    "remaining": "None. Merge together with T-0019 (same branch).",
+    "next": "Review with T-0019.",
+    "completed_at": "2026-11-17T13:42:10Z"
+  }
 }

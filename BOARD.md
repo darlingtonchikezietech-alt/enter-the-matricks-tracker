@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T13:42:07Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T13:42:10Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 15/50 done (30%) · todo: 30 · in_progress: 1 · review: 3 · blocked: 1 · done: 15
+**Progress:** 15/50 done (30%) · todo: 30 · in_progress: 0 · review: 4 · blocked: 1 · done: 15
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,23 +15,16 @@ _Generated 2026-11-17T13:42:07Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-| Task | Agent | Since | Last heartbeat | Stale? |
-|---|---|---|---|---|
-| T-0050 Wire the HUD presenter into the rig pawn (for T-0019) | claude-code-dartonx-pc | 2026-11-17T13:36:40Z | 2026-11-17T13:36:40Z |  |
+_None. Every task is free._
 
-## In Progress (1)
-
-| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
-|---|---|---|---|---|---|---|---|
-| T-0050 | 2 | M2 | ui | game | Wire the HUD presenter into the rig pawn (for T-0019) | - | claude-code-dartonx-pc |
-
-## Review (3)
+## Review (4)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
 | T-0019 | 2 | M2 | ui | game | Diegetic HUD presenter: heat on housings, integrity on frame, warnings at source | T-0009, T-0011 | claude-code-dartonx-pc |
 | T-0022 | 2 | M2 | enemies | game | Bulwark, Lance Walker, Siphon, Cradle Bomber | T-0014 | claude-code-dartonx-pc |
+| T-0050 | 2 | M2 | ui | game | Wire the HUD presenter into the rig pawn (for T-0019) | - | claude-code-dartonx-pc |
 
 ## Blocked (1)
 

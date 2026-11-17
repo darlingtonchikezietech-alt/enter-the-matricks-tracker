@@ -2,6 +2,11 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 13:42Z** · `claude-code-dartonx-pc` · T-0050 · _complete_ · commits: 003668d
+  AXRSeatedRigPawn creates a UHUDPresenterComponent ('HUD') attached to its root.
+  Verified: Covered by the ETM.UI.Presenter tests, which use the real rig pawn's HUD; all 60 tests pass.
+  Remaining: None. Merge together with T-0019 (same branch).
+  Next: Review with T-0019.
 - **2026-11-17 13:42Z** · `claude-code-dartonx-pc` · T-0019 · _complete_ · commits: f1f82ed
   UHUDPresenterComponent (Source/ETM/UI), event-driven, on the rig pawn. Placement per bible section 11: heat bar on each cannon housing near the muzzle plus a lock bracket when overheated; rig integrity bar and 'RIG n' on the central lower frame; brace readiness bar on the frame (full ready, empty in use, refills through the cooldown); objective marker 'POWER n%' above the equipment, pulsing while it is under attack; enemy warnings as '! seconds' markers above each source, the 3 most urgent (soonest, rig attacks win ties), with an edge arrow for sources more than 50 deg off view; '[ OPEN seconds ]' on exposed Gatebreaker weak points; a short objective line; a secondary line for score/narrative that is hidden whenever a critical warning is up. Binds to enemies, bosses and the objective by scanning every 0.5 s (and catches attacks already running). Pure ranking and priority rules in UI/HudModel.h.
   Verified: Built on UE 5.8.4, zero errors and warnings; all 60 tests on this branch pass, 5 new (ETM.UI.*): ranking, tie-break, cap, secondary expiry, view cone; frame elements 1-2 m from the design eye, below eye height, on the frame, rig bar central; heat and lock per housing; rig text; brace 1 -> 0 -> 0.5 at 8 s -> 1; objective marker text and alarm; 4 attacks -> 3 markers above sources with countdowns, edge arrow only for the off-view one, queued warning moves up, warnings end with their attacks, secondary hidden then back then expires, late-bound attack still warned; boss marker on the open node, gone when it closes. Not seen in a headset: text orientation, size and angular readability are unverified.
@@ -119,7 +124,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Verified: Built ETMEditor Win64 Development on UE 5.8.4, zero errors and warnings. 5 new automation tests (ETM.Enemies.Base.*) pass in a headless editor using a real test world: full lifecycle with events in order, attack lands on a 500-point integrity objective only after its warning, kills and staggers during the warning deal nothing, parts and shield scaling, reuse resets health and parts, 160 pooled spawns create no new actors. This also exercised UIntegrityComponent's owner-damage binding from T-0011 in a world. All 15 ETM tests pass. No headset, no meshes, no movement or AI.
   Remaining: No movement, targeting or attack selection: that is the archetypes (T-0014, T-0022). Bulwark shield x0.1 is done with a part DamageScale and no armor tag, so the cannon's own shot result reports x1 for that surface; revisit if the HUD needs the true multiplier. Attack tokens and the active cap are enforced by the director (T-0017) using the pool's counts. Pooling avoids actor allocation; allocation inside archetype effects is theirs to keep clean. Branch agent/claude-code-dartonx-pc/t-0013 needs a PR into main.
   Next: Review T-0013. Then T-0014 (Shardling and Needle Drone) and T-0017 (encounter director) open. Ready now: T-0012 (input mapping), T-0018 (objective).
-- **2026-11-17 07:22Z** · `claude-code-dartonx-pc` · T-0013 · _claim_
-  Claimed T-0013: Enemy base: lifecycle states, damage interface, weak points, pooling
 
-_12 older entries in `tracking/reports/`._
+_13 older entries in `tracking/reports/`._
