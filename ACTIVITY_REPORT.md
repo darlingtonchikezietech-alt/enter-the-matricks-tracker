@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 12:41Z** · `claude-code-dartonx-pc` · T-0046 · _claim_
+  Claimed T-0046: Quest 3/3S: pin device profiles to the Quest 2 baseline and document supported headsets (P-31)
 - **2026-11-17 11:05Z** · `owner` · T-0045 · _review_
   Approved. Approved by the owner in chat on 2026-11-17 (merged all, approve T-0017 and T-0045). Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-17 11:05Z** · `owner` · T-0017 · _review_
