@@ -1,13 +1,13 @@
 # Task Board
 
-_Generated 2026-11-17T12:44:41Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T12:47:49Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 12/47 done (26%) · todo: 33 · in_progress: 0 · review: 2 · blocked: 0 · done: 12
+**Progress:** 13/47 done (28%) · todo: 33 · in_progress: 0 · review: 1 · blocked: 0 · done: 13
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 8 | `████░░░░░░` |
-| M1 | 6 | 12 | `█████░░░░░` |
+| M1 | 7 | 12 | `██████░░░░` |
 | M2 | 3 | 11 | `███░░░░░░░` |
 | M3 | 0 | 8 | `░░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
@@ -17,12 +17,11 @@ _Generated 2026-11-17T12:44:41Z by `tools/agent.py render`. Do not edit by hand.
 
 _None. Every task is free._
 
-## Review (2)
+## Review (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
-| T-0046 | 1 | M1 | engine | game | Quest 3/3S: pin device profiles to the Quest 2 baseline and document supported headsets (P-31) | - | claude-code-dartonx-pc |
 
 ## Todo (33)
 
@@ -62,7 +61,7 @@ _None. Every task is free._
 | T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
 | T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
 
-## Done (12)
+## Done (13)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -75,6 +74,7 @@ _None. Every task is free._
 | T-0013 | 1 | M1 | enemies | game | Enemy base: lifecycle states, damage interface, weak points, pooling | T-0011 | claude-code-dartonx-pc |
 | T-0014 | 1 | M1 | enemies | game | Shardling (ground) and Needle Drone (flying) prototypes | T-0013 | claude-code-dartonx-pc |
 | T-0044 | 1 | M1 | engine | game | Keep the ETM module building once it passes 32 source files (unity-build name clashes in tests) | - | claude-code-dartonx-pc |
+| T-0046 | 1 | M1 | engine | game | Quest 3/3S: pin device profiles to the Quest 2 baseline and document supported headsets (P-31) | - | claude-code-dartonx-pc |
 | T-0017 | 1 | M2 | encounters | game | Encounter director: authored phases, spawn budgets, attack tokens, early-transition rule (P-13) | T-0013 | claude-code-dartonx-pc |
 | T-0018 | 1 | M2 | objective | game | Objective integrity, world marker, failure and retry | T-0011 | claude-code-dartonx-pc |
 | T-0045 | 1 | M2 | enemies | game | Attack tokens in the enemy base: cap simultaneous attacks (bible section 14: max 2 dangerous attacks) | - | claude-code-dartonx-pc |

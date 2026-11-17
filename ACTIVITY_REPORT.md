@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 12:47Z** · `owner` · T-0046 · _review_
+  Approved. Approved by the owner in chat on 2026-11-17 (Approve T-0046). Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-17 12:44Z** · `claude-code-dartonx-pc` · T-0046 · _complete_ · commits: e742028
   Quest 3 and 3S now get exactly the Quest 2 rendering settings. Config/DefaultDeviceProfiles.ini adds sg.ShadowQuality=1 to Meta_Quest_3 and Meta_Quest_3S (the engine gave them 2 via Android_OpenXR while Quest 2 has 1). New test ETM.Platform.DeviceProfiles.Quest3MatchesQuest2 resolves each profile's full inherited settings and requires Quest 3 and 3S to match Quest 2 in both directions. docs/TOOLCHAIN.md has a Supported headsets section (profiles, Touch Plus via the Touch profile, 72 Hz, verification status). The manifest already listed quest3 and quest3s, so it was not changed.
   Verified: Built on UE 5.8.4, zero errors and warnings; all 44 ETM tests pass. Ran the new test with DefaultDeviceProfiles.ini removed: it fails with 'Meta_Quest_3 sets sg.shadowquality=1 like Quest 2 (has 2)', so it detects the mismatch. Editor only; no Quest 3 or 3S has run the game.
