@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T10:42:23Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T10:42:27Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 8/44 done (18%) · todo: 33 · in_progress: 1 · review: 2 · blocked: 0 · done: 8
+**Progress:** 8/44 done (18%) · todo: 33 · in_progress: 0 · review: 3 · blocked: 0 · done: 8
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,21 +15,14 @@ _Generated 2026-11-17T10:42:23Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-| Task | Agent | Since | Last heartbeat | Stale? |
-|---|---|---|---|---|
-| T-0014 Shardling (ground) and Needle Drone (flying) prototypes | claude-code-dartonx-pc | 2026-11-17T10:31:57Z | 2026-11-17T10:31:57Z |  |
+_None. Every task is free._
 
-## In Progress (1)
-
-| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
-|---|---|---|---|---|---|---|---|
-| T-0014 | 1 | M1 | enemies | game | Shardling (ground) and Needle Drone (flying) prototypes | T-0013 | claude-code-dartonx-pc |
-
-## Review (2)
+## Review (3)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
+| T-0014 | 1 | M1 | enemies | game | Shardling (ground) and Needle Drone (flying) prototypes | T-0013 | claude-code-dartonx-pc |
 | T-0044 | 1 | M1 | engine | game | Keep the ETM module building once it passes 32 source files (unity-build name clashes in tests) | - | claude-code-dartonx-pc |
 
 ## Todo (33)
