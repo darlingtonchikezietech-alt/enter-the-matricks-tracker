@@ -4,7 +4,7 @@
   "milestone": "M2",
   "area": "save",
   "repo": "game",
-  "status": "todo",
+  "status": "in_progress",
   "priority": 2,
   "depends_on": [
     "T-0018",
@@ -18,6 +18,12 @@
     "Boss checkpoint restores preset, not unwinnable state"
   ],
   "description": "",
-  "assignee": null,
-  "history": []
+  "assignee": "claude-code-dartonx-pc",
+  "history": [
+    {
+      "time": "2026-11-17T13:52:17Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "claimed"
+    }
+  ]
 }

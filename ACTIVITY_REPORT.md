@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 13:52Z** · `claude-code-dartonx-pc` · T-0023 · _claim_
+  Claimed T-0023: Save system: settings, checkpoints incl. boss presets (P-04), results
 - **2026-11-17 13:43Z** · `owner` · T-0050 · _review_
   Approved. Approved by the owner in chat on 2026-11-17 (Approve all three). Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-17 13:43Z** · `owner` · T-0019 · _review_
@@ -116,7 +118,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Verified: Built ETMEditor Win64 Development on UE 5.8.4, zero errors and warnings. 4 new automation tests (ETM.Objectives.*) pass in a headless editor with a test world, real AEnemyBase attackers and the real integrity and brace components; all 19 tests on main plus this branch pass. No headset, no level, no HUD.
   Remaining: Archetypes must tag infrastructure attackers (Shardling, Siphon, Bulwark, Cradle and Lance when targeting the objective) in T-0014/T-0022. Nothing registers the rig with the mission yet: AXRSeatedRigPawn or a game mode must call RegisterRig (outside this task's paths). The director (T-0017) must call StartMission and RecordCheckpoint and rebuild the phase on OnRetryStarted. Midpoint repair (+60 rig, P-05) belongs to the director's schedule. The failure screen that calls Retry is T-0031; checkpoints are in memory only until T-0023. The marker visual is T-0019.
   Next: Review T-0018. Pending reviews: T-0009, T-0012, T-0013 (merged), T-0018.
-- **2026-11-17 10:22Z** · `claude-code-dartonx-pc` · T-0018 · _claim_
-  Claimed T-0018: Objective integrity, world marker, failure and retry
 
-_16 older entries in `tracking/reports/`._
+_17 older entries in `tracking/reports/`._
