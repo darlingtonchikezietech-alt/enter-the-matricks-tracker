@@ -1,0 +1,23 @@
+{
+  "id": "T-0046",
+  "title": "Quest 3/3S: pin device profiles to the Quest 2 baseline and document supported headsets (P-31)",
+  "milestone": "M1",
+  "area": "engine",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [],
+  "paths": [
+    "Config/DefaultDeviceProfiles.ini",
+    "docs/TOOLCHAIN.md",
+    "Source/ETM/Platform/**"
+  ],
+  "acceptance": [
+    "Meta_Quest_3 and Meta_Quest_3S device profiles apply the same rendering settings as Oculus_Quest2",
+    "An automation test loads the device profiles and checks the pinned values",
+    "docs/TOOLCHAIN.md lists the supported headsets, controllers and refresh rate"
+  ],
+  "description": "From ADR-0003. The engine's Quest 2 profile sets sg.ShadowQuality=1 but its Quest 3/3S profiles do not, so without project profiles Quest 3 would render differently from Quest 2. No Quest-3-only quality increase in this task.",
+  "assignee": null,
+  "history": []
+}

@@ -1,13 +1,13 @@
 # Task Board
 
-_Generated 2026-11-17T11:08:06Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T12:41:11Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 12/45 done (27%) · todo: 32 · in_progress: 0 · review: 1 · blocked: 0 · done: 12
+**Progress:** 12/46 done (26%) · todo: 33 · in_progress: 0 · review: 1 · blocked: 0 · done: 12
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 8 | `████░░░░░░` |
-| M1 | 6 | 10 | `██████░░░░` |
+| M1 | 6 | 11 | `█████░░░░░` |
 | M2 | 3 | 11 | `███░░░░░░░` |
 | M3 | 0 | 8 | `░░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
@@ -23,7 +23,7 @@ _None. Every task is free._
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
 
-## Todo (32)
+## Todo (33)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -33,6 +33,7 @@ _None. Every task is free._
 | T-0004 🟢 ready | 2 | M0 | art | tracker | Revised concept art pass using the CONCEPT_ART_REVIEW brief | - |  |
 | T-0008 | 2 | M0 | art | game | Open-frame rig blockout mesh (seat, knee guard, weapon arms) | T-0006 |  |
 | T-0016 | 1 | M1 | qa | tracker | M1 gate: 3-minute combat test on Quest 2 (comfort, readability, perf capture) | T-0014, T-0015, T-0012, T-0010 |  |
+| T-0046 🟢 ready | 1 | M1 | engine | game | Quest 3/3S: pin device profiles to the Quest 2 baseline and document supported headsets (P-31) | - |  |
 | T-0015 🟢 ready | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 | T-0043 | 2 | M1 | weapons | game | Heat model: carry fire-cooldown remainder so cadence does not drift at 72 Hz | T-0010 |  |
 | T-0021 🟢 ready | 1 | M2 | boss | game | Gatebreaker boss prototype (P-02, P-09, P-10) | T-0017 |  |
