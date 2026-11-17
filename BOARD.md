@@ -1,14 +1,14 @@
 # Task Board
 
-_Generated 2026-11-17T13:42:10Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T13:43:21Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 15/50 done (30%) · todo: 30 · in_progress: 0 · review: 4 · blocked: 1 · done: 15
+**Progress:** 16/50 done (32%) · todo: 30 · in_progress: 0 · review: 3 · blocked: 1 · done: 16
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 8 | `████░░░░░░` |
 | M1 | 8 | 13 | `██████░░░░` |
-| M2 | 4 | 13 | `███░░░░░░░` |
+| M2 | 5 | 13 | `████░░░░░░` |
 | M3 | 0 | 8 | `░░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
 | M5 | 0 | 3 | `░░░░░░░░░░` |
@@ -17,13 +17,12 @@ _Generated 2026-11-17T13:42:10Z by `tools/agent.py render`. Do not edit by hand.
 
 _None. Every task is free._
 
-## Review (4)
+## Review (3)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
 | T-0019 | 2 | M2 | ui | game | Diegetic HUD presenter: heat on housings, integrity on frame, warnings at source | T-0009, T-0011 | claude-code-dartonx-pc |
-| T-0022 | 2 | M2 | enemies | game | Bulwark, Lance Walker, Siphon, Cradle Bomber | T-0014 | claude-code-dartonx-pc |
 | T-0050 | 2 | M2 | ui | game | Wire the HUD presenter into the rig pawn (for T-0019) | - | claude-code-dartonx-pc |
 
 ## Blocked (1)
@@ -67,7 +66,7 @@ _None. Every task is free._
 | T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
 | T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
 
-## Done (15)
+## Done (16)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -86,4 +85,5 @@ _None. Every task is free._
 | T-0018 | 1 | M2 | objective | game | Objective integrity, world marker, failure and retry | T-0011 | claude-code-dartonx-pc |
 | T-0021 | 1 | M2 | boss | game | Gatebreaker boss prototype (P-02, P-09, P-10) | T-0017 | claude-code-dartonx-pc |
 | T-0045 | 1 | M2 | enemies | game | Attack tokens in the enemy base: cap simultaneous attacks (bible section 14: max 2 dangerous attacks) | - | claude-code-dartonx-pc |
+| T-0022 | 2 | M2 | enemies | game | Bulwark, Lance Walker, Siphon, Cradle Bomber | T-0014 | claude-code-dartonx-pc |
 

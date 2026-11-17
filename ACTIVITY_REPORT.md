@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 13:43Z** · `owner` · T-0022 · _review_
+  Approved. Approved by the owner in chat on 2026-11-17 (Approve all three). Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-17 13:42Z** · `claude-code-dartonx-pc` · T-0050 · _complete_ · commits: 003668d
   AXRSeatedRigPawn creates a UHUDPresenterComponent ('HUD') attached to its root.
   Verified: Covered by the ETM.UI.Presenter tests, which use the real rig pawn's HUD; all 60 tests pass.
@@ -119,10 +121,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Next: Review T-0012 with the split in mind. Reviewer should reject if the playtest and ADR must stay inside this task.
 - **2026-11-17 07:32Z** · `claude-code-dartonx-pc` · T-0012 · _claim_
   Claimed T-0012: Enhanced Input mapping with grip-vent threshold 0.85/100ms and alternative A/B mapping (P-12)
-- **2026-11-17 07:31Z** · `claude-code-dartonx-pc` · T-0013 · _complete_ · commits: bb21215
-  Enemy base done. AEnemyBase (Source/ETM/Enemies/Base) runs Inactive, Spawning, Approaching, Attacking, Staggered, Dying through one transition table. BeginAttack starts a telegraphed attack that resolves through DealDamageTo, the single damage gate; it refuses once the enemy is staggered, dying or parked, and a stopped attack reports its prevented damage (P-30). FEnemyPart gives destructible parts their own HP, damage scale, pass-to-body and interrupt-on-break (Bulwark nodes and shield, Lance chamber, Cradle pod). Optional stagger from concentrated fire. UEnemyPoolSubsystem prewarms and reuses actors, exposes threat and active counts for the caps, and counts growth.
-  Verified: Built ETMEditor Win64 Development on UE 5.8.4, zero errors and warnings. 5 new automation tests (ETM.Enemies.Base.*) pass in a headless editor using a real test world: full lifecycle with events in order, attack lands on a 500-point integrity objective only after its warning, kills and staggers during the warning deal nothing, parts and shield scaling, reuse resets health and parts, 160 pooled spawns create no new actors. This also exercised UIntegrityComponent's owner-damage binding from T-0011 in a world. All 15 ETM tests pass. No headset, no meshes, no movement or AI.
-  Remaining: No movement, targeting or attack selection: that is the archetypes (T-0014, T-0022). Bulwark shield x0.1 is done with a part DamageScale and no armor tag, so the cannon's own shot result reports x1 for that surface; revisit if the HUD needs the true multiplier. Attack tokens and the active cap are enforced by the director (T-0017) using the pool's counts. Pooling avoids actor allocation; allocation inside archetype effects is theirs to keep clean. Branch agent/claude-code-dartonx-pc/t-0013 needs a PR into main.
-  Next: Review T-0013. Then T-0014 (Shardling and Needle Drone) and T-0017 (encounter director) open. Ready now: T-0012 (input mapping), T-0018 (objective).
 
-_13 older entries in `tracking/reports/`._
+_14 older entries in `tracking/reports/`._
