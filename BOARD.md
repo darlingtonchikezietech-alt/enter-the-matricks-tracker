@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T12:41:33Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T12:44:24Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 12/47 done (26%) · todo: 33 · in_progress: 1 · review: 1 · blocked: 0 · done: 12
+**Progress:** 12/47 done (26%) · todo: 33 · in_progress: 0 · review: 2 · blocked: 0 · done: 12
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,21 +15,14 @@ _Generated 2026-11-17T12:41:33Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-| Task | Agent | Since | Last heartbeat | Stale? |
-|---|---|---|---|---|
-| T-0046 Quest 3/3S: pin device profiles to the Quest 2 baseline and document supported headsets (P-31) | claude-code-dartonx-pc | 2026-11-17T12:41:33Z | 2026-11-17T12:41:33Z |  |
+_None. Every task is free._
 
-## In Progress (1)
-
-| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
-|---|---|---|---|---|---|---|---|
-| T-0046 | 1 | M1 | engine | game | Quest 3/3S: pin device profiles to the Quest 2 baseline and document supported headsets (P-31) | - | claude-code-dartonx-pc |
-
-## Review (1)
+## Review (2)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
+| T-0046 | 1 | M1 | engine | game | Quest 3/3S: pin device profiles to the Quest 2 baseline and document supported headsets (P-31) | - | claude-code-dartonx-pc |
 
 ## Todo (33)
 
