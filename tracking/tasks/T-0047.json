@@ -1,0 +1,25 @@
+{
+  "id": "T-0047",
+  "title": "Verify on a physical Quest 3 or 3S: install, tracking, Touch Plus input, 72 Hz, short combat test (P-31)",
+  "milestone": "M1",
+  "area": "qa",
+  "repo": "tracker",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0006",
+    "T-0046"
+  ],
+  "paths": [
+    "docs/reports/quest3-device-check.md"
+  ],
+  "acceptance": [
+    "Same APK as the Quest 2 build installs and runs at 72 Hz",
+    "Both Touch Plus controllers drive the cannons: triggers, grips (P-12 gate), A/B/X/Y, stick clicks, menu",
+    "Recenter and Forward re-anchor work",
+    "Active device profile is Meta_Quest_3 or Meta_Quest_3S in the log"
+  ],
+  "description": "From ADR-0003. Needs a Quest 3 or 3S headset with Developer Mode; the build PC has only a Quest 2 today.",
+  "assignee": null,
+  "history": []
+}
