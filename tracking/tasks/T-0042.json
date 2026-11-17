@@ -1,0 +1,24 @@
+{
+  "id": "T-0042",
+  "title": "Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12)",
+  "milestone": "M2",
+  "area": "input",
+  "repo": "tracker",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [
+    "T-0016"
+  ],
+  "paths": [
+    "docs/decisions/ADR-0002-vent-control-scheme.md",
+    "docs/reports/vent-scheme-playtest.md"
+  ],
+  "acceptance": [
+    "Suspect vents per minute and suspect fraction reported for GripVent and ButtonVent from the same testers (VentStats log lines from ARigPlayerController)",
+    "Winner and reasoning recorded in docs/decisions/ADR-0002",
+    "Default scheme in the game repo updated if ButtonVent wins"
+  ],
+  "description": "Split out of T-0012. T-0012's acceptance asked for a playtest measurement and an ADR, but the playtest is T-0016, which itself depends on T-0012. T-0012 delivers the code and the counters; this task does the measurement and the decision after the playtest.",
+  "assignee": null,
+  "history": []
+}
