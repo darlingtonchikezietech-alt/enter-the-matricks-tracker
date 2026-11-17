@@ -1,6 +1,6 @@
 # Task Board
 
-_Generated 2026-11-17T10:37:44Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T10:40:45Z by `tools/agent.py render`. Do not edit by hand._
 
 **Progress:** 8/44 done (18%) · todo: 33 · in_progress: 2 · review: 1 · blocked: 0 · done: 8
 
@@ -18,14 +18,14 @@ _Generated 2026-11-17T10:37:44Z by `tools/agent.py render`. Do not edit by hand.
 | Task | Agent | Since | Last heartbeat | Stale? |
 |---|---|---|---|---|
 | T-0014 Shardling (ground) and Needle Drone (flying) prototypes | claude-code-dartonx-pc | 2026-11-17T10:31:57Z | 2026-11-17T10:31:57Z |  |
-| T-0044 Fix clean builds: test helper names collide when Unreal merges .cpp files (unity build) | claude-code-dartonx-pc | 2026-11-17T10:37:44Z | 2026-11-17T10:37:44Z |  |
+| T-0044 Keep the ETM module building once it passes 32 source files (unity-build name clashes in tests) | claude-code-dartonx-pc | 2026-11-17T10:37:44Z | 2026-11-17T10:37:44Z |  |
 
 ## In Progress (2)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0014 | 1 | M1 | enemies | game | Shardling (ground) and Needle Drone (flying) prototypes | T-0013 | claude-code-dartonx-pc |
-| T-0044 | 1 | M1 | engine | game | Fix clean builds: test helper names collide when Unreal merges .cpp files (unity build) | - | claude-code-dartonx-pc |
+| T-0044 | 1 | M1 | engine | game | Keep the ETM module building once it passes 32 source files (unity-build name clashes in tests) | - | claude-code-dartonx-pc |
 
 ## Review (1)
 
