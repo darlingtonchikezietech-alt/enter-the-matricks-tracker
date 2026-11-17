@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 07:32Z** · `claude-code-dartonx-pc` · T-0012 · _claim_
+  Claimed T-0012: Enhanced Input mapping with grip-vent threshold 0.85/100ms and alternative A/B mapping (P-12)
 - **2026-11-17 07:31Z** · `claude-code-dartonx-pc` · T-0013 · _complete_ · commits: bb21215
   Enemy base done. AEnemyBase (Source/ETM/Enemies/Base) runs Inactive, Spawning, Approaching, Attacking, Staggered, Dying through one transition table. BeginAttack starts a telegraphed attack that resolves through DealDamageTo, the single damage gate; it refuses once the enemy is staggered, dying or parked, and a stopped attack reports its prevented damage (P-30). FEnemyPart gives destructible parts their own HP, damage scale, pass-to-body and interrupt-on-break (Bulwark nodes and shield, Lance chamber, Cradle pod). Optional stagger from concentrated fire. UEnemyPoolSubsystem prewarms and reuses actors, exposes threat and active counts for the caps, and counts growth.
   Verified: Built ETMEditor Win64 Development on UE 5.8.4, zero errors and warnings. 5 new automation tests (ETM.Enemies.Base.*) pass in a headless editor using a real test world: full lifecycle with events in order, attack lands on a 500-point integrity objective only after its warning, kills and staggers during the warning deal nothing, parts and shield scaling, reuse resets health and parts, 160 pooled spawns create no new actors. This also exercised UIntegrityComponent's owner-damage binding from T-0011 in a world. All 15 ETM tests pass. No headset, no meshes, no movement or AI.
