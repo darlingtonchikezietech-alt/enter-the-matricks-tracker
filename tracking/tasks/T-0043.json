@@ -1,0 +1,24 @@
+{
+  "id": "T-0043",
+  "title": "Heat model: carry fire-cooldown remainder so cadence does not drift at 72 Hz",
+  "milestone": "M1",
+  "area": "weapons",
+  "repo": "game",
+  "status": "todo",
+  "priority": 2,
+  "depends_on": [
+    "T-0010"
+  ],
+  "paths": [
+    "Source/ETM/Weapons/CannonHeatModel.h",
+    "Source/ETM/Tests/**"
+  ],
+  "acceptance": [
+    "StepHeat keeps the leftover time when the fire cooldown expires (FireCooldown += 1/FireRate instead of = 1/FireRate)",
+    "ETM.Weapons.HeatParity.Quest72Hz passes with one-frame time tolerance and 1% dps tolerance",
+    "balance_sim.py updated the same way if its numbers move, and the bible's P-01 figures re-checked"
+  ],
+  "description": "Found by T-0010. At 72 Hz with 1/240 s sub-steps the model resets the fire cooldown on the sub-step where it expires, so each shot slips up to 3.5 ms. Measured: overheat at 2.792 s instead of 2.751 s (12 shots either way), burst+vent 89.33 dps instead of 90.67. The 72 Hz parity test currently allows 3 frames and 2% to stay green; tighten it when this is fixed.",
+  "assignee": null,
+  "history": []
+}
