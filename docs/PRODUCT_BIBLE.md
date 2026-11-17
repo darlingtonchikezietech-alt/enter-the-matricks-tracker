@@ -1,8 +1,9 @@
 # ENTER THE MATRICKS
-### VR Game Product Bible · Version 1.1
+### VR Game Product Bible · Version 1.2
 
 > v1.1 (2026-11-16) applies the patches logged in `docs/PLAN_REVIEW.md`. Patched passages carry a `[P-xx]` tag. The original is preserved at `docs/archive/PRODUCT_BIBLE_v1.0.md`.
-**Quest 2 first · Unreal Engine · Single-player survival shooter**
+> v1.2 (2026-11-17) adds P-31: Quest 3 and 3S ship in the first release, from the same build as Quest 2.
+**Quest 2, 3 and 3S · Quest 2 sets the performance floor · Unreal Engine · Single-player survival shooter** **[P-31]**
 
 > **Two cannons. One evacuation. Hold until the last signal.**
 
@@ -16,8 +17,8 @@ The player’s body stays anchored while the battlefield erupts around them. Int
 
 | Item | Definition |
 |---|---|
-| Primary platform | Meta Quest 2, standalone (new Quest 2 app submissions close December 2027; see P-15) |
-| Later platforms | Quest 3/3S, then PCVR; other headsets after validation |
+| Primary platforms | Meta Quest 2, Quest 3 and Quest 3S, standalone, from one build. Quest 2 is the performance floor. **[P-31]** (New Quest 2 app submissions close December 2027; see P-15.) |
+| Later platforms | PCVR; other headsets after validation **[P-31]** |
 | Engine | Unreal Engine 5; version locked after hardware prototype |
 | XR foundation | OpenXR, with platform-specific features behind adapters |
 | Perspective | First-person, stereoscopic VR |
@@ -652,7 +653,9 @@ OpenXR reduces integration differences; it does not eliminate platform certifica
 
 ## 14. Quest 2 Performance Budgets
 
-These are **project budgets for the prototype**, not universal platform limits. Replace them with measured budgets after the vertical slice.
+These are **project budgets for the prototype**, not universal platform limits.
+
+**[P-31]** These budgets are the floor for every supported headset. Quest 3 and 3S run the same content and settings as Quest 2 until their own measurements justify more. A Quest 3 quality increase may never change gameplay, timing, enemy counts or the readability of warnings. Replace them with measured budgets after the vertical slice.
 
 Meta identifies stable frame rate and constrained rendering costs as key Quest development concerns. Epic recommends mobile multiview and disabling Mobile HDR for mobile VR; Meta recommends the mobile forward rendering path and MSAA. [Meta optimization guidance](https://developers.meta.com/vr/documentation/unreal/ts-book-tools/), [Epic XR best practices](https://dev.epicgames.com/documentation/unreal-engine/xr-best-practices-in-unreal-engine), [Meta forward rendering guidance](https://developers.meta.com/vr/documentation/unreal/unreal-forward-renderer/).
 
@@ -696,7 +699,7 @@ Never reduce warning visibility or input responsiveness to preserve decoration.
 
 ### Device verification
 
-Profile packaged builds on a physical Quest 2, including a **30-minute repeated-combat soak**. Record CPU/GPU timing, missed frames, thermal behavior, memory, and the exact build/settings.
+Profile packaged builds on a physical Quest 2, including a **30-minute repeated-combat soak**. Before release, repeat the soak on a Quest 3 or 3S. **[P-31]** Record CPU/GPU timing, missed frames, thermal behavior, memory, and the exact build/settings.
 
 Editor performance and PC-linked VR are insufficient evidence.
 
@@ -817,7 +820,7 @@ A milestone is complete only when its exit gate has evidence.
 | Enemy readability | Testers distinguish each archetype and its attack warning at intended combat distance |
 | Boss robustness | Missed exposure windows never create a permanent unwinnable state |
 | Comfort | No forced viewpoint movement; any severe discomfort report triggers investigation and retest |
-| Performance | 72 Hz target sustained in representative combat; CPU/GPU percentile budgets and missed-frame results documented |
+| Performance | 72 Hz target sustained in representative combat on Quest 2 and on Quest 3 or 3S **[P-31]**; CPU/GPU percentile budgets and missed-frame results documented |
 | Stability | No crash, softlock, or progressive memory growth across a 30-minute combat soak |
 | Interruptions | Pause, tracking loss, headset removal, and resume preserve a valid mission state |
 | Accessibility | Subtitles, volume controls, reduced flash, haptic settings, and seated calibration verified |
@@ -845,10 +848,11 @@ Testing validates the product; a small playtest is not a guarantee of comfort fo
 | Bosses become health sponges | Campaign pacing collapses | Tune exposure cycles and interruptions before adding health |
 | Adaptive spawning breaks story timing | Long or inconsistent missions | Use bounded phases and measure successful-run duration |
 | Engine/plugin incompatibility | Packaging delays | Lock a proven toolchain after first successful device build |
-| Quest 2 distribution/support changes **[P-15]** | Hard release deadline | Meta has announced that Horizon OS v2.13 is the final feature release for Quest 2, and new apps supporting Quest 2 are accepted only **through December 2027**. Target store submission by **Q3 2027** to leave review buffer. Gameplay must not depend on any OS or SDK feature released after v2.13. Re-verify these dates at every milestone gate. |
+| Quest 2 distribution/support changes **[P-15]** | Hard release deadline | Meta has announced that Horizon OS v2.13 is the final feature release for Quest 2, and new apps supporting Quest 2 are accepted only **through December 2027**. Target store submission by **Q3 2027** to leave review buffer. Gameplay must not depend on any OS or SDK feature released after v2.13. Re-verify these dates at every milestone gate. Shipping on Quest 3/3S as well means a missed Quest 2 cutoff no longer stops the release outright **[P-31]**. |
 | Binary asset conflicts | Lost work and integration delays | Assign asset ownership, use branches and Git LFS, avoid simultaneous edits |
 | Scope expands beyond two missions | Schedule failure | Maintain exclusions and require explicit milestone changes |
-| Porting begins too early | Baseline quality suffers | Start additional platform validation after Quest 2 vertical-slice approval |
+| Porting begins too early | Baseline quality suffers | Quest 3/3S ship from the same build with Quest 2 settings, so supporting them costs device testing, not a port. Quest-3-only quality work waits for Quest 2 vertical-slice approval and measured headroom. PCVR and other headsets start after that approval. **[P-31]** |
+| Quest 3 controllers or runtime behave differently **[P-31]** | Input or tracking bugs only some players see | Quest 3/3S use Touch Plus controllers. The engine's OpenXR plugin binds only the Oculus Touch profile, which Meta's runtime serves Touch Plus through. Verify input, tracking and 72 Hz on a physical Quest 3 or 3S at every hardware gate. |
 
 ---
 
@@ -864,11 +868,11 @@ Deliver the complete two-mission campaign with:
 - Two distinct bosses.
 - Checkpoints and replay scoring.
 - Comfort and accessibility settings.
-- Verified Quest 2 performance.
+- Verified performance on Quest 2 and on Quest 3 or 3S. **[P-31]**
 
 ### Later platform work
 
-**Quest 3/3S:** retain gameplay parity; use measured headroom for resolution, effects, and environmental detail.
+**Quest 3/3S quality:** they ship in the first release (P-31). Later, use measured headroom for resolution, effects, and environmental detail, keeping gameplay parity.
 
 **PCVR:** validate controller bindings and headset behavior, then add optional higher-quality shadows, textures, and effects.
 

@@ -34,6 +34,7 @@ Severity: **Blocker** = the plan contradicts itself or can't ship as written · 
 | P-22 | Minor | Level 1 arena | "Transfer equipment sits beyond the player's rig" could read as *behind*, which conflicts with "never look behind". | In front and below, centre lane. |
 | P-24 | Major | Schedule | The 16-week plan had no calendar anchor, so it couldn't be checked against the P-15 deadline. | Weeks are anchored to the team start date in `DEVELOPMENT_PLAN.md`, with ≥12 weeks of slack before the cutoff. |
 | P-30 | Minor | Scoring | "Damage prevented" was undefined. | Brace-absorbed damage + damage from interrupted attacks. |
+| P-31 | Major | Platforms | **Owner decision, 2026-11-17:** make the game available on Quest 3 too. v1.1 listed Quest 3/3S as later platform work. | Quest 2, 3 and 3S ship in the first release from one build. Quest 2 stays the performance floor; Quest 3/3S use the same settings until measured. Quest 3/3S device checks added to the hardware gates and release criteria. See `docs/decisions/ADR-0003-quest-3-support.md`. |
 
 (P-20, P-21, P-23 and P-25–P-29 were checked and need no change: overheat timing ≈3 s ✔, both-cannon peak 320 dps ✔, Needle Drone killable in its 1.5 s telegraph ✔, active caps match the performance budget ✔, Level 2 population 39 ✔, the 72 Hz frame maths ✔.)
 
