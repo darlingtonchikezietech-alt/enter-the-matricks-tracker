@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-17 13:22Z** · `claude-code-dartonx-pc` · T-0015 · _blocked_
+  Code half done in T-0048 (all seven shot parts, settings, pooling, tests). Left for T-0015: final effect assets in Content/ETM/Weapons and Content/ETM/VFX once art exists, and the 'effects within budget on device' check, which needs a packaged build on a headset (T-0006).
 - **2026-11-17 13:22Z** · `claude-code-dartonx-pc` · T-0048 · _complete_ · commits: 5eef185
   UCannonFeedbackComponent (Source/ETM/Weapons/Feedback), one per cannon on AXRSeatedRigPawn (LeftFeedback/RightFeedback). Per shot: recoil kick (6 cm back, 2.5 deg up, settles in 0.15 s) on its own pivot with a placeholder barrel; amber-white directional muzzle flash (0.05 s); a tracer from a pool of 3 that races muzzle to end in 0.04 s and is gone by 0.08 s; an impact flash from a pool of 3 on hits and frame blocks, plus OnImpact(location, weak point, blocked) for debris VFX; a 0.06 s haptic pulse on that hand; a report sound. Overheat lock gives a 0.25 s full buzz. HapticStrength 0..1 (0 = off) and bReducedFlash (smaller, shorter flashes; tracer kept) for the T-0037 settings. Ticks only while animating; everything built at BeginPlay, nothing per shot. Placeholders: engine cylinder/cone, EmissiveMeshMaterial tinted amber, 1kSineTonePing pitched to 0.3.
   Verified: Built on UE 5.8.4, zero errors and warnings; all 55 ETM tests pass, 4 new (ETM.Weapons.Feedback.*): all seven parts fire on a real cannon shot and settle within 0.2 s; tracer starts at the muzzle and reaches the impact at half its life; haptics off/half; reduced flash; overheat buzz; 2 minutes of burst fire (200+ shots) creates no new visuals and never overflows the pools; on the real rig pawn, camera, XR origin and pawn never move while firing, and only the firing hand gets haptics. Not seen rendered, not heard, not felt: no headset; the test run uses no audio device.
@@ -119,10 +121,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Next: Review T-0011. T-0009 (cannon component) and T-0012 (input) are ready once T-0007 is approved in the tracker; T-0013 (enemy base) and T-0018 (objective) open after T-0011 is approved.
 - **2026-11-17 07:13Z** · `claude-code-dartonx-pc` · T-0011 · _claim_
   Claimed T-0011: Brace (DefenseComponent) and Integrity components
-- **2026-11-17 07:11Z** · `claude-code-dartonx-pc` · T-0007 · _complete_ · commits: 4472fb2
-  Seated rig pawn done in code. Calibration moves only the XR origin; nothing writes to the camera. Recenter seats the head at the design eye point (also on the first tracked frame and after a system recenter). Forward re-anchor (P-11) re-aligns facing without moving the head in the rig. Per-hand aim offsets are clamped and saved to slot ETM_Calibration. Cannons hold aim when a controller loses tracking.
-  Verified: Built ETMEditor Win64 Development on UE 5.8.4, zero errors and warnings. 5 automation tests (ETM.Player.Calibration.*) pass in a headless editor. No headset, no VR Preview, no pause menu exists yet, so recenter and re-anchor are verified by maths only.
-  Remaining: On-device check of recenter, re-anchor and offset feel (with T-0006). DesignEyeLocation (0,0,120) and the offset clamp range are prototype values to tune with the T-0008 blockout. Pause menu wiring is T-0030/T-0031. T-0023 may absorb the calibration save slot. Branch agent/claude-code-dartonx-pc/t-0007 needs a PR into main.
-  Next: Review T-0007. Ready now: T-0011 (brace and integrity), T-0009 and T-0012 after T-0007 is approved, T-0006 once the engine has the Android target and the Quest 2 has Developer Mode.
 
-_5 older entries in `tracking/reports/`._
+_6 older entries in `tracking/reports/`._

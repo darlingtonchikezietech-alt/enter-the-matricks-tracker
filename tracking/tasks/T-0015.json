@@ -4,7 +4,7 @@
   "milestone": "M1",
   "area": "vfx",
   "repo": "game",
-  "status": "in_progress",
+  "status": "blocked",
   "priority": 2,
   "depends_on": [
     "T-0009"
@@ -19,12 +19,19 @@
     "Effects within budget on device"
   ],
   "description": "",
-  "assignee": "claude-code-dartonx-pc",
+  "assignee": null,
   "history": [
     {
       "time": "2026-11-17T13:16:42Z",
       "agent": "claude-code-dartonx-pc",
       "event": "claimed"
+    },
+    {
+      "time": "2026-11-17T13:22:06Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "blocked",
+      "reason": "Code half done in T-0048 (all seven shot parts, settings, pooling, tests). Left for T-0015: final effect assets in Content/ETM/Weapons and Content/ETM/VFX once art exists, and the 'effects within budget on device' check, which needs a packaged build on a headset (T-0006)."
     }
-  ]
+  ],
+  "blocked_reason": "Code half done in T-0048 (all seven shot parts, settings, pooling, tests). Left for T-0015: final effect assets in Content/ETM/Weapons and Content/ETM/VFX once art exists, and the 'effects within budget on device' check, which needs a packaged build on a headset (T-0006)."
 }
