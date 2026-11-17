@@ -4,7 +4,7 @@
   "milestone": "M1",
   "area": "enemies",
   "repo": "game",
-  "status": "in_progress",
+  "status": "review",
   "priority": 1,
   "depends_on": [
     "T-0011"
@@ -24,6 +24,19 @@
       "time": "2026-11-17T07:22:55Z",
       "agent": "claude-code-dartonx-pc",
       "event": "claimed"
+    },
+    {
+      "time": "2026-11-17T07:31:37Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "completed"
     }
-  ]
+  ],
+  "result": {
+    "summary": "Enemy base done. AEnemyBase (Source/ETM/Enemies/Base) runs Inactive, Spawning, Approaching, Attacking, Staggered, Dying through one transition table. BeginAttack starts a telegraphed attack that resolves through DealDamageTo, the single damage gate; it refuses once the enemy is staggered, dying or parked, and a stopped attack reports its prevented damage (P-30). FEnemyPart gives destructible parts their own HP, damage scale, pass-to-body and interrupt-on-break (Bulwark nodes and shield, Lance chamber, Cradle pod). Optional stagger from concentrated fire. UEnemyPoolSubsystem prewarms and reuses actors, exposes threat and active counts for the caps, and counts growth.",
+    "commits": "bb21215",
+    "verification": "Built ETMEditor Win64 Development on UE 5.8.4, zero errors and warnings. 5 new automation tests (ETM.Enemies.Base.*) pass in a headless editor using a real test world: full lifecycle with events in order, attack lands on a 500-point integrity objective only after its warning, kills and staggers during the warning deal nothing, parts and shield scaling, reuse resets health and parts, 160 pooled spawns create no new actors. This also exercised UIntegrityComponent's owner-damage binding from T-0011 in a world. All 15 ETM tests pass. No headset, no meshes, no movement or AI.",
+    "remaining": "No movement, targeting or attack selection: that is the archetypes (T-0014, T-0022). Bulwark shield x0.1 is done with a part DamageScale and no armor tag, so the cannon's own shot result reports x1 for that surface; revisit if the HUD needs the true multiplier. Attack tokens and the active cap are enforced by the director (T-0017) using the pool's counts. Pooling avoids actor allocation; allocation inside archetype effects is theirs to keep clean. Branch agent/claude-code-dartonx-pc/t-0013 needs a PR into main.",
+    "next": "Review T-0013. Then T-0014 (Shardling and Needle Drone) and T-0017 (encounter director) open. Ready now: T-0012 (input mapping), T-0018 (objective).",
+    "completed_at": "2026-11-17T07:31:37Z"
+  }
 }
