@@ -1,0 +1,22 @@
+{
+  "id": "T-0050",
+  "title": "Wire the HUD presenter into the rig pawn (for T-0019)",
+  "milestone": "M2",
+  "area": "ui",
+  "repo": "game",
+  "status": "todo",
+  "priority": 2,
+  "depends_on": [
+    "T-0019"
+  ],
+  "paths": [
+    "Source/ETM/Player/XRSeatedRigPawn.h",
+    "Source/ETM/Player/XRSeatedRigPawn.cpp"
+  ],
+  "acceptance": [
+    "AXRSeatedRigPawn creates one UHUDPresenterComponent"
+  ],
+  "description": "T-0019 owns Source/ETM/UI only; the pawn lives in Source/ETM/Player.",
+  "assignee": null,
+  "history": []
+}

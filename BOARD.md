@@ -1,14 +1,14 @@
 # Task Board
 
-_Generated 2026-11-17T13:35:10Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T13:36:16Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 15/49 done (31%) · todo: 30 · in_progress: 1 · review: 2 · blocked: 1 · done: 15
+**Progress:** 15/50 done (30%) · todo: 31 · in_progress: 1 · review: 2 · blocked: 1 · done: 15
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 8 | `████░░░░░░` |
 | M1 | 8 | 13 | `██████░░░░` |
-| M2 | 4 | 12 | `███░░░░░░░` |
+| M2 | 4 | 13 | `███░░░░░░░` |
 | M3 | 0 | 8 | `░░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
 | M5 | 0 | 3 | `░░░░░░░░░░` |
@@ -38,7 +38,7 @@ _Generated 2026-11-17T13:35:10Z by `tools/agent.py render`. Do not edit by hand.
 |---|---|---|---|---|---|---|---|
 | T-0015 | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 
-## Todo (30)
+## Todo (31)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -55,6 +55,7 @@ _Generated 2026-11-17T13:35:10Z by `tools/agent.py render`. Do not edit by hand.
 | T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 |  |
 | T-0023 🟢 ready | 2 | M2 | save | game | Save system: settings, checkpoints incl. boss presets (P-04), results | T-0018, T-0017 |  |
 | T-0024 | 2 | M2 | perf | game | Performance capture tooling + 30-minute soak script | T-0006 |  |
+| T-0050 | 2 | M2 | ui | game | Wire the HUD presenter into the rig pawn (for T-0019) | T-0019 |  |
 | T-0049 🟢 ready | 3 | M2 | qa | game | Test worlds: run garbage collection after destroying them, so reserved GPU memory stops climbing during the test run | - |  |
 | T-0026 | 1 | M3 | encounters | game | Level 1 full schedule (51 enemies, timeline, gating P-14) | T-0025 |  |
 | T-0027 | 1 | M3 | level | game | Level 2 arena greybox | T-0025 |  |
