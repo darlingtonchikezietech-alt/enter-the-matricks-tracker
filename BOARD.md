@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T10:22:35Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T10:26:51Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 4/42 done (10%) · todo: 34 · in_progress: 1 · review: 3 · blocked: 0 · done: 4
+**Progress:** 4/42 done (10%) · todo: 34 · in_progress: 0 · review: 4 · blocked: 0 · done: 4
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,23 +15,16 @@ _Generated 2026-11-17T10:22:35Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-| Task | Agent | Since | Last heartbeat | Stale? |
-|---|---|---|---|---|
-| T-0018 Objective integrity, world marker, failure and retry | claude-code-dartonx-pc | 2026-11-17T10:22:35Z | 2026-11-17T10:22:35Z |  |
+_None. Every task is free._
 
-## In Progress (1)
-
-| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
-|---|---|---|---|---|---|---|---|
-| T-0018 | 1 | M2 | objective | game | Objective integrity, world marker, failure and retry | T-0011 | claude-code-dartonx-pc |
-
-## Review (3)
+## Review (4)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0009 | 1 | M1 | weapons | game | Cannon component: aim envelope ±65/-30..+45, servo, cadence, muzzle trace, heat per P-01 | T-0007 | claude-code-dartonx-pc |
 | T-0012 | 1 | M1 | input | game | Enhanced Input mapping with grip-vent threshold 0.85/100ms and alternative A/B mapping (P-12) | T-0007 | claude-code-dartonx-pc |
 | T-0013 | 1 | M1 | enemies | game | Enemy base: lifecycle states, damage interface, weak points, pooling | T-0011 | claude-code-dartonx-pc |
+| T-0018 | 1 | M2 | objective | game | Objective integrity, world marker, failure and retry | T-0011 | claude-code-dartonx-pc |
 
 ## Todo (34)
 
