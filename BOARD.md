@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-17T10:30:11Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-17T10:31:11Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 8/43 done (19%) · todo: 34 · in_progress: 1 · review: 0 · blocked: 0 · done: 8
+**Progress:** 8/43 done (19%) · todo: 34 · in_progress: 0 · review: 1 · blocked: 0 · done: 8
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,11 +15,9 @@ _Generated 2026-11-17T10:30:11Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-| Task | Agent | Since | Last heartbeat | Stale? |
-|---|---|---|---|---|
-| T-0010 Automation test: cannon heat parity with tools/balance_sim.py | claude-code-dartonx-pc | 2026-11-17T10:28:17Z | 2026-11-17T10:28:17Z |  |
+_None. Every task is free._
 
-## In Progress (1)
+## Review (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
