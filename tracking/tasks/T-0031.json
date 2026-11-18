@@ -11,12 +11,13 @@
   ],
   "paths": [
     "Source/ETM/Core/Flow/**",
-    "Content/ETM/UI/Menus/**"
+    "Content/ETM/UI/Menus/**",
+    "Source/ETM/Core/Game/**"
   ],
   "acceptance": [
     "Full loop start -> L1 -> fade -> L2 -> ending -> results"
   ],
-  "description": "",
+  "description": "Until real arenas exist (T-0020, T-0027), the flow runs in the code-built sandbox range: title panel, two short stand-in levels that complete when their waves are cleared, brief results, relocation fade, ending, campaign results, back to title. Menu buttons are world-space panels the player shoots. Widened to Core/Game (the sandbox game mode builds what each stage shows).",
   "assignee": null,
   "history": []
 }
