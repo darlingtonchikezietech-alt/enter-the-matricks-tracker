@@ -2,6 +2,10 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 18:07Z** · `claude-code-dartonx-pc` · T-0031 · _complete_ · commits: 9e22f91,909c365
+  Campaign flow (9e22f91) plus a lighting fix (909c365): panel text faced away from the light and rendered black on the headset.
+  Verified: All 83 ETM tests pass; PC render of the title stage shows the panel text lit and readable; APK reinstalled on the Quest 3. Owner headset play-through pending.
+  Remaining: Owner headset run of the full loop; a visible pause indicator (the menu-button pause shows nothing yet)
 - **2026-11-18 18:07Z** · `claude-code-dartonx-pc` · T-0031 · _claim_
   Fix from the owner's headset video: panel text was unlit
 - **2026-11-18 08:43Z** · `claude-code-dartonx-pc` · T-0031 · _complete_ · commits: 9e22f91
@@ -112,7 +116,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Next: Review T-0019 and T-0050 (same branch).
 - **2026-11-17 13:36Z** · `claude-code-dartonx-pc` · T-0050 · _claim_
   Wiring for T-0019, same branch
-- **2026-11-17 13:35Z** · `claude-code-dartonx-pc` · T-0019 · _claim_
-  Claimed T-0019: Diegetic HUD presenter: heat on housings, integrity on frame, warnings at source
 
-_49 older entries in `tracking/reports/`._
+_50 older entries in `tracking/reports/`._
