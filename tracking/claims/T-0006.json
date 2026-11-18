@@ -1,0 +1,8 @@
+{
+  "task": "T-0006",
+  "agent": "claude-code-dartonx-pc",
+  "claimed_at": "2026-11-18T00:37:36Z",
+  "heartbeat": "2026-11-18T00:37:36Z",
+  "branch": "agent/claude-code-dartonx-pc/t-0006",
+  "note": "Packaging the T-0053 sandbox for the connected Quest 3; Quest 2 not attached"
+}

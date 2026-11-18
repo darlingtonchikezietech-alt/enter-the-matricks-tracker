@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 00:37Z** · `claude-code-dartonx-pc` · T-0006 · _claim_
+  Packaging the T-0053 sandbox for the connected Quest 3; Quest 2 not attached
 - **2026-11-18 00:37Z** · `claude-code-dartonx-pc` · T-0053 · _complete_ · commits: 5e733a1
   AETMSandboxGameMode (Source/ETM/Core/Game) is the project default (GlobalDefaultGameMode in Config/DefaultEngine.ini). Player = AXRSeatedRigPawn + ARigPlayerController; each rig is registered with the mission at StartPlay and on RestartPlayer. On the Entry map (the boot map) with no objective present it builds a range in code: one movable shadowless directional light, a 60 m floor, distance posts at 5/15/30/45 m down three lanes (-35, 0, +35 deg), the objective 4.5 m ahead at floor level with a block for its bulk, three target-point entrances 25 m out facing the rig, and an encounter director running one hour-long practice phase (Shardlings from left and centre, Needle Drones from the right, max 5 active), with automatic retry 3 s after a mission failure.
   Verified: Built on UE 5.8.4, zero errors and warnings; all 78 ETM tests pass, 2 new (ETM.Core.Sandbox.*) using FTestWorldWrapper: the default game mode is the sandbox and does not build the range in non-Entry worlds; BuildSandbox gives an objective ahead and below the eye, three valid entrances, one light without shadows, more than 15 range actors; enemies arrive within 10 s of real world ticks; a rig failure retries by itself and restores the rig; building twice is a no-op. Not yet seen in VR Preview or on a headset.
@@ -119,7 +121,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Verified: Built on main (UE 5.8.4), zero errors and warnings. New test ETM.Enemies.Base.AttackTokens passes, plus all 15 existing tests on main. Not run together with the T-0014 archetypes yet (that happens on the T-0017 branch).
   Remaining: Every attack counts, including Shardling cuts on the objective; if that makes enemies queue too much in playtests, give objective attacks their own limit or opt them out. Branch agent/claude-code-dartonx-pc/t-0045 needs a PR into main.
   Next: T-0017 uses this to enforce the 2-attack cap.
-- **2026-11-17 10:44Z** · `claude-code-dartonx-pc` · T-0045 · _claim_
-  Needed by T-0017
 
-_31 older entries in `tracking/reports/`._
+_32 older entries in `tracking/reports/`._
