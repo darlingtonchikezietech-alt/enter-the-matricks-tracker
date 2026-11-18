@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 08:33Z** · `claude-code-dartonx-pc` · T-0031 · _claim_
+  Owner picked T-0031 next; T-0006 waits on a Quest 2
 - **2026-11-18 08:25Z** · `owner` · T-0043 · _review_
   Approved. Owner asked in chat to close it. Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-18 08:25Z** · `claude-code-dartonx-pc` · T-0043 · _complete_ · commits: 9586ea3
@@ -113,7 +115,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Next: Review T-0022. T-0019 next (HUD), then T-0026 (Level 1 schedule) is unblocked once T-0022 is approved.
 - **2026-11-17 13:29Z** · `claude-code-dartonx-pc` · T-0022 · _claim_
   Claimed T-0022: Bulwark, Lance Walker, Siphon, Cradle Bomber
-- **2026-11-17 13:25Z** · `owner` · T-0048 · _review_
-  Approved. Approved by the owner in chat on 2026-11-17 (Approve T-0048). Recorded on the owner's behalf by claude-code-dartonx-pc.
 
-_46 older entries in `tracking/reports/`._
+_47 older entries in `tracking/reports/`._

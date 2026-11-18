@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-18T08:25:48Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T08:33:34Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 27/55 done (49%) · todo: 26 · in_progress: 1 · review: 0 · blocked: 1 · done: 27
+**Progress:** 27/55 done (49%) · todo: 25 · in_progress: 2 · review: 0 · blocked: 1 · done: 27
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -18,12 +18,14 @@ _Generated 2026-11-18T08:25:48Z by `tools/agent.py render`. Do not edit by hand.
 | Task | Agent | Since | Last heartbeat | Stale? |
 |---|---|---|---|---|
 | T-0006 Package an empty VR scene and deploy it to a physical Quest 2 | claude-code-dartonx-pc | 2026-11-18T00:37:36Z | 2026-11-18T00:37:36Z |  |
+| T-0031 Campaign flow: menus, relocation fade, results, ending | claude-code-dartonx-pc | 2026-11-18T08:33:34Z | 2026-11-18T08:33:34Z |  |
 
-## In Progress (1)
+## In Progress (2)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0006 | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 | claude-code-dartonx-pc |
+| T-0031 | 2 | M3 | flow | game | Campaign flow: menus, relocation fade, results, ending | T-0019 | claude-code-dartonx-pc |
 
 ## Blocked (1)
 
@@ -31,7 +33,7 @@ _Generated 2026-11-18T08:25:48Z by `tools/agent.py render`. Do not edit by hand.
 |---|---|---|---|---|---|---|---|
 | T-0015 | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 
-## Todo (26)
+## Todo (25)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -51,7 +53,6 @@ _Generated 2026-11-18T08:25:48Z by `tools/agent.py render`. Do not edit by hand.
 | T-0028 | 1 | M3 | boss | game | Conductor boss incl. pairing reset (P-07), rig sweep (P-08), emitter fallback (P-06) | T-0025 |  |
 | T-0029 | 1 | M3 | encounters | game | Level 2 full schedule + train gating (P-14) | T-0027, T-0028 |  |
 | T-0033 | 1 | M3 | qa | tracker | M3 gate: both missions end to end in a packaged build | T-0026, T-0029, T-0030, T-0031 |  |
-| T-0031 🟢 ready | 2 | M3 | flow | game | Campaign flow: menus, relocation fade, results, ending | T-0019 |  |
 | T-0032 | 3 | M3 | audio | game | Placeholder VO (Mara, RIG-6) and subtitles with speaker labels | T-0031 |  |
 | T-0038 | 1 | M4 | qa | tracker | 10-player playtest: duration, comprehension, comfort | T-0034, T-0035, T-0036, T-0037 |  |
 | T-0034 | 2 | M4 | art | game | Final enemy and boss art + animation | T-0004, T-0033 |  |

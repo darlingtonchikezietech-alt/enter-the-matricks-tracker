@@ -4,7 +4,7 @@
   "milestone": "M3",
   "area": "flow",
   "repo": "game",
-  "status": "todo",
+  "status": "in_progress",
   "priority": 2,
   "depends_on": [
     "T-0019"
@@ -18,6 +18,12 @@
     "Full loop start -> L1 -> fade -> L2 -> ending -> results"
   ],
   "description": "Until real arenas exist (T-0020, T-0027), the flow runs in the code-built sandbox range: title panel, two short stand-in levels that complete when their waves are cleared, brief results, relocation fade, ending, campaign results, back to title. Menu buttons are world-space panels the player shoots. Widened to Core/Game (the sandbox game mode builds what each stage shows).",
-  "assignee": null,
-  "history": []
+  "assignee": "claude-code-dartonx-pc",
+  "history": [
+    {
+      "time": "2026-11-18T08:33:34Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "claimed"
+    }
+  ]
 }
