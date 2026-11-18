@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 18:55Z** · `owner` · T-0056 · _review_
+  Approved. Owner checked the changes on the Quest 3 and approved in chat. Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-18 18:53Z** · `claude-code-dartonx-pc` · T-0056 · _complete_ · commits: 9be1ed2
   Faster stand-in spawns (gaps 1.5-2.5 s, shorter slots), drones from left and right, muzzle flash 40 cm past the muzzle at half size, dimmer and at most every 0.25 s, cannon mounts 65 cm to each side. Branch stacked on t-0031.
   Verified: All 83 ETM tests pass (new: rapid-fire flash rate/position, stand-in spawn gaps and drone lanes); APK installed on the Quest 3. Owner headset check pending.
@@ -112,7 +114,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Resume entry point for T-0023, same branch
 - **2026-11-17 13:52Z** · `claude-code-dartonx-pc` · T-0023 · _claim_
   Claimed T-0023: Save system: settings, checkpoints incl. boss presets (P-04), results
-- **2026-11-17 13:43Z** · `owner` · T-0050 · _review_
-  Approved. Approved by the owner in chat on 2026-11-17 (Approve all three). Recorded on the owner's behalf by claude-code-dartonx-pc.
 
-_55 older entries in `tracking/reports/`._
+_56 older entries in `tracking/reports/`._

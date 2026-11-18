@@ -1,13 +1,13 @@
 # Task Board
 
-_Generated 2026-11-18T18:53:13Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T18:55:21Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 28/56 done (50%) · todo: 25 · in_progress: 1 · review: 1 · blocked: 1 · done: 28
+**Progress:** 29/56 done (52%) · todo: 25 · in_progress: 1 · review: 0 · blocked: 1 · done: 29
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 5 | 10 | `█████░░░░░` |
-| M1 | 11 | 15 | `███████░░░` |
+| M1 | 12 | 15 | `████████░░` |
 | M2 | 10 | 15 | `███████░░░` |
 | M3 | 2 | 8 | `██░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
@@ -24,12 +24,6 @@ _Generated 2026-11-18T18:53:13Z by `tools/agent.py render`. Do not edit by hand.
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0006 | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 | claude-code-dartonx-pc |
-
-## Review (1)
-
-| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
-|---|---|---|---|---|---|---|---|
-| T-0056 | 1 | M1 | weapons | game | Second headset test: faster stand-in spawns, muzzle flash away from the eyes, drones from both sides | - | claude-code-dartonx-pc |
 
 ## Blocked (1)
 
@@ -67,7 +61,7 @@ _Generated 2026-11-18T18:53:13Z by `tools/agent.py render`. Do not edit by hand.
 | T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
 | T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
 
-## Done (28)
+## Done (29)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -85,6 +79,7 @@ _Generated 2026-11-18T18:53:13Z by `tools/agent.py render`. Do not edit by hand.
 | T-0044 | 1 | M1 | engine | game | Keep the ETM module building once it passes 32 source files (unity-build name clashes in tests) | - | claude-code-dartonx-pc |
 | T-0046 | 1 | M1 | engine | game | Quest 3/3S: pin device profiles to the Quest 2 baseline and document supported headsets (P-31) | - | claude-code-dartonx-pc |
 | T-0055 | 1 | M1 | weapons | game | First headset test changes: P-34 rapid fire in code, fire-cadence carry (T-0043), eye height, barrel length, closer sandbox range | - | claude-code-dartonx-pc |
+| T-0056 | 1 | M1 | weapons | game | Second headset test: faster stand-in spawns, muzzle flash away from the eyes, drones from both sides | - | claude-code-dartonx-pc |
 | T-0043 | 2 | M1 | weapons | game | Heat model: carry fire-cooldown remainder so cadence does not drift at 72 Hz | T-0010 | claude-code-dartonx-pc |
 | T-0048 | 2 | M1 | vfx | game | Shot feedback component in C++: recoil, muzzle flash, tracer, impact flash, haptics, placeholder sound (for T-0015) | T-0009 | claude-code-dartonx-pc |
 | T-0017 | 1 | M2 | encounters | game | Encounter director: authored phases, spawn budgets, attack tokens, early-transition rule (P-13) | T-0013 | claude-code-dartonx-pc |

@@ -4,7 +4,7 @@
   "milestone": "M1",
   "area": "weapons",
   "repo": "game",
-  "status": "review",
+  "status": "done",
   "priority": 1,
   "depends_on": [],
   "paths": [
@@ -32,6 +32,12 @@
       "time": "2026-11-18T18:53:13Z",
       "agent": "claude-code-dartonx-pc",
       "event": "completed"
+    },
+    {
+      "time": "2026-11-18T18:55:21Z",
+      "agent": "owner",
+      "event": "approved",
+      "note": "Owner checked the changes on the Quest 3 and approved in chat. Recorded on the owner's behalf by claude-code-dartonx-pc."
     }
   ],
   "result": {
