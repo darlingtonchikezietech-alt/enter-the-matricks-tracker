@@ -1,8 +1,0 @@
-{
-  "task": "T-0031",
-  "agent": "claude-code-dartonx-pc",
-  "claimed_at": "2026-11-18T08:33:34Z",
-  "heartbeat": "2026-11-18T08:33:34Z",
-  "branch": "agent/claude-code-dartonx-pc/t-0031",
-  "note": "Owner picked T-0031 next; T-0006 waits on a Quest 2"
-}

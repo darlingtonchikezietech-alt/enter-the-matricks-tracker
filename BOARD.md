@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-18T08:33:34Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T08:43:46Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 27/55 done (49%) · todo: 25 · in_progress: 2 · review: 0 · blocked: 1 · done: 27
+**Progress:** 27/55 done (49%) · todo: 25 · in_progress: 1 · review: 1 · blocked: 1 · done: 27
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -18,13 +18,17 @@ _Generated 2026-11-18T08:33:34Z by `tools/agent.py render`. Do not edit by hand.
 | Task | Agent | Since | Last heartbeat | Stale? |
 |---|---|---|---|---|
 | T-0006 Package an empty VR scene and deploy it to a physical Quest 2 | claude-code-dartonx-pc | 2026-11-18T00:37:36Z | 2026-11-18T00:37:36Z |  |
-| T-0031 Campaign flow: menus, relocation fade, results, ending | claude-code-dartonx-pc | 2026-11-18T08:33:34Z | 2026-11-18T08:33:34Z |  |
 
-## In Progress (2)
+## In Progress (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0006 | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 | claude-code-dartonx-pc |
+
+## Review (1)
+
+| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
+|---|---|---|---|---|---|---|---|
 | T-0031 | 2 | M3 | flow | game | Campaign flow: menus, relocation fade, results, ending | T-0019 | claude-code-dartonx-pc |
 
 ## Blocked (1)

@@ -2,6 +2,10 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 08:43Z** · `claude-code-dartonx-pc` · T-0031 · _complete_ · commits: 9e22f91
+  Campaign flow on the game instance: Title -> L1 -> brief results -> relocation fade -> L2 -> ending -> campaign results -> title, plus practice. Shootable world-space menu panels. Results tracked (shots, hits, weak-point hits, brace-absorbed damage, retries, time), saved, provisional score. Until real arenas exist, both levels are short stand-in encounters in the sandbox range; the fade dims the range's only light; sun moved behind the rig so panels and enemies are lit.
+  Verified: Editor build; all 83 ETM tests pass incl. 5 new ETM.Core.Flow tests (full loop with map loads, run tracking, sandbox stages/panels with a real cannon shot on START, stand-in levels finite); APK packaged and installed on Quest 3. Headset play-through by the owner pending.
+  Remaining: Owner headset run of the full loop; text facing and readability on device; failure screen, pause-menu quit, continue-from-checkpoint on the title, interrupted-attack damage for P-30, real arena maps and a fade that works with baked lighting
 - **2026-11-18 08:33Z** · `claude-code-dartonx-pc` · T-0031 · _claim_
   Owner picked T-0031 next; T-0006 waits on a Quest 2
 - **2026-11-18 08:25Z** · `owner` · T-0043 · _review_
@@ -113,7 +117,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Verified: Built on UE 5.8.4, zero errors and warnings; all 61 ETM tests pass, 6 new: every bible value; Bulwark shield x0.1, covered body, slam timing 30 at 1 s then every 4 s, node breaks shield and cancels a wind-up, open body takes full damage; Lance plants within 6 m, chamber only hittable while charging, 35 strike, 2 shots interrupt, objective targeting and tag sync; Siphon tether during warning, no drain during it, ~5/s after, stops on death; Bomber hovers above target, pod and descending tone cues, 40 release, pod shot kills it, objective targeting; pooled reuse restores shield, nodes, chamber, pod and clears tags; silhouettes: every pair differs by 30%+ in a dimension (Shardling 125x68x63, Drone 159x100x94, Bulwark 360x112x230, Lance 297x153x415, Siphon 160x70x115, Bomber 180x180x137 cm). No headset, no art, no sound assets (cue sound slots empty).
   Remaining: Prototype values not in the bible: Bulwark 1 s wind-up, 120 cm/s, 2 m contact; Lance 6 m advance, 0.6 s plant, 4 s cooldown; Siphon 1.5 s latch warning, 200 cm/s; Bomber 5 s re-arm, 6 m hover, 300 cm/s. Bomber release hits instantly (no falling pod). Bulwark shield's x0.1 is applied by the enemy, so the cannon's shot result still reports x1 there. Silhouette distinctness is measured by bounding size, not seen at 5-45 m in a headset. Branch agent/claude-code-dartonx-pc/t-0022 needs a PR.
   Next: Review T-0022. T-0019 next (HUD), then T-0026 (Level 1 schedule) is unblocked once T-0022 is approved.
-- **2026-11-17 13:29Z** · `claude-code-dartonx-pc` · T-0022 · _claim_
-  Claimed T-0022: Bulwark, Lance Walker, Siphon, Cradle Bomber
 
-_47 older entries in `tracking/reports/`._
+_48 older entries in `tracking/reports/`._
