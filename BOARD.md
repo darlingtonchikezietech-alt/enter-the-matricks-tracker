@@ -1,13 +1,13 @@
 # Task Board
 
-_Generated 2026-11-18T01:24:16Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T08:12:57Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 23/55 done (42%) · todo: 27 · in_progress: 1 · review: 3 · blocked: 1 · done: 23
+**Progress:** 24/55 done (44%) · todo: 27 · in_progress: 1 · review: 2 · blocked: 1 · done: 24
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 10 | `███░░░░░░░` |
-| M1 | 9 | 14 | `██████░░░░` |
+| M1 | 10 | 14 | `███████░░░` |
 | M2 | 10 | 15 | `███████░░░` |
 | M3 | 1 | 8 | `█░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
@@ -25,13 +25,12 @@ _Generated 2026-11-18T01:24:16Z by `tools/agent.py render`. Do not edit by hand.
 |---|---|---|---|---|---|---|---|
 | T-0006 | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 | claude-code-dartonx-pc |
 
-## Review (3)
+## Review (2)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0053 | 1 | M0 | engine | game | Sandbox game mode: rig pawn, floor and distance markers, practice encounter (first playable for VR Preview and the first APK) | - | claude-code-dartonx-pc |
 | T-0054 | 1 | M0 | engine | game | Fix Android (Clang) build errors in the interruption subsystem and the sandbox game mode | - | claude-code-dartonx-pc |
-| T-0055 | 1 | M1 | weapons | game | First headset test changes: P-34 rapid fire in code, fire-cadence carry (T-0043), eye height, barrel length, closer sandbox range | - | claude-code-dartonx-pc |
 
 ## Blocked (1)
 
@@ -71,7 +70,7 @@ _Generated 2026-11-18T01:24:16Z by `tools/agent.py render`. Do not edit by hand.
 | T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
 | T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
 
-## Done (23)
+## Done (24)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -86,6 +85,7 @@ _Generated 2026-11-18T01:24:16Z by `tools/agent.py render`. Do not edit by hand.
 | T-0014 | 1 | M1 | enemies | game | Shardling (ground) and Needle Drone (flying) prototypes | T-0013 | claude-code-dartonx-pc |
 | T-0044 | 1 | M1 | engine | game | Keep the ETM module building once it passes 32 source files (unity-build name clashes in tests) | - | claude-code-dartonx-pc |
 | T-0046 | 1 | M1 | engine | game | Quest 3/3S: pin device profiles to the Quest 2 baseline and document supported headsets (P-31) | - | claude-code-dartonx-pc |
+| T-0055 | 1 | M1 | weapons | game | First headset test changes: P-34 rapid fire in code, fire-cadence carry (T-0043), eye height, barrel length, closer sandbox range | - | claude-code-dartonx-pc |
 | T-0048 | 2 | M1 | vfx | game | Shot feedback component in C++: recoil, muzzle flash, tracer, impact flash, haptics, placeholder sound (for T-0015) | T-0009 | claude-code-dartonx-pc |
 | T-0017 | 1 | M2 | encounters | game | Encounter director: authored phases, spawn budgets, attack tokens, early-transition rule (P-13) | T-0013 | claude-code-dartonx-pc |
 | T-0018 | 1 | M2 | objective | game | Objective integrity, world marker, failure and retry | T-0011 | claude-code-dartonx-pc |

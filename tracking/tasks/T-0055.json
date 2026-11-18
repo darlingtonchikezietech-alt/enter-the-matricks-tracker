@@ -4,7 +4,7 @@
   "milestone": "M1",
   "area": "weapons",
   "repo": "game",
-  "status": "review",
+  "status": "done",
   "priority": 1,
   "depends_on": [],
   "paths": [
@@ -35,6 +35,12 @@
       "time": "2026-11-18T01:24:08Z",
       "agent": "claude-code-dartonx-pc",
       "event": "completed"
+    },
+    {
+      "time": "2026-11-18T08:12:57Z",
+      "agent": "owner",
+      "event": "approved",
+      "note": "Owner retested on the Quest 3: feels good, approved in chat. Recorded on the owner's behalf by claude-code-dartonx-pc."
     }
   ],
   "result": {
