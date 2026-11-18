@@ -2,6 +2,10 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 01:24Z** · `claude-code-dartonx-pc` · T-0055 · _complete_ · commits: 9586ea3
+  P-34 rapid fire in code (10/s, 25 dmg, heat 1 -> 100 shots in 9.9 s), fire-cooldown remainder carried (T-0043), Gatebreaker core 6500 (phase 3 at 1950), design eye Z 110, barrels/muzzle 80 cm, HUD heat bar at 63, sandbox objective 3.5 m and entrances 18 m. Branch stacked on t-0053 (sandbox).
+  Verified: Editor build; all 78 ETM automation tests pass (72 Hz heat parity now within one frame and 1%); Android APK packaged and installed on the Quest 3. Standalone g++ heat test updated but not run (no compiler on this PC). Owner retest in the headset pending.
+  Remaining: Owner retest on the headset
 - **2026-11-18 01:17Z** · `claude-code-dartonx-pc` · T-0055 · _claim_
   Owner's headset feedback
 - **2026-11-18 00:41Z** · `claude-code-dartonx-pc` · T-0053 · _note_
@@ -116,7 +120,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Next: Review T-0021 and answer P-32/P-33. Then T-0022 (other enemies) or T-0026 (Level 1 schedule).
 - **2026-11-17 12:52Z** · `claude-code-dartonx-pc` · T-0021 · _claim_
   Claimed T-0021: Gatebreaker boss prototype (P-02, P-09, P-10)
-- **2026-11-17 12:47Z** · `owner` · T-0046 · _review_
-  Approved. Approved by the owner in chat on 2026-11-17 (Approve T-0046). Recorded on the owner's behalf by claude-code-dartonx-pc.
 
-_38 older entries in `tracking/reports/`._
+_39 older entries in `tracking/reports/`._
