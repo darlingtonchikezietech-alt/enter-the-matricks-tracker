@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 08:25Z** · `owner` · T-0053 · _review_
+  Approved. Approved by the owner in chat after the headset tests; merged via PR #21. Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-18 08:12Z** · `owner` · T-0055 · _review_
   Approved. Owner retested on the Quest 3: feels good, approved in chat. Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-18 01:24Z** · `claude-code-dartonx-pc` · T-0043 · _note_
@@ -115,7 +117,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Code half of T-0015
 - **2026-11-17 13:16Z** · `claude-code-dartonx-pc` · T-0015 · _claim_
   Claimed T-0015: Weapon feel: muzzle, tracer, impact, haptics, placeholder audio
-- **2026-11-17 13:04Z** · `owner` · T-0021 · _review_
-  Approved. Approved by the owner in chat on 2026-11-17 (Approve T-0021). Recorded on the owner's behalf by claude-code-dartonx-pc.
 
-_41 older entries in `tracking/reports/`._
+_42 older entries in `tracking/reports/`._

@@ -4,7 +4,7 @@
   "milestone": "M0",
   "area": "engine",
   "repo": "game",
-  "status": "review",
+  "status": "done",
   "priority": 1,
   "depends_on": [],
   "paths": [
@@ -28,6 +28,12 @@
       "time": "2026-11-18T00:37:00Z",
       "agent": "claude-code-dartonx-pc",
       "event": "completed"
+    },
+    {
+      "time": "2026-11-18T08:25:20Z",
+      "agent": "owner",
+      "event": "approved",
+      "note": "Approved by the owner in chat after the headset tests; merged via PR #21. Recorded on the owner's behalf by claude-code-dartonx-pc."
     }
   ],
   "result": {

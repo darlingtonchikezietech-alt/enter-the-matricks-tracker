@@ -1,12 +1,12 @@
 # Task Board
 
-_Generated 2026-11-18T08:12:57Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T08:25:20Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 24/55 done (44%) · todo: 27 · in_progress: 1 · review: 2 · blocked: 1 · done: 24
+**Progress:** 25/55 done (45%) · todo: 27 · in_progress: 1 · review: 1 · blocked: 1 · done: 25
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
-| M0 | 3 | 10 | `███░░░░░░░` |
+| M0 | 4 | 10 | `████░░░░░░` |
 | M1 | 10 | 14 | `███████░░░` |
 | M2 | 10 | 15 | `███████░░░` |
 | M3 | 1 | 8 | `█░░░░░░░░░` |
@@ -25,11 +25,10 @@ _Generated 2026-11-18T08:12:57Z by `tools/agent.py render`. Do not edit by hand.
 |---|---|---|---|---|---|---|---|
 | T-0006 | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 | claude-code-dartonx-pc |
 
-## Review (2)
+## Review (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
-| T-0053 | 1 | M0 | engine | game | Sandbox game mode: rig pawn, floor and distance markers, practice encounter (first playable for VR Preview and the first APK) | - | claude-code-dartonx-pc |
 | T-0054 | 1 | M0 | engine | game | Fix Android (Clang) build errors in the interruption subsystem and the sandbox game mode | - | claude-code-dartonx-pc |
 
 ## Blocked (1)
@@ -70,13 +69,14 @@ _Generated 2026-11-18T08:12:57Z by `tools/agent.py render`. Do not edit by hand.
 | T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
 | T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
 
-## Done (24)
+## Done (25)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0001 | 1 | M0 | producer | tracker | Bootstrap repos, patched bible v1.1, tracker and Unreal scaffold | - | claude-bootstrap |
 | T-0005 | 1 | M0 | engine | game | Compile the scaffold and lock the toolchain (UE version, Meta XR/OpenXR plugin, SDK/NDK/JDK) | - | claude-code-dartonx-pc |
 | T-0007 | 1 | M0 | player | game | Seated rig pawn: XR origin, controller tracking, seated calibration, Forward re-anchor (P-11) | T-0005 | claude-code-dartonx-pc |
+| T-0053 | 1 | M0 | engine | game | Sandbox game mode: rig pawn, floor and distance markers, practice encounter (first playable for VR Preview and the first APK) | - | claude-code-dartonx-pc |
 | T-0009 | 1 | M1 | weapons | game | Cannon component: aim envelope ±65/-30..+45, servo, cadence, muzzle trace, heat per P-01 | T-0007 | claude-code-dartonx-pc |
 | T-0010 | 1 | M1 | qa | game | Automation test: cannon heat parity with tools/balance_sim.py | T-0009 | claude-code-dartonx-pc |
 | T-0011 | 1 | M1 | combat | game | Brace (DefenseComponent) and Integrity components | T-0005 | claude-code-dartonx-pc |
