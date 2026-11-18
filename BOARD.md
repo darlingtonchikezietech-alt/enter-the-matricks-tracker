@@ -1,13 +1,13 @@
 # Task Board
 
-_Generated 2026-11-18T18:44:15Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T18:48:25Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 28/55 done (51%) · todo: 25 · in_progress: 1 · review: 0 · blocked: 1 · done: 28
+**Progress:** 28/56 done (50%) · todo: 26 · in_progress: 1 · review: 0 · blocked: 1 · done: 28
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 5 | 10 | `█████░░░░░` |
-| M1 | 11 | 14 | `████████░░` |
+| M1 | 11 | 15 | `███████░░░` |
 | M2 | 10 | 15 | `███████░░░` |
 | M3 | 2 | 8 | `██░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
@@ -31,7 +31,7 @@ _Generated 2026-11-18T18:44:15Z by `tools/agent.py render`. Do not edit by hand.
 |---|---|---|---|---|---|---|---|
 | T-0015 | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 
-## Todo (25)
+## Todo (26)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -41,6 +41,7 @@ _Generated 2026-11-18T18:44:15Z by `tools/agent.py render`. Do not edit by hand.
 | T-0008 | 2 | M0 | art | game | Open-frame rig blockout mesh (seat, knee guard, weapon arms) | T-0006 |  |
 | T-0016 | 1 | M1 | qa | tracker | M1 gate: 3-minute combat test on Quest 2 (comfort, readability, perf capture) | T-0014, T-0015, T-0012, T-0010 |  |
 | T-0047 | 1 | M1 | qa | tracker | Verify on a physical Quest 3 or 3S: install, tracking, Touch Plus input, 72 Hz, short combat test (P-31) | T-0006, T-0046 |  |
+| T-0056 🟢 ready | 1 | M1 | weapons | game | Second headset test: faster stand-in spawns, muzzle flash away from the eyes, drones from both sides | - |  |
 | T-0025 | 1 | M2 | qa | tracker | M2 gate: vertical slice validated on hardware | T-0020, T-0021, T-0022, T-0023, T-0024, T-0019 |  |
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
 | T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 |  |
