@@ -4,7 +4,7 @@
   "milestone": "M1",
   "area": "weapons",
   "repo": "game",
-  "status": "in_progress",
+  "status": "review",
   "priority": 1,
   "depends_on": [],
   "paths": [
@@ -27,6 +27,19 @@
       "time": "2026-11-18T18:48:34Z",
       "agent": "claude-code-dartonx-pc",
       "event": "claimed"
+    },
+    {
+      "time": "2026-11-18T18:53:13Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "completed"
     }
-  ]
+  ],
+  "result": {
+    "summary": "Faster stand-in spawns (gaps 1.5-2.5 s, shorter slots), drones from left and right, muzzle flash 40 cm past the muzzle at half size, dimmer and at most every 0.25 s, cannon mounts 65 cm to each side. Branch stacked on t-0031.",
+    "commits": "9be1ed2",
+    "verification": "All 83 ETM tests pass (new: rapid-fire flash rate/position, stand-in spawn gaps and drone lanes); APK installed on the Quest 3. Owner headset check pending.",
+    "remaining": "Owner headset check",
+    "next": "",
+    "completed_at": "2026-11-18T18:53:13Z"
+  }
 }

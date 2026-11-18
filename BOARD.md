@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-18T18:48:34Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T18:53:13Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 28/56 done (50%) · todo: 25 · in_progress: 2 · review: 0 · blocked: 1 · done: 28
+**Progress:** 28/56 done (50%) · todo: 25 · in_progress: 1 · review: 1 · blocked: 1 · done: 28
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -18,13 +18,17 @@ _Generated 2026-11-18T18:48:34Z by `tools/agent.py render`. Do not edit by hand.
 | Task | Agent | Since | Last heartbeat | Stale? |
 |---|---|---|---|---|
 | T-0006 Package an empty VR scene and deploy it to a physical Quest 2 | claude-code-dartonx-pc | 2026-11-18T00:37:36Z | 2026-11-18T00:37:36Z |  |
-| T-0056 Second headset test: faster stand-in spawns, muzzle flash away from the eyes, drones from both sides | claude-code-dartonx-pc | 2026-11-18T18:48:34Z | 2026-11-18T18:48:34Z |  |
 
-## In Progress (2)
+## In Progress (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0006 | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 | claude-code-dartonx-pc |
+
+## Review (1)
+
+| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
+|---|---|---|---|---|---|---|---|
 | T-0056 | 1 | M1 | weapons | game | Second headset test: faster stand-in spawns, muzzle flash away from the eyes, drones from both sides | - | claude-code-dartonx-pc |
 
 ## Blocked (1)
@@ -47,7 +51,7 @@ _Generated 2026-11-18T18:48:34Z by `tools/agent.py render`. Do not edit by hand.
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
 | T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 |  |
 | T-0024 | 2 | M2 | perf | game | Performance capture tooling + 30-minute soak script | T-0006 |  |
-| T-0049 | 3 | M2 | qa | game | Test worlds: run garbage collection after destroying them, so reserved GPU memory stops climbing during the test run | - |  |
+| T-0049 🟢 ready | 3 | M2 | qa | game | Test worlds: run garbage collection after destroying them, so reserved GPU memory stops climbing during the test run | - |  |
 | T-0026 | 1 | M3 | encounters | game | Level 1 full schedule (51 enemies, timeline, gating P-14) | T-0025 |  |
 | T-0027 | 1 | M3 | level | game | Level 2 arena greybox | T-0025 |  |
 | T-0028 | 1 | M3 | boss | game | Conductor boss incl. pairing reset (P-07), rig sweep (P-08), emitter fallback (P-06) | T-0025 |  |
