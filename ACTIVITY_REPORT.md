@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 01:24Z** · `claude-code-dartonx-pc` · T-0043 · _note_
+  Done inside T-0055 (commit 9586ea3): StepHeat carries the cooldown remainder; 72 Hz parity test tightened to one frame and 1%. Can be closed when T-0055 is approved.
 - **2026-11-18 01:24Z** · `claude-code-dartonx-pc` · T-0055 · _complete_ · commits: 9586ea3
   P-34 rapid fire in code (10/s, 25 dmg, heat 1 -> 100 shots in 9.9 s), fire-cooldown remainder carried (T-0043), Gatebreaker core 6500 (phase 3 at 1950), design eye Z 110, barrels/muzzle 80 cm, HUD heat bar at 63, sandbox objective 3.5 m and entrances 18 m. Branch stacked on t-0053 (sandbox).
   Verified: Editor build; all 78 ETM automation tests pass (72 Hz heat parity now within one frame and 1%); Android APK packaged and installed on the Quest 3. Standalone g++ heat test updated but not run (no compiler on this PC). Owner retest in the headset pending.
@@ -118,7 +120,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Verified: Built on UE 5.8.4, zero errors and warnings; all 51 ETM tests pass, 7 new (ETM.Bosses.Gatebreaker.*). They check bible values, immune armour and closed targets, alternating and repeating node windows, phase-1 furnace hits 45 with no core window, phase-2 windows 4 s fired / 6 s interrupted, interrupted blast never lands, chamber rebuilt, phase 3 at 900 with artillery 35 and core still opening, braced blast 11.25, death parks the wreck; two real heat-model cannons at 70% expected accuracy destroy the core in 2-3 exposures; 2 minutes of ignoring targets in each phase never softlocks; director activation, retry to full health (P-04 preset) and phase completion on death. No headset, level, art or audio. One run logged an RHI warning (reserved virtual memory over its 256 GB budget) during the tests, not investigated.
   Remaining: P-32 (artillery cadence) and P-33 (P-13 60% wait after a fast boss kill) need the owner. Node window 5 s, gap 1.5 s, attack interval 5 s and artillery warning 2 s are my prototype values. The Level 1 boss phase must set MaxConcurrentAttacks to 1 for adds (the boss bypasses tokens) and cap adds at 3 (bible section 9); that is T-0026. 'Sequential leg locks' on entry are presentation only (spawn time 3 s). No sound assets; charge sound slots are empty. Branch agent/claude-code-dartonx-pc/t-0021 needs a PR.
   Next: Review T-0021 and answer P-32/P-33. Then T-0022 (other enemies) or T-0026 (Level 1 schedule).
-- **2026-11-17 12:52Z** · `claude-code-dartonx-pc` · T-0021 · _claim_
-  Claimed T-0021: Gatebreaker boss prototype (P-02, P-09, P-10)
 
-_39 older entries in `tracking/reports/`._
+_40 older entries in `tracking/reports/`._
