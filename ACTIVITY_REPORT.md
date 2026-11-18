@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 22:34Z** · `claude-code-dartonx-pc` · T-0047 · _claim_
+  Claimed T-0047: Verify on a physical Quest 3 or 3S: install, tracking, Touch Plus input, 72 Hz, short combat test (P-31)
 - **2026-11-18 22:19Z** · `owner` · T-0058 · _review_
   Approved. Owner played the build on Quest 3 and approved in chat. Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-18 22:19Z** · `owner` · T-0020 · _review_
@@ -108,7 +110,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Approved. Approved by the owner in chat on 2026-11-17 (approve T-0010). Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-17 14:16Z** · `owner` · T-0030 · _review_
   Approved. Approved by the owner in chat on 2026-11-17 (Approve both). Recorded on the owner's behalf by claude-code-dartonx-pc.
-- **2026-11-17 14:16Z** · `owner` · T-0052 · _review_
-  Approved. Approved by the owner in chat on 2026-11-17 (Approve both). Recorded on the owner's behalf by claude-code-dartonx-pc.
 
-_66 older entries in `tracking/reports/`._
+_67 older entries in `tracking/reports/`._

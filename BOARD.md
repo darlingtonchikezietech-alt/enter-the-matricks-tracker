@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-18T22:19:44Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T22:34:29Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 32/58 done (55%) · todo: 25 · in_progress: 0 · review: 0 · blocked: 1 · done: 32
+**Progress:** 32/58 done (55%) · todo: 24 · in_progress: 1 · review: 0 · blocked: 1 · done: 32
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,7 +15,15 @@ _Generated 2026-11-18T22:19:44Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-_None. Every task is free._
+| Task | Agent | Since | Last heartbeat | Stale? |
+|---|---|---|---|---|
+| T-0047 Verify on a physical Quest 3 or 3S: install, tracking, Touch Plus input, 72 Hz, short combat test (P-31) | claude-code-dartonx-pc | 2026-11-18T22:34:29Z | 2026-11-18T22:34:29Z |  |
+
+## In Progress (1)
+
+| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
+|---|---|---|---|---|---|---|---|
+| T-0047 | 1 | M1 | qa | tracker | Verify on a physical Quest 3 or 3S: install, tracking, Touch Plus input, 72 Hz, short combat test (P-31) | T-0006, T-0046 | claude-code-dartonx-pc |
 
 ## Blocked (1)
 
@@ -23,7 +31,7 @@ _None. Every task is free._
 |---|---|---|---|---|---|---|---|
 | T-0015 | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 
-## Todo (25)
+## Todo (24)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -32,7 +40,6 @@ _None. Every task is free._
 | T-0004 🟢 ready | 2 | M0 | art | tracker | Revised concept art pass using the CONCEPT_ART_REVIEW brief | - |  |
 | T-0008 🟢 ready | 2 | M0 | art | game | Open-frame rig blockout mesh (seat, knee guard, weapon arms) | T-0006 |  |
 | T-0016 | 1 | M1 | qa | tracker | M1 gate: 3-minute combat test on Quest 2 (comfort, readability, perf capture) | T-0014, T-0015, T-0012, T-0010 |  |
-| T-0047 🟢 ready | 1 | M1 | qa | tracker | Verify on a physical Quest 3 or 3S: install, tracking, Touch Plus input, 72 Hz, short combat test (P-31) | T-0006, T-0046 |  |
 | T-0057 🟢 ready | 1 | M1 | platform | game | Deploy the packaged build to a physical Quest 2: install, 72 Hz, tracking, input (split from T-0006) | - |  |
 | T-0025 | 1 | M2 | qa | tracker | M2 gate: vertical slice validated on hardware | T-0020, T-0021, T-0022, T-0023, T-0024, T-0019 |  |
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
