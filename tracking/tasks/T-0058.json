@@ -4,7 +4,7 @@
   "milestone": "M1",
   "area": "enemies",
   "repo": "game",
-  "status": "in_progress",
+  "status": "review",
   "priority": 1,
   "depends_on": [],
   "paths": [
@@ -26,6 +26,19 @@
       "time": "2026-11-18T20:53:52Z",
       "agent": "claude-code-dartonx-pc",
       "event": "claimed"
+    },
+    {
+      "time": "2026-11-18T21:05:16Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "completed"
     }
-  ]
+  ],
+  "result": {
+    "summary": "Enemies die in a small explosion (flash plus debris, sized to the enemy, self-removing; bosses opt out). Needle Drones drift around their hover point (sideways, up/down, a little in/out as the rig sees them), each with its own pattern, slower during the warning. Branch stacked on t-0020.",
+    "commits": "0815b53",
+    "verification": "All 88 ETM tests pass (new: drone drift sweep/zone/never-still, burst spawn/flash/cleanup/pool reuse); APK installed on the Quest 3. Owner headset check pending.",
+    "remaining": "Owner headset check",
+    "next": "",
+    "completed_at": "2026-11-18T21:05:16Z"
+  }
 }

@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-18T20:53:52Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T21:05:16Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 30/58 done (52%) · todo: 25 · in_progress: 1 · review: 1 · blocked: 1 · done: 30
+**Progress:** 30/58 done (52%) · todo: 25 · in_progress: 0 · review: 2 · blocked: 1 · done: 30
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,20 +15,13 @@ _Generated 2026-11-18T20:53:52Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-| Task | Agent | Since | Last heartbeat | Stale? |
-|---|---|---|---|---|
-| T-0058 Third headset test: small explosion when enemies die; Needle Drones drift around their hover point | claude-code-dartonx-pc | 2026-11-18T20:53:52Z | 2026-11-18T20:53:52Z |  |
+_None. Every task is free._
 
-## In Progress (1)
+## Review (2)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0058 | 1 | M1 | enemies | game | Third headset test: small explosion when enemies die; Needle Drones drift around their hover point | - | claude-code-dartonx-pc |
-
-## Review (1)
-
-| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
-|---|---|---|---|---|---|---|---|
 | T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 | claude-code-dartonx-pc |
 
 ## Blocked (1)
@@ -51,7 +44,7 @@ _Generated 2026-11-18T20:53:52Z by `tools/agent.py render`. Do not edit by hand.
 | T-0025 | 1 | M2 | qa | tracker | M2 gate: vertical slice validated on hardware | T-0020, T-0021, T-0022, T-0023, T-0024, T-0019 |  |
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
 | T-0024 🟢 ready | 2 | M2 | perf | game | Performance capture tooling + 30-minute soak script | T-0006 |  |
-| T-0049 | 3 | M2 | qa | game | Test worlds: run garbage collection after destroying them, so reserved GPU memory stops climbing during the test run | - |  |
+| T-0049 🟢 ready | 3 | M2 | qa | game | Test worlds: run garbage collection after destroying them, so reserved GPU memory stops climbing during the test run | - |  |
 | T-0026 | 1 | M3 | encounters | game | Level 1 full schedule (51 enemies, timeline, gating P-14) | T-0025 |  |
 | T-0027 | 1 | M3 | level | game | Level 2 arena greybox | T-0025 |  |
 | T-0028 | 1 | M3 | boss | game | Conductor boss incl. pairing reset (P-07), rig sweep (P-08), emitter fallback (P-06) | T-0025 |  |

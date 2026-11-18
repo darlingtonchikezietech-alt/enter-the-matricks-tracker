@@ -2,6 +2,10 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 21:05Z** · `claude-code-dartonx-pc` · T-0058 · _complete_ · commits: 0815b53
+  Enemies die in a small explosion (flash plus debris, sized to the enemy, self-removing; bosses opt out). Needle Drones drift around their hover point (sideways, up/down, a little in/out as the rig sees them), each with its own pattern, slower during the warning. Branch stacked on t-0020.
+  Verified: All 88 ETM tests pass (new: drone drift sweep/zone/never-still, burst spawn/flash/cleanup/pool reuse); APK installed on the Quest 3. Owner headset check pending.
+  Remaining: Owner headset check
 - **2026-11-18 20:53Z** · `claude-code-dartonx-pc` · T-0058 · _claim_
   Owner's third headset feedback
 - **2026-11-18 20:47Z** · `claude-code-dartonx-pc` · T-0020 · _complete_ · commits: f5ba31c,3dfccc4,5d8f211
@@ -109,10 +113,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Next: Review T-0030 and T-0052.
 - **2026-11-17 14:08Z** · `claude-code-dartonx-pc` · T-0030 · _claim_
   Claimed T-0030: Pause, tracking loss, headset removal, resume countdown
-- **2026-11-17 14:07Z** · `claude-code-dartonx-pc` · T-0052 · _complete_ · commits: 93e2da5
-  UETMSaveStore gains two static entry points for other systems' slots: SaveChecked (synchronous write of the length+CRC32-wrapped save to the slot and its backup) and LoadChecked (main copy if its header and CRC are intact, else the backup, else null; damaged bytes never reach the engine's parser). AXRSeatedRigPawn::SaveCalibration/LoadCalibration and ARigPlayerController's control-scheme save and load now use them.
-  Verified: Built on UE 5.8.4, zero errors and warnings; all 73 ETM tests pass, 2 new (ETM.Save.OtherSlots.*): each slot is written with the ETMS header plus a backup, survives a restart (new pawn / new controller reads it at BeginPlay), recovers from a damaged main copy via the backup, and gives defaults with no crash when both copies are damaged (including a fake engine-format header). The real slots are moved aside during the test and restored afterwards.
-  Remaining: Raw-format calibration or input files left from earlier development are now treated as damaged and give defaults once (no migration, on purpose: reading them is the crash path). The T-0007 calibration save test still round-trips the save class through the engine's plain functions on its own test slot; harmless, not changed (outside these paths).
-  Next: Review T-0052. T-0030 next.
 
-_63 older entries in `tracking/reports/`._
+_64 older entries in `tracking/reports/`._
