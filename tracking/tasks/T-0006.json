@@ -11,14 +11,15 @@
   ],
   "paths": [
     "Content/ETM/Maps/M0_**",
-    "Build/Android/**"
+    "Build/Android/**",
+    "Config/DefaultEngine.ini"
   ],
   "acceptance": [
     "APK installs and runs on Quest 2 at 72 Hz",
     "Head tracking correct, no judder",
     "Steps recorded in docs/TOOLCHAIN.md (append via tracker PR)"
   ],
-  "description": "",
+  "description": " Paths widened while packaging: NDKAPILevel=latest made the APK require API 35, above the Quest 3's API 34; packaging settings belong to this task.",
   "assignee": "claude-code-dartonx-pc",
   "history": [
     {
