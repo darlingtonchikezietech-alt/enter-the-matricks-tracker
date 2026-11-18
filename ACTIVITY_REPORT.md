@@ -2,6 +2,10 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 18:39Z** · `claude-code-dartonx-pc` · T-0031 · _complete_ · commits: 9e22f91,909c365,a14c5ab,18f33a7
+  Campaign flow (9e22f91) plus three fixes from the owner's headset tests: panel text lit (909c365), rig placed on the range instead of the Entry map's player start so panels are reachable (a14c5ab), rig on a 1 m mount with a lower objective bulk so all lanes are visible (18f33a7).
+  Verified: All 83 ETM tests pass (incl. cannon reach to every button and a clear centre-lane sightline); owner on Quest 3: START button works, all lanes visible.
+  Remaining: Owner run through the whole loop (results, relocation fade, Level 2, ending, campaign results); visible pause indicator; failure screen
 - **2026-11-18 18:23Z** · `claude-code-dartonx-pc` · T-0031 · _claim_
   Owner headset test: the rig spawned above the panel
 - **2026-11-18 18:07Z** · `claude-code-dartonx-pc` · T-0031 · _complete_ · commits: 9e22f91,909c365
@@ -111,10 +115,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Verified: Covered by the ETM.UI.Presenter tests, which use the real rig pawn's HUD; all 60 tests pass.
   Remaining: None. Merge together with T-0019 (same branch).
   Next: Review with T-0019.
-- **2026-11-17 13:42Z** · `claude-code-dartonx-pc` · T-0019 · _complete_ · commits: f1f82ed
-  UHUDPresenterComponent (Source/ETM/UI), event-driven, on the rig pawn. Placement per bible section 11: heat bar on each cannon housing near the muzzle plus a lock bracket when overheated; rig integrity bar and 'RIG n' on the central lower frame; brace readiness bar on the frame (full ready, empty in use, refills through the cooldown); objective marker 'POWER n%' above the equipment, pulsing while it is under attack; enemy warnings as '! seconds' markers above each source, the 3 most urgent (soonest, rig attacks win ties), with an edge arrow for sources more than 50 deg off view; '[ OPEN seconds ]' on exposed Gatebreaker weak points; a short objective line; a secondary line for score/narrative that is hidden whenever a critical warning is up. Binds to enemies, bosses and the objective by scanning every 0.5 s (and catches attacks already running). Pure ranking and priority rules in UI/HudModel.h.
-  Verified: Built on UE 5.8.4, zero errors and warnings; all 60 tests on this branch pass, 5 new (ETM.UI.*): ranking, tie-break, cap, secondary expiry, view cone; frame elements 1-2 m from the design eye, below eye height, on the frame, rig bar central; heat and lock per housing; rig text; brace 1 -> 0 -> 0.5 at 8 s -> 1; objective marker text and alarm; 4 attacks -> 3 markers above sources with countdowns, edge arrow only for the off-view one, queued warning moves up, warnings end with their attacks, secondary hidden then back then expires, late-bound attack still warned; boss marker on the open node, gone when it closes. Not seen in a headset: text orientation, size and angular readability are unverified.
-  Remaining: Text faces the seat by a fixed 180 deg turn and world markers face the head each frame; readability at 1-2 m must be checked on a headset (bible: angular readability tests). Placeholder bars and engine text, no UI art (T-0034). Subtitles (T-0032) and results panel (T-0031) are not here. Warnings for attacks against the objective show as normal warnings; Lance and Bomber designated targets are known but not shown. Scanning every 0.5 s: a warning can appear up to 0.5 s late only for an enemy spawned and attacking within that time. Branch agent/claude-code-dartonx-pc/t-0019 also carries T-0050.
-  Next: Review T-0019 and T-0050 (same branch).
 
-_51 older entries in `tracking/reports/`._
+_52 older entries in `tracking/reports/`._

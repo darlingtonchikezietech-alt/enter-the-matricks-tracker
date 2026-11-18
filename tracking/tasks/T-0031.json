@@ -4,7 +4,7 @@
   "milestone": "M3",
   "area": "flow",
   "repo": "game",
-  "status": "in_progress",
+  "status": "review",
   "priority": 2,
   "depends_on": [
     "T-0019"
@@ -44,14 +44,19 @@
       "time": "2026-11-18T18:23:41Z",
       "agent": "claude-code-dartonx-pc",
       "event": "claimed"
+    },
+    {
+      "time": "2026-11-18T18:39:10Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "completed"
     }
   ],
   "result": {
-    "summary": "Campaign flow (9e22f91) plus a lighting fix (909c365): panel text faced away from the light and rendered black on the headset.",
-    "commits": "9e22f91,909c365",
-    "verification": "All 83 ETM tests pass; PC render of the title stage shows the panel text lit and readable; APK reinstalled on the Quest 3. Owner headset play-through pending.",
-    "remaining": "Owner headset run of the full loop; a visible pause indicator (the menu-button pause shows nothing yet)",
+    "summary": "Campaign flow (9e22f91) plus three fixes from the owner's headset tests: panel text lit (909c365), rig placed on the range instead of the Entry map's player start so panels are reachable (a14c5ab), rig on a 1 m mount with a lower objective bulk so all lanes are visible (18f33a7).",
+    "commits": "9e22f91,909c365,a14c5ab,18f33a7",
+    "verification": "All 83 ETM tests pass (incl. cannon reach to every button and a clear centre-lane sightline); owner on Quest 3: START button works, all lanes visible.",
+    "remaining": "Owner run through the whole loop (results, relocation fade, Level 2, ending, campaign results); visible pause indicator; failure screen",
     "next": "",
-    "completed_at": "2026-11-18T18:07:53Z"
+    "completed_at": "2026-11-18T18:39:10Z"
   }
 }
