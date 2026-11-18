@@ -4,7 +4,7 @@
   "milestone": "M1",
   "area": "weapons",
   "repo": "game",
-  "status": "todo",
+  "status": "in_progress",
   "priority": 1,
   "depends_on": [],
   "paths": [
@@ -23,6 +23,12 @@
     "All ETM tests pass; repackaged APK installed on the Quest 3"
   ],
   "description": "From the owner's first headset session on 2026-11-18: floor a little low and far, cannons too long, wants fast fire with about 100 shots before overheating (P-34, owner chose 25 damage per shot). Includes T-0043 (carry the fire-cooldown remainder), which matters more at 10 shots/s.",
-  "assignee": null,
-  "history": []
+  "assignee": "claude-code-dartonx-pc",
+  "history": [
+    {
+      "time": "2026-11-18T01:17:09Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "claimed"
+    }
+  ]
 }
