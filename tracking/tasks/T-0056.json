@@ -4,7 +4,7 @@
   "milestone": "M1",
   "area": "weapons",
   "repo": "game",
-  "status": "todo",
+  "status": "in_progress",
   "priority": 1,
   "depends_on": [],
   "paths": [
@@ -19,6 +19,12 @@
     "All ETM tests pass; APK installed on the Quest 3"
   ],
   "description": "Owner feedback, 2026-11-18, after the full campaign loop: enemies spawn a little slow; the circle of light at the muzzle is too close to the eyes when turning to shoot drones; drones only come from one side (owner chose to add the left side in the stand-ins; bible layouts keep flyers on the right for the real arenas).",
-  "assignee": null,
-  "history": []
+  "assignee": "claude-code-dartonx-pc",
+  "history": [
+    {
+      "time": "2026-11-18T18:48:34Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "claimed"
+    }
+  ]
 }

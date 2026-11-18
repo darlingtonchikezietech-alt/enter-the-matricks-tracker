@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-18T18:48:25Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T18:48:34Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 28/56 done (50%) · todo: 26 · in_progress: 1 · review: 0 · blocked: 1 · done: 28
+**Progress:** 28/56 done (50%) · todo: 25 · in_progress: 2 · review: 0 · blocked: 1 · done: 28
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -18,12 +18,14 @@ _Generated 2026-11-18T18:48:25Z by `tools/agent.py render`. Do not edit by hand.
 | Task | Agent | Since | Last heartbeat | Stale? |
 |---|---|---|---|---|
 | T-0006 Package an empty VR scene and deploy it to a physical Quest 2 | claude-code-dartonx-pc | 2026-11-18T00:37:36Z | 2026-11-18T00:37:36Z |  |
+| T-0056 Second headset test: faster stand-in spawns, muzzle flash away from the eyes, drones from both sides | claude-code-dartonx-pc | 2026-11-18T18:48:34Z | 2026-11-18T18:48:34Z |  |
 
-## In Progress (1)
+## In Progress (2)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0006 | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 | claude-code-dartonx-pc |
+| T-0056 | 1 | M1 | weapons | game | Second headset test: faster stand-in spawns, muzzle flash away from the eyes, drones from both sides | - | claude-code-dartonx-pc |
 
 ## Blocked (1)
 
@@ -31,7 +33,7 @@ _Generated 2026-11-18T18:48:25Z by `tools/agent.py render`. Do not edit by hand.
 |---|---|---|---|---|---|---|---|
 | T-0015 | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 
-## Todo (26)
+## Todo (25)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -41,12 +43,11 @@ _Generated 2026-11-18T18:48:25Z by `tools/agent.py render`. Do not edit by hand.
 | T-0008 | 2 | M0 | art | game | Open-frame rig blockout mesh (seat, knee guard, weapon arms) | T-0006 |  |
 | T-0016 | 1 | M1 | qa | tracker | M1 gate: 3-minute combat test on Quest 2 (comfort, readability, perf capture) | T-0014, T-0015, T-0012, T-0010 |  |
 | T-0047 | 1 | M1 | qa | tracker | Verify on a physical Quest 3 or 3S: install, tracking, Touch Plus input, 72 Hz, short combat test (P-31) | T-0006, T-0046 |  |
-| T-0056 🟢 ready | 1 | M1 | weapons | game | Second headset test: faster stand-in spawns, muzzle flash away from the eyes, drones from both sides | - |  |
 | T-0025 | 1 | M2 | qa | tracker | M2 gate: vertical slice validated on hardware | T-0020, T-0021, T-0022, T-0023, T-0024, T-0019 |  |
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
 | T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 |  |
 | T-0024 | 2 | M2 | perf | game | Performance capture tooling + 30-minute soak script | T-0006 |  |
-| T-0049 🟢 ready | 3 | M2 | qa | game | Test worlds: run garbage collection after destroying them, so reserved GPU memory stops climbing during the test run | - |  |
+| T-0049 | 3 | M2 | qa | game | Test worlds: run garbage collection after destroying them, so reserved GPU memory stops climbing during the test run | - |  |
 | T-0026 | 1 | M3 | encounters | game | Level 1 full schedule (51 enemies, timeline, gating P-14) | T-0025 |  |
 | T-0027 | 1 | M3 | level | game | Level 2 arena greybox | T-0025 |  |
 | T-0028 | 1 | M3 | boss | game | Conductor boss incl. pairing reset (P-07), rig sweep (P-08), emitter fallback (P-06) | T-0025 |  |
