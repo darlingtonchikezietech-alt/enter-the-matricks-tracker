@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 08:25Z** · `owner` · T-0043 · _review_
+  Approved. Owner asked in chat to close it. Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-18 08:25Z** · `claude-code-dartonx-pc` · T-0043 · _complete_ · commits: 9586ea3
   Fix shipped inside T-0055: StepHeat carries the fire-cooldown remainder; 72 Hz parity test tightened to one frame and 1%.
   Verified: ETM.Weapons.HeatParity.Quest72Hz passes at the tightened tolerance; owner headset test
@@ -113,7 +115,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Claimed T-0022: Bulwark, Lance Walker, Siphon, Cradle Bomber
 - **2026-11-17 13:25Z** · `owner` · T-0048 · _review_
   Approved. Approved by the owner in chat on 2026-11-17 (Approve T-0048). Recorded on the owner's behalf by claude-code-dartonx-pc.
-- **2026-11-17 13:22Z** · `claude-code-dartonx-pc` · T-0015 · _blocked_
-  Code half done in T-0048 (all seven shot parts, settings, pooling, tests). Left for T-0015: final effect assets in Content/ETM/Weapons and Content/ETM/VFX once art exists, and the 'effects within budget on device' check, which needs a packaged build on a headset (T-0006).
 
-_45 older entries in `tracking/reports/`._
+_46 older entries in `tracking/reports/`._
