@@ -2,6 +2,11 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 00:41Z** · `claude-code-dartonx-pc` · T-0054 · _complete_ · commits: 5e733a1
+  Replaced the two one-pass 'first actor' loops in UETMInterruptionSubsystem (FindRig, BindMenuButton) with a single iterator check. Clang treats -Wunreachable-code-loop-increment as an error on Android; MSVC accepted them.
+  Verified: Android arm64 Development C++ now compiles (the build reaches Gradle; Gradle then fails on Java 25, a separate toolchain issue). Editor build clean and all 78 ETM tests pass. Same branch as T-0053.
+  Remaining: None for this fix. Packaging still needs JDK 21 (T-0006).
+  Next: Review with T-0053 (same branch).
 - **2026-11-18 00:38Z** · `claude-code-dartonx-pc` · T-0054 · _claim_
   Done on the T-0053 branch
 - **2026-11-18 00:37Z** · `claude-code-dartonx-pc` · T-0006 · _claim_
@@ -113,10 +118,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Approved. Approved by the owner in chat on 2026-11-17 (merged all, approve T-0017 and T-0045). Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-17 11:05Z** · `owner` · T-0017 · _review_
   Approved. Approved by the owner in chat on 2026-11-17 (merged all, approve T-0017 and T-0045). Recorded on the owner's behalf by claude-code-dartonx-pc.
-- **2026-11-17 10:52Z** · `claude-code-dartonx-pc` · T-0017 · _complete_ · commits: c687803
-  AEncounterDirector (Source/ETM/Encounters): authored FEncounterPhase rows of FEncounterSpawnGroup (class, count, entrance, delay, interval), spawned from level entrance actors through the enemy pool with seeded scatter. Caps: phase MaxActive, global 8, boss phases 4 adds; spawns held back while the budget is full, one per group per tick; reinforcements stop when groups are spent. Attack-token limit set per phase (default 2, via T-0045). P-13: a finished phase moves on only after 60% of its slot and with no required dialogue pending; unfinished phases extend; boss phases end via CompletePhase. Never removes enemies; survivors carry over and count against the next cap. Refuses to start if an entrance is missing or more than 110 degrees from rig forward. Mission integration: StartMission, midpoint repair then checkpoint, suspends on failure, rebuilds the checkpoint phase with the same seed on retry without a second repair. Pool prewarm covers live plus dying enemies.
-  Verified: Built ETMEditor Win64 Development on UE 5.8.4, zero errors and warnings. 5 new automation tests (ETM.Encounters.Director.*) pass in a test world with the real pool, tokens, mission state, objective and rig health: caps 3/8/4 never exceeded, held-back trickle, P-13 60% and dialogue hold, unfinished phase extends, carry-over not deleted and counted, repair 260 then checkpoint, suspend on failure, retry restores phase/seed/position without a second repair, entrance validation. Pool never grows. All 25 tests on this branch pass. Enemies were plain AEnemyBase actors killed by the test, not archetypes with AI; no level, no headset.
-  Remaining: No real Level 1 or Level 2 schedule yet (T-0026, T-0029). The pause flow (T-0030) must stop the director's tick. The behind-the-player limit (110 degrees) is my choice. Dialogue is a single pending flag the VO system (T-0032) must set. The boss controller (T-0021) must call CompletePhase. Branch is built from T-0018 with T-0044 and T-0045 merged in: merge those three first.
-  Next: Review T-0017 and T-0045. Then T-0021 (Gatebreaker) or T-0022 (Bulwark, Lance, Siphon, Cradle) or T-0026 (Level 1 schedule).
 
-_33 older entries in `tracking/reports/`._
+_34 older entries in `tracking/reports/`._

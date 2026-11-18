@@ -1,8 +1,0 @@
-{
-  "task": "T-0054",
-  "agent": "claude-code-dartonx-pc",
-  "claimed_at": "2026-11-18T00:38:40Z",
-  "heartbeat": "2026-11-18T00:38:40Z",
-  "branch": "agent/claude-code-dartonx-pc/t-0054",
-  "note": "Done on the T-0053 branch"
-}
