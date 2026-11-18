@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-18T00:21:13Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T00:21:18Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 23/53 done (43%) · todo: 29 · in_progress: 0 · review: 0 · blocked: 1 · done: 23
+**Progress:** 23/53 done (43%) · todo: 28 · in_progress: 1 · review: 0 · blocked: 1 · done: 23
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,7 +15,15 @@ _Generated 2026-11-18T00:21:13Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-_None. Every task is free._
+| Task | Agent | Since | Last heartbeat | Stale? |
+|---|---|---|---|---|
+| T-0053 Sandbox game mode: rig pawn, floor and distance markers, practice encounter (first playable for VR Preview and the first APK) | claude-code-dartonx-pc | 2026-11-18T00:21:18Z | 2026-11-18T00:21:18Z |  |
+
+## In Progress (1)
+
+| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
+|---|---|---|---|---|---|---|---|
+| T-0053 | 1 | M0 | engine | game | Sandbox game mode: rig pawn, floor and distance markers, practice encounter (first playable for VR Preview and the first APK) | - | claude-code-dartonx-pc |
 
 ## Blocked (1)
 
@@ -23,14 +31,13 @@ _None. Every task is free._
 |---|---|---|---|---|---|---|---|
 | T-0015 | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 
-## Todo (29)
+## Todo (28)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0002 🟢 ready | 1 | M0 | producer | tracker | Owner: set team start date and turn M0-M5 weeks into calendar dates | - |  |
 | T-0003 🟢 ready | 1 | M0 | producer | tracker | Owner: kick off naming/trademark clearance for the title (P-16) | - |  |
 | T-0006 🟢 ready | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 |  |
-| T-0053 🟢 ready | 1 | M0 | engine | game | Sandbox game mode: rig pawn, floor and distance markers, practice encounter (first playable for VR Preview and the first APK) | - |  |
 | T-0004 🟢 ready | 2 | M0 | art | tracker | Revised concept art pass using the CONCEPT_ART_REVIEW brief | - |  |
 | T-0008 | 2 | M0 | art | game | Open-frame rig blockout mesh (seat, knee guard, weapon arms) | T-0006 |  |
 | T-0016 | 1 | M1 | qa | tracker | M1 gate: 3-minute combat test on Quest 2 (comfort, readability, perf capture) | T-0014, T-0015, T-0012, T-0010 |  |

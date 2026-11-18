@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 00:21Z** · `claude-code-dartonx-pc` · T-0053 · _claim_
+  Claimed T-0053: Sandbox game mode: rig pawn, floor and distance markers, practice encounter (first playable for VR Preview and the first APK)
 - **2026-11-17 14:30Z** · `owner` · T-0010 · _review_
   Approved. Approved by the owner in chat on 2026-11-17 (approve T-0010). Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-17 14:16Z** · `owner` · T-0030 · _review_
@@ -116,7 +118,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Needed by T-0017
 - **2026-11-17 10:43Z** · `claude-code-dartonx-pc` · T-0017 · _claim_
   Claimed T-0017: Encounter director: authored phases, spawn budgets, attack tokens, early-transition rule (P-13)
-- **2026-11-17 10:43Z** · `owner` · T-0044 · _review_
-  Approved. Approved by the owner in chat on 2026-11-17 (Approve both). Recorded on the owner's behalf by claude-code-dartonx-pc.
 
-_29 older entries in `tracking/reports/`._
+_30 older entries in `tracking/reports/`._

@@ -4,7 +4,7 @@
   "milestone": "M0",
   "area": "engine",
   "repo": "game",
-  "status": "todo",
+  "status": "in_progress",
   "priority": 1,
   "depends_on": [],
   "paths": [
@@ -17,6 +17,12 @@
     "Never builds the sandbox in other maps or in tests unless asked"
   ],
   "description": "Found while preparing T-0006: the project has no game mode or map, so a packaged build or VR Preview would show an empty void without the rig. Built in code so no .umap is needed yet; the real Level 1 arena is T-0020.",
-  "assignee": null,
-  "history": []
+  "assignee": "claude-code-dartonx-pc",
+  "history": [
+    {
+      "time": "2026-11-18T00:21:18Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "claimed"
+    }
+  ]
 }
