@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 00:41Z** · `claude-code-dartonx-pc` · T-0053 · _note_
+  T-0053 branch now also carries T-0054's Android build fixes for the sandbox; review them together.
 - **2026-11-18 00:41Z** · `claude-code-dartonx-pc` · T-0054 · _complete_ · commits: 890a0ba
   Android (Clang) build fixes on the T-0053 branch: the sandbox uses ALight::GetLightComponent (ADirectionalLight::GetComponent is editor-only), and three one-pass 'first actor' loops (sandbox ShouldBuildSandbox, interruption FindRig and BindMenuButton) became single iterator checks, since Clang's -Wunreachable-code-loop-increment is an error on Android. Supersedes the earlier completion, which named the wrong commit.
   Verified: Android arm64 Development C++ compiles (the build reaches Gradle, which then fails on Java 25: a toolchain issue, not code). Editor build clean; all 78 ETM tests pass.
@@ -119,7 +121,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Verified: Built on UE 5.8.4, zero errors and warnings; all 44 ETM tests pass. Ran the new test with DefaultDeviceProfiles.ini removed: it fails with 'Meta_Quest_3 sets sg.shadowquality=1 like Quest 2 (has 2)', so it detects the mismatch. Editor only; no Quest 3 or 3S has run the game.
   Remaining: Device check on a real Quest 3 or 3S is T-0047 and needs a headset (the build PC has only a Quest 2). Touch Plus through the Touch profile is expected, not seen. Quest 3 renders at its higher recommended resolution: measure before raising any other setting. Quest Pro stays in the manifest until T-0041 decides.
   Next: Review T-0046. T-0047 after T-0006 packages an APK.
-- **2026-11-17 12:41Z** · `claude-code-dartonx-pc` · T-0046 · _claim_
-  Claimed T-0046: Quest 3/3S: pin device profiles to the Quest 2 baseline and document supported headsets (P-31)
 
-_36 older entries in `tracking/reports/`._
+_37 older entries in `tracking/reports/`._
