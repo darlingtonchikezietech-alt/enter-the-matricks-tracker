@@ -1,0 +1,28 @@
+{
+  "id": "T-0055",
+  "title": "First headset test changes: P-34 rapid fire in code, fire-cadence carry (T-0043), eye height, barrel length, closer sandbox range",
+  "milestone": "M1",
+  "area": "weapons",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [],
+  "paths": [
+    "Source/ETM/Weapons/**",
+    "Source/ETM/Tests/**",
+    "Source/ETM/Bosses/Gatebreaker/**",
+    "Source/ETM/Player/XRSeatedRigPawn.h",
+    "Source/ETM/UI/HUDPresenterComponent.h",
+    "Source/ETM/UI/Tests/HudPresenterTest.cpp",
+    "Source/ETM/Core/Game/ETMSandboxGameMode.cpp"
+  ],
+  "acceptance": [
+    "Cannon defaults match P-34 and the balance sim; heat parity test passes at 1 ms and at 72 Hz within one frame and 1%",
+    "Gatebreaker core 6,500 HP, collapse at 1,950, core falls in 2-3 exposures at 70% with the real heat model",
+    "Design eye 10 cm lower, barrels 80 cm, sandbox objective and entrances closer",
+    "All ETM tests pass; repackaged APK installed on the Quest 3"
+  ],
+  "description": "From the owner's first headset session on 2026-11-18: floor a little low and far, cannons too long, wants fast fire with about 100 shots before overheating (P-34, owner chose 25 damage per shot). Includes T-0043 (carry the fire-cooldown remainder), which matters more at 10 shots/s.",
+  "assignee": null,
+  "history": []
+}

@@ -1,13 +1,13 @@
 # Task Board
 
-_Generated 2026-11-18T00:41:57Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T01:17:05Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 23/54 done (43%) · todo: 27 · in_progress: 1 · review: 2 · blocked: 1 · done: 23
+**Progress:** 23/55 done (42%) · todo: 28 · in_progress: 1 · review: 2 · blocked: 1 · done: 23
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 3 | 10 | `███░░░░░░░` |
-| M1 | 9 | 13 | `███████░░░` |
+| M1 | 9 | 14 | `██████░░░░` |
 | M2 | 10 | 15 | `███████░░░` |
 | M3 | 1 | 8 | `█░░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
@@ -38,7 +38,7 @@ _Generated 2026-11-18T00:41:57Z by `tools/agent.py render`. Do not edit by hand.
 |---|---|---|---|---|---|---|---|
 | T-0015 | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 
-## Todo (27)
+## Todo (28)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -48,6 +48,7 @@ _Generated 2026-11-18T00:41:57Z by `tools/agent.py render`. Do not edit by hand.
 | T-0008 | 2 | M0 | art | game | Open-frame rig blockout mesh (seat, knee guard, weapon arms) | T-0006 |  |
 | T-0016 | 1 | M1 | qa | tracker | M1 gate: 3-minute combat test on Quest 2 (comfort, readability, perf capture) | T-0014, T-0015, T-0012, T-0010 |  |
 | T-0047 | 1 | M1 | qa | tracker | Verify on a physical Quest 3 or 3S: install, tracking, Touch Plus input, 72 Hz, short combat test (P-31) | T-0006, T-0046 |  |
+| T-0055 🟢 ready | 1 | M1 | weapons | game | First headset test changes: P-34 rapid fire in code, fire-cadence carry (T-0043), eye height, barrel length, closer sandbox range | - |  |
 | T-0043 🟢 ready | 2 | M1 | weapons | game | Heat model: carry fire-cooldown remainder so cadence does not drift at 72 Hz | T-0010 |  |
 | T-0025 | 1 | M2 | qa | tracker | M2 gate: vertical slice validated on hardware | T-0020, T-0021, T-0022, T-0023, T-0024, T-0019 |  |
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
