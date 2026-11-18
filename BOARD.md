@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-18T00:41:47Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T00:41:54Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 23/54 done (43%) · todo: 27 · in_progress: 2 · review: 1 · blocked: 1 · done: 23
+**Progress:** 23/54 done (43%) · todo: 27 · in_progress: 1 · review: 2 · blocked: 1 · done: 23
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -18,20 +18,19 @@ _Generated 2026-11-18T00:41:47Z by `tools/agent.py render`. Do not edit by hand.
 | Task | Agent | Since | Last heartbeat | Stale? |
 |---|---|---|---|---|
 | T-0006 Package an empty VR scene and deploy it to a physical Quest 2 | claude-code-dartonx-pc | 2026-11-18T00:37:36Z | 2026-11-18T00:37:36Z |  |
-| T-0054 Fix Android (Clang) build errors in the interruption subsystem and the sandbox game mode | claude-code-dartonx-pc | 2026-11-18T00:41:47Z | 2026-11-18T00:41:47Z |  |
 
-## In Progress (2)
+## In Progress (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0006 | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 | claude-code-dartonx-pc |
-| T-0054 | 1 | M0 | engine | game | Fix Android (Clang) build errors in the interruption subsystem and the sandbox game mode | - | claude-code-dartonx-pc |
 
-## Review (1)
+## Review (2)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0053 | 1 | M0 | engine | game | Sandbox game mode: rig pawn, floor and distance markers, practice encounter (first playable for VR Preview and the first APK) | - | claude-code-dartonx-pc |
+| T-0054 | 1 | M0 | engine | game | Fix Android (Clang) build errors in the interruption subsystem and the sandbox game mode | - | claude-code-dartonx-pc |
 
 ## Blocked (1)
 

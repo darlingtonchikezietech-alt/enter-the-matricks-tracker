@@ -4,7 +4,7 @@
   "milestone": "M0",
   "area": "engine",
   "repo": "game",
-  "status": "in_progress",
+  "status": "review",
   "priority": 1,
   "depends_on": [],
   "paths": [
@@ -32,14 +32,19 @@
       "time": "2026-11-18T00:41:47Z",
       "agent": "claude-code-dartonx-pc",
       "event": "claimed"
+    },
+    {
+      "time": "2026-11-18T00:41:54Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "completed"
     }
   ],
   "result": {
-    "summary": "Replaced the two one-pass 'first actor' loops in UETMInterruptionSubsystem (FindRig, BindMenuButton) with a single iterator check. Clang treats -Wunreachable-code-loop-increment as an error on Android; MSVC accepted them.",
-    "commits": "5e733a1",
-    "verification": "Android arm64 Development C++ now compiles (the build reaches Gradle; Gradle then fails on Java 25, a separate toolchain issue). Editor build clean and all 78 ETM tests pass. Same branch as T-0053.",
-    "remaining": "None for this fix. Packaging still needs JDK 21 (T-0006).",
-    "next": "Review with T-0053 (same branch).",
-    "completed_at": "2026-11-18T00:41:15Z"
+    "summary": "Android (Clang) build fixes on the T-0053 branch: the sandbox uses ALight::GetLightComponent (ADirectionalLight::GetComponent is editor-only), and three one-pass 'first actor' loops (sandbox ShouldBuildSandbox, interruption FindRig and BindMenuButton) became single iterator checks, since Clang's -Wunreachable-code-loop-increment is an error on Android. Supersedes the earlier completion, which named the wrong commit.",
+    "commits": "890a0ba",
+    "verification": "Android arm64 Development C++ compiles (the build reaches Gradle, which then fails on Java 25: a toolchain issue, not code). Editor build clean; all 78 ETM tests pass.",
+    "remaining": "Packaging needs JDK 21 (T-0006). Merge with T-0053 (same branch).",
+    "next": "Review with T-0053.",
+    "completed_at": "2026-11-18T00:41:54Z"
   }
 }
