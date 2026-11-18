@@ -1,13 +1,13 @@
 # Task Board
 
-_Generated 2026-11-18T22:19:40Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T22:19:44Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 31/58 done (53%) · todo: 25 · in_progress: 0 · review: 1 · blocked: 1 · done: 31
+**Progress:** 32/58 done (55%) · todo: 25 · in_progress: 0 · review: 0 · blocked: 1 · done: 32
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 6 | 10 | `██████░░░░` |
-| M1 | 12 | 17 | `███████░░░` |
+| M1 | 13 | 17 | `████████░░` |
 | M2 | 11 | 15 | `███████░░░` |
 | M3 | 2 | 8 | `██░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
@@ -16,12 +16,6 @@ _Generated 2026-11-18T22:19:40Z by `tools/agent.py render`. Do not edit by hand.
 ## Active claims
 
 _None. Every task is free._
-
-## Review (1)
-
-| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
-|---|---|---|---|---|---|---|---|
-| T-0058 | 1 | M1 | enemies | game | Third headset test: small explosion when enemies die; Needle Drones drift around their hover point | - | claude-code-dartonx-pc |
 
 ## Blocked (1)
 
@@ -59,7 +53,7 @@ _None. Every task is free._
 | T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
 | T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
 
-## Done (31)
+## Done (32)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -79,6 +73,7 @@ _None. Every task is free._
 | T-0046 | 1 | M1 | engine | game | Quest 3/3S: pin device profiles to the Quest 2 baseline and document supported headsets (P-31) | - | claude-code-dartonx-pc |
 | T-0055 | 1 | M1 | weapons | game | First headset test changes: P-34 rapid fire in code, fire-cadence carry (T-0043), eye height, barrel length, closer sandbox range | - | claude-code-dartonx-pc |
 | T-0056 | 1 | M1 | weapons | game | Second headset test: faster stand-in spawns, muzzle flash away from the eyes, drones from both sides | - | claude-code-dartonx-pc |
+| T-0058 | 1 | M1 | enemies | game | Third headset test: small explosion when enemies die; Needle Drones drift around their hover point | - | claude-code-dartonx-pc |
 | T-0043 | 2 | M1 | weapons | game | Heat model: carry fire-cooldown remainder so cadence does not drift at 72 Hz | T-0010 | claude-code-dartonx-pc |
 | T-0048 | 2 | M1 | vfx | game | Shot feedback component in C++: recoil, muzzle flash, tracer, impact flash, haptics, placeholder sound (for T-0015) | T-0009 | claude-code-dartonx-pc |
 | T-0017 | 1 | M2 | encounters | game | Encounter director: authored phases, spawn budgets, attack tokens, early-transition rule (P-13) | T-0013 | claude-code-dartonx-pc |

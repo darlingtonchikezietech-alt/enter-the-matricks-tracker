@@ -4,7 +4,7 @@
   "milestone": "M1",
   "area": "enemies",
   "repo": "game",
-  "status": "review",
+  "status": "done",
   "priority": 1,
   "depends_on": [],
   "paths": [
@@ -31,6 +31,12 @@
       "time": "2026-11-18T21:05:16Z",
       "agent": "claude-code-dartonx-pc",
       "event": "completed"
+    },
+    {
+      "time": "2026-11-18T22:19:44Z",
+      "agent": "owner",
+      "event": "approved",
+      "note": "Owner played the build on Quest 3 and approved in chat. Recorded on the owner's behalf by claude-code-dartonx-pc."
     }
   ],
   "result": {
