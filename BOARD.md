@@ -1,12 +1,12 @@
 # Task Board
 
-_Generated 2026-11-18T19:41:35Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T19:41:38Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 29/57 done (51%) · todo: 26 · in_progress: 0 · review: 1 · blocked: 1 · done: 29
+**Progress:** 30/57 done (53%) · todo: 26 · in_progress: 0 · review: 0 · blocked: 1 · done: 30
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
-| M0 | 5 | 10 | `█████░░░░░` |
+| M0 | 6 | 10 | `██████░░░░` |
 | M1 | 12 | 16 | `████████░░` |
 | M2 | 10 | 15 | `███████░░░` |
 | M3 | 2 | 8 | `██░░░░░░░░` |
@@ -16,12 +16,6 @@ _Generated 2026-11-18T19:41:35Z by `tools/agent.py render`. Do not edit by hand.
 ## Active claims
 
 _None. Every task is free._
-
-## Review (1)
-
-| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
-|---|---|---|---|---|---|---|---|
-| T-0006 | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 | claude-code-dartonx-pc |
 
 ## Blocked (1)
 
@@ -36,14 +30,14 @@ _None. Every task is free._
 | T-0002 🟢 ready | 1 | M0 | producer | tracker | Owner: set team start date and turn M0-M5 weeks into calendar dates | - |  |
 | T-0003 🟢 ready | 1 | M0 | producer | tracker | Owner: kick off naming/trademark clearance for the title (P-16) | - |  |
 | T-0004 🟢 ready | 2 | M0 | art | tracker | Revised concept art pass using the CONCEPT_ART_REVIEW brief | - |  |
-| T-0008 | 2 | M0 | art | game | Open-frame rig blockout mesh (seat, knee guard, weapon arms) | T-0006 |  |
+| T-0008 🟢 ready | 2 | M0 | art | game | Open-frame rig blockout mesh (seat, knee guard, weapon arms) | T-0006 |  |
 | T-0016 | 1 | M1 | qa | tracker | M1 gate: 3-minute combat test on Quest 2 (comfort, readability, perf capture) | T-0014, T-0015, T-0012, T-0010 |  |
-| T-0047 | 1 | M1 | qa | tracker | Verify on a physical Quest 3 or 3S: install, tracking, Touch Plus input, 72 Hz, short combat test (P-31) | T-0006, T-0046 |  |
+| T-0047 🟢 ready | 1 | M1 | qa | tracker | Verify on a physical Quest 3 or 3S: install, tracking, Touch Plus input, 72 Hz, short combat test (P-31) | T-0006, T-0046 |  |
 | T-0057 🟢 ready | 1 | M1 | platform | game | Deploy the packaged build to a physical Quest 2: install, 72 Hz, tracking, input (split from T-0006) | - |  |
 | T-0025 | 1 | M2 | qa | tracker | M2 gate: vertical slice validated on hardware | T-0020, T-0021, T-0022, T-0023, T-0024, T-0019 |  |
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
-| T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 |  |
-| T-0024 | 2 | M2 | perf | game | Performance capture tooling + 30-minute soak script | T-0006 |  |
+| T-0020 🟢 ready | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 |  |
+| T-0024 🟢 ready | 2 | M2 | perf | game | Performance capture tooling + 30-minute soak script | T-0006 |  |
 | T-0049 🟢 ready | 3 | M2 | qa | game | Test worlds: run garbage collection after destroying them, so reserved GPU memory stops climbing during the test run | - |  |
 | T-0026 | 1 | M3 | encounters | game | Level 1 full schedule (51 enemies, timeline, gating P-14) | T-0025 |  |
 | T-0027 | 1 | M3 | level | game | Level 2 arena greybox | T-0025 |  |
@@ -60,12 +54,13 @@ _None. Every task is free._
 | T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
 | T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
 
-## Done (29)
+## Done (30)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0001 | 1 | M0 | producer | tracker | Bootstrap repos, patched bible v1.1, tracker and Unreal scaffold | - | claude-bootstrap |
 | T-0005 | 1 | M0 | engine | game | Compile the scaffold and lock the toolchain (UE version, Meta XR/OpenXR plugin, SDK/NDK/JDK) | - | claude-code-dartonx-pc |
+| T-0006 | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 | claude-code-dartonx-pc |
 | T-0007 | 1 | M0 | player | game | Seated rig pawn: XR origin, controller tracking, seated calibration, Forward re-anchor (P-11) | T-0005 | claude-code-dartonx-pc |
 | T-0053 | 1 | M0 | engine | game | Sandbox game mode: rig pawn, floor and distance markers, practice encounter (first playable for VR Preview and the first APK) | - | claude-code-dartonx-pc |
 | T-0054 | 1 | M0 | engine | game | Fix Android (Clang) build errors in the interruption subsystem and the sandbox game mode | - | claude-code-dartonx-pc |

@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 19:41Z** · `owner` · T-0006 · _review_
+  Approved. Owner chose in chat to close T-0006 on the Quest 3 evidence and split the Quest 2 check into its own task. Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-18 19:41Z** · `claude-code-dartonx-pc` · T-0006 · _complete_ · commits: bc6ed2d,890a0ba
   Packaged Android build (NDK API 32, JDK 21) deployed to a physical Quest 3: installs and launches, 72/72 FPS, no stale frames, CPU+GPU 11.8 ms, tracking and input good per the owner. Quest 2 check moved to its own task at the owner's request.
   Verified: Device install and runs on Quest 3 across four owner sessions (OVR metrics and device logs); full campaign loop played
@@ -114,7 +116,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Verified: Built on UE 5.8.4, zero errors and warnings; all 71 tests on this branch pass, 5 new (ETM.Save.*), restarts simulated by a fresh store reading the files back from disk: every setting survives and out-of-range values are clamped; checkpoint saved automatically through the mission, survives restart with phase/seed/boss flag/health/difficulty, resumes into a director at the boss phase with rig 300 and objective 60% (80% on Assisted), not a retry; a midpoint resumes exact values; cleared checkpoint stays cleared; results keep best and last with P-30 stats; settings applied to a real rig pawn and mission. Found and fixed: a damaged save file made the engine assert (crash) inside LoadGameFromSlot; now garbage, truncated and fake-engine-header files fall back to the backup or defaults with no crash. Async writes are not exercised by the tests (they write synchronously); nothing tested on a headset's storage.
   Remaining: The calibration (ETM_Calibration) and control scheme (ETM_Input) slots from T-0007 and T-0012 still use the engine's plain load, so a damaged copy of either could still crash the game: filed as a follow-up. Score is computed by the results screen (T-0031); the stats themselves are not yet collected during play. Continue flow (load map, start encounter, ResumeInto) belongs to T-0031. Assisted damage scale 0.7 is my value; the bible only says 'reduced'. Branch agent/claude-code-dartonx-pc/t-0023 also carries T-0051.
   Next: Review T-0023 and T-0051 (same branch), then the slot follow-up.
-- **2026-11-17 13:53Z** · `claude-code-dartonx-pc` · T-0051 · _claim_
-  Resume entry point for T-0023, same branch
 
-_57 older entries in `tracking/reports/`._
+_58 older entries in `tracking/reports/`._

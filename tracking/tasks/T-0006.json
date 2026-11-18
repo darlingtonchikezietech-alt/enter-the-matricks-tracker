@@ -4,7 +4,7 @@
   "milestone": "M0",
   "area": "engine",
   "repo": "game",
-  "status": "review",
+  "status": "done",
   "priority": 1,
   "depends_on": [
     "T-0005"
@@ -31,6 +31,12 @@
       "time": "2026-11-18T19:41:35Z",
       "agent": "claude-code-dartonx-pc",
       "event": "completed"
+    },
+    {
+      "time": "2026-11-18T19:41:38Z",
+      "agent": "owner",
+      "event": "approved",
+      "note": "Owner chose in chat to close T-0006 on the Quest 3 evidence and split the Quest 2 check into its own task. Recorded on the owner's behalf by claude-code-dartonx-pc."
     }
   ],
   "result": {
