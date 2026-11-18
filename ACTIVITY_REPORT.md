@@ -2,6 +2,9 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 08:25Z** · `claude-code-dartonx-pc` · T-0043 · _complete_ · commits: 9586ea3
+  Fix shipped inside T-0055: StepHeat carries the fire-cooldown remainder; 72 Hz parity test tightened to one frame and 1%.
+  Verified: ETM.Weapons.HeatParity.Quest72Hz passes at the tightened tolerance; owner headset test
 - **2026-11-18 08:25Z** · `claude-code-dartonx-pc` · T-0043 · _claim_
   Closing: fix shipped in T-0055 (9586ea3, PR #21)
 - **2026-11-18 08:25Z** · `owner` · T-0054 · _review_
@@ -112,10 +115,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Approved. Approved by the owner in chat on 2026-11-17 (Approve T-0048). Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-17 13:22Z** · `claude-code-dartonx-pc` · T-0015 · _blocked_
   Code half done in T-0048 (all seven shot parts, settings, pooling, tests). Left for T-0015: final effect assets in Content/ETM/Weapons and Content/ETM/VFX once art exists, and the 'effects within budget on device' check, which needs a packaged build on a headset (T-0006).
-- **2026-11-17 13:22Z** · `claude-code-dartonx-pc` · T-0048 · _complete_ · commits: 5eef185
-  UCannonFeedbackComponent (Source/ETM/Weapons/Feedback), one per cannon on AXRSeatedRigPawn (LeftFeedback/RightFeedback). Per shot: recoil kick (6 cm back, 2.5 deg up, settles in 0.15 s) on its own pivot with a placeholder barrel; amber-white directional muzzle flash (0.05 s); a tracer from a pool of 3 that races muzzle to end in 0.04 s and is gone by 0.08 s; an impact flash from a pool of 3 on hits and frame blocks, plus OnImpact(location, weak point, blocked) for debris VFX; a 0.06 s haptic pulse on that hand; a report sound. Overheat lock gives a 0.25 s full buzz. HapticStrength 0..1 (0 = off) and bReducedFlash (smaller, shorter flashes; tracer kept) for the T-0037 settings. Ticks only while animating; everything built at BeginPlay, nothing per shot. Placeholders: engine cylinder/cone, EmissiveMeshMaterial tinted amber, 1kSineTonePing pitched to 0.3.
-  Verified: Built on UE 5.8.4, zero errors and warnings; all 55 ETM tests pass, 4 new (ETM.Weapons.Feedback.*): all seven parts fire on a real cannon shot and settle within 0.2 s; tracer starts at the muzzle and reaches the impact at half its life; haptics off/half; reduced flash; overheat buzz; 2 minutes of burst fire (200+ shots) creates no new visuals and never overflows the pools; on the real rig pawn, camera, XR origin and pawn never move while firing, and only the firing hand gets haptics. Not seen rendered, not heard, not felt: no headset; the test run uses no audio device.
-  Remaining: Everything is placeholder: final muzzle/tracer/impact art and Niagara debris (T-0034), real report and servo sounds (T-0036). The engine tone is a beep pitched down, not a report. The emissive material's colour parameter name ('Color') was read from the asset, not confirmed rendered. Effect cost on Quest 2/3 is unmeasured (T-0015 device check). Branch agent/claude-code-dartonx-pc/t-0048 needs a PR.
-  Next: Review T-0048. T-0015 stays open for the on-device budget check.
 
-_44 older entries in `tracking/reports/`._
+_45 older entries in `tracking/reports/`._

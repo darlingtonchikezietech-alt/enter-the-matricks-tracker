@@ -4,7 +4,7 @@
   "milestone": "M1",
   "area": "weapons",
   "repo": "game",
-  "status": "in_progress",
+  "status": "review",
   "priority": 2,
   "depends_on": [
     "T-0010"
@@ -25,6 +25,19 @@
       "time": "2026-11-18T08:25:42Z",
       "agent": "claude-code-dartonx-pc",
       "event": "claimed"
+    },
+    {
+      "time": "2026-11-18T08:25:45Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "completed"
     }
-  ]
+  ],
+  "result": {
+    "summary": "Fix shipped inside T-0055: StepHeat carries the fire-cooldown remainder; 72 Hz parity test tightened to one frame and 1%.",
+    "commits": "9586ea3",
+    "verification": "ETM.Weapons.HeatParity.Quest72Hz passes at the tightened tolerance; owner headset test",
+    "remaining": "",
+    "next": "",
+    "completed_at": "2026-11-18T08:25:45Z"
+  }
 }

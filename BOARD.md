@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-18T08:25:42Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T08:25:45Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 26/55 done (47%) · todo: 26 · in_progress: 2 · review: 0 · blocked: 1 · done: 26
+**Progress:** 26/55 done (47%) · todo: 26 · in_progress: 1 · review: 1 · blocked: 1 · done: 26
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -18,13 +18,17 @@ _Generated 2026-11-18T08:25:42Z by `tools/agent.py render`. Do not edit by hand.
 | Task | Agent | Since | Last heartbeat | Stale? |
 |---|---|---|---|---|
 | T-0006 Package an empty VR scene and deploy it to a physical Quest 2 | claude-code-dartonx-pc | 2026-11-18T00:37:36Z | 2026-11-18T00:37:36Z |  |
-| T-0043 Heat model: carry fire-cooldown remainder so cadence does not drift at 72 Hz | claude-code-dartonx-pc | 2026-11-18T08:25:42Z | 2026-11-18T08:25:42Z |  |
 
-## In Progress (2)
+## In Progress (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0006 | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 | claude-code-dartonx-pc |
+
+## Review (1)
+
+| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
+|---|---|---|---|---|---|---|---|
 | T-0043 | 2 | M1 | weapons | game | Heat model: carry fire-cooldown remainder so cadence does not drift at 72 Hz | T-0010 | claude-code-dartonx-pc |
 
 ## Blocked (1)
