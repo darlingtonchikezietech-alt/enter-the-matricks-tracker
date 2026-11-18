@@ -10,13 +10,15 @@
   "paths": [
     "Source/ETM/Weapons/Feedback/**",
     "Source/ETM/Core/Game/**",
-    "Source/ETM/Core/Flow/Tests/**"
+    "Source/ETM/Core/Flow/Tests/**",
+    "Source/ETM/Player/XRSeatedRigPawn.cpp"
   ],
   "acceptance": [
     "Stand-in levels keep steady pressure (shorter spawn gaps and slots)",
     "Muzzle flash sits further from the eye, smaller and dimmer, and does not strobe every shot at 10 shots/s; reduced-flash still reduces it",
     "Stand-in levels send drones from the left lane as well as the right",
-    "All ETM tests pass; APK installed on the Quest 3"
+    "All ETM tests pass; APK installed on the Quest 3",
+    "Cannon mounts wider apart so they read as being at the player's sides"
   ],
   "description": "Owner feedback, 2026-11-18, after the full campaign loop: enemies spawn a little slow; the circle of light at the muzzle is too close to the eyes when turning to shoot drones; drones only come from one side (owner chose to add the left side in the stand-ins; bible layouts keep flyers on the right for the real arenas).",
   "assignee": "claude-code-dartonx-pc",
