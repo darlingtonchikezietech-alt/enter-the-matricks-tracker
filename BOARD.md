@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-18T08:25:23Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T08:25:42Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 26/55 done (47%) · todo: 27 · in_progress: 1 · review: 0 · blocked: 1 · done: 26
+**Progress:** 26/55 done (47%) · todo: 26 · in_progress: 2 · review: 0 · blocked: 1 · done: 26
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -18,12 +18,14 @@ _Generated 2026-11-18T08:25:23Z by `tools/agent.py render`. Do not edit by hand.
 | Task | Agent | Since | Last heartbeat | Stale? |
 |---|---|---|---|---|
 | T-0006 Package an empty VR scene and deploy it to a physical Quest 2 | claude-code-dartonx-pc | 2026-11-18T00:37:36Z | 2026-11-18T00:37:36Z |  |
+| T-0043 Heat model: carry fire-cooldown remainder so cadence does not drift at 72 Hz | claude-code-dartonx-pc | 2026-11-18T08:25:42Z | 2026-11-18T08:25:42Z |  |
 
-## In Progress (1)
+## In Progress (2)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0006 | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 | claude-code-dartonx-pc |
+| T-0043 | 2 | M1 | weapons | game | Heat model: carry fire-cooldown remainder so cadence does not drift at 72 Hz | T-0010 | claude-code-dartonx-pc |
 
 ## Blocked (1)
 
@@ -31,7 +33,7 @@ _Generated 2026-11-18T08:25:23Z by `tools/agent.py render`. Do not edit by hand.
 |---|---|---|---|---|---|---|---|
 | T-0015 | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 
-## Todo (27)
+## Todo (26)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -41,7 +43,6 @@ _Generated 2026-11-18T08:25:23Z by `tools/agent.py render`. Do not edit by hand.
 | T-0008 | 2 | M0 | art | game | Open-frame rig blockout mesh (seat, knee guard, weapon arms) | T-0006 |  |
 | T-0016 | 1 | M1 | qa | tracker | M1 gate: 3-minute combat test on Quest 2 (comfort, readability, perf capture) | T-0014, T-0015, T-0012, T-0010 |  |
 | T-0047 | 1 | M1 | qa | tracker | Verify on a physical Quest 3 or 3S: install, tracking, Touch Plus input, 72 Hz, short combat test (P-31) | T-0006, T-0046 |  |
-| T-0043 🟢 ready | 2 | M1 | weapons | game | Heat model: carry fire-cooldown remainder so cadence does not drift at 72 Hz | T-0010 |  |
 | T-0025 | 1 | M2 | qa | tracker | M2 gate: vertical slice validated on hardware | T-0020, T-0021, T-0022, T-0023, T-0024, T-0019 |  |
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
 | T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 |  |

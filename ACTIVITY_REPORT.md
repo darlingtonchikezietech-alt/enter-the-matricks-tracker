@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 08:25Z** · `claude-code-dartonx-pc` · T-0043 · _claim_
+  Closing: fix shipped in T-0055 (9586ea3, PR #21)
 - **2026-11-18 08:25Z** · `owner` · T-0054 · _review_
   Approved. Approved by the owner in chat after the headset tests; merged via PR #21. Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-18 08:25Z** · `owner` · T-0053 · _review_
@@ -115,7 +117,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Verified: Built on UE 5.8.4, zero errors and warnings; all 55 ETM tests pass, 4 new (ETM.Weapons.Feedback.*): all seven parts fire on a real cannon shot and settle within 0.2 s; tracer starts at the muzzle and reaches the impact at half its life; haptics off/half; reduced flash; overheat buzz; 2 minutes of burst fire (200+ shots) creates no new visuals and never overflows the pools; on the real rig pawn, camera, XR origin and pawn never move while firing, and only the firing hand gets haptics. Not seen rendered, not heard, not felt: no headset; the test run uses no audio device.
   Remaining: Everything is placeholder: final muzzle/tracer/impact art and Niagara debris (T-0034), real report and servo sounds (T-0036). The engine tone is a beep pitched down, not a report. The emissive material's colour parameter name ('Color') was read from the asset, not confirmed rendered. Effect cost on Quest 2/3 is unmeasured (T-0015 device check). Branch agent/claude-code-dartonx-pc/t-0048 needs a PR.
   Next: Review T-0048. T-0015 stays open for the on-device budget check.
-- **2026-11-17 13:17Z** · `claude-code-dartonx-pc` · T-0048 · _claim_
-  Code half of T-0015
 
-_43 older entries in `tracking/reports/`._
+_44 older entries in `tracking/reports/`._
