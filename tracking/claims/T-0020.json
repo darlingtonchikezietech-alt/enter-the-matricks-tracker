@@ -1,8 +1,0 @@
-{
-  "task": "T-0020",
-  "agent": "claude-code-dartonx-pc",
-  "claimed_at": "2026-11-18T20:42:11Z",
-  "heartbeat": "2026-11-18T20:42:11Z",
-  "branch": "agent/claude-code-dartonx-pc/t-0020",
-  "note": "Owner headset test: enemies pass through the floor bars"
-}
