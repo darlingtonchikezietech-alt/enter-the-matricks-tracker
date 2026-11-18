@@ -1,14 +1,14 @@
 # Task Board
 
-_Generated 2026-11-18T21:05:16Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T22:19:40Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 30/58 done (52%) · todo: 25 · in_progress: 0 · review: 2 · blocked: 1 · done: 30
+**Progress:** 31/58 done (53%) · todo: 25 · in_progress: 0 · review: 1 · blocked: 1 · done: 31
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 6 | 10 | `██████░░░░` |
 | M1 | 12 | 17 | `███████░░░` |
-| M2 | 10 | 15 | `███████░░░` |
+| M2 | 11 | 15 | `███████░░░` |
 | M3 | 2 | 8 | `██░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
 | M5 | 0 | 3 | `░░░░░░░░░░` |
@@ -17,12 +17,11 @@ _Generated 2026-11-18T21:05:16Z by `tools/agent.py render`. Do not edit by hand.
 
 _None. Every task is free._
 
-## Review (2)
+## Review (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0058 | 1 | M1 | enemies | game | Third headset test: small explosion when enemies die; Needle Drones drift around their hover point | - | claude-code-dartonx-pc |
-| T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 | claude-code-dartonx-pc |
 
 ## Blocked (1)
 
@@ -60,7 +59,7 @@ _None. Every task is free._
 | T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
 | T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
 
-## Done (30)
+## Done (31)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -88,6 +87,7 @@ _None. Every task is free._
 | T-0045 | 1 | M2 | enemies | game | Attack tokens in the enemy base: cap simultaneous attacks (bible section 14: max 2 dangerous attacks) | - | claude-code-dartonx-pc |
 | T-0052 | 1 | M2 | save | game | Move the calibration and control-scheme saves to the checked save format (damaged files crash the engine's loader) | T-0023 | claude-code-dartonx-pc |
 | T-0019 | 2 | M2 | ui | game | Diegetic HUD presenter: heat on housings, integrity on frame, warnings at source | T-0009, T-0011 | claude-code-dartonx-pc |
+| T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 | claude-code-dartonx-pc |
 | T-0022 | 2 | M2 | enemies | game | Bulwark, Lance Walker, Siphon, Cradle Bomber | T-0014 | claude-code-dartonx-pc |
 | T-0023 | 2 | M2 | save | game | Save system: settings, checkpoints incl. boss presets (P-04), results | T-0018, T-0017 | claude-code-dartonx-pc |
 | T-0050 | 2 | M2 | ui | game | Wire the HUD presenter into the rig pawn (for T-0019) | - | claude-code-dartonx-pc |

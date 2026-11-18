@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 22:19Z** · `owner` · T-0020 · _review_
+  Approved. Owner played the build on Quest 3 and approved in chat. Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-18 21:05Z** · `claude-code-dartonx-pc` · T-0058 · _complete_ · commits: 0815b53
   Enemies die in a small explosion (flash plus debris, sized to the enemy, self-removing; bosses opt out). Needle Drones drift around their hover point (sideways, up/down, a little in/out as the rig sees them), each with its own pattern, slower during the warning. Branch stacked on t-0020.
   Verified: All 88 ETM tests pass (new: drone drift sweep/zone/never-still, burst spawn/flash/cleanup/pool reuse); APK installed on the Quest 3. Owner headset check pending.
@@ -111,7 +113,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Verified: Built on UE 5.8.4, zero errors and warnings; all 74 tests pass, 3 new (ETM.Platform.Interruptions.*) that tick a real game world built with the engine's FTestWorldWrapper (game instance, game mode): world ticking moves an enemy and the director's clock; during a 20 s pause the enemy's attack timer, the rig's health, the brace timer and the mission clock do not change; the countdown keeps it frozen for 3 s; afterwards the attack lands braced exactly as left. Headset off/on, removal during the countdown, multiple reasons (menu plus background), lost/reconnected headset, tracking grace, start-up and editor cases, recenter refused during play. Platform events were raised by broadcasting the engine delegates in the test; nothing tried on a headset.
   Remaining: Needs a headset to confirm the real events: whether Quest's OpenXR runtime sends user-presence (headset on/off) events, and how focus changes when the Meta menu opens. Pause menu UI and the countdown display are T-0031. Audio is not explicitly paused (world pause stops gameplay sounds started by ticking code; looping sounds may continue). The 3 s countdown and 0.3 s grace are my values. The first test attempt exposed that the older test files step components by hand rather than ticking a world; T-0049 (shared test-world helper) should move them to FTestWorldWrapper. Branch agent/claude-code-dartonx-pc/t-0030 needs a PR.
   Next: Review T-0030 and T-0052.
-- **2026-11-17 14:08Z** · `claude-code-dartonx-pc` · T-0030 · _claim_
-  Claimed T-0030: Pause, tracking loss, headset removal, resume countdown
 
-_64 older entries in `tracking/reports/`._
+_65 older entries in `tracking/reports/`._
