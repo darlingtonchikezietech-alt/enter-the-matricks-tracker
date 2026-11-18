@@ -4,7 +4,7 @@
   "milestone": "M1",
   "area": "enemies",
   "repo": "game",
-  "status": "todo",
+  "status": "in_progress",
   "priority": 1,
   "depends_on": [],
   "paths": [
@@ -20,6 +20,12 @@
     "All ETM tests pass; installed on the Quest 3"
   ],
   "description": "Owner feedback 2026-11-18: 'when they die, let them [go] in a small explosion'; drones should 'swarm around... fly around, move around gradually within that axis, so that you aim them and you shoot' instead of standing in one place.",
-  "assignee": null,
-  "history": []
+  "assignee": "claude-code-dartonx-pc",
+  "history": [
+    {
+      "time": "2026-11-18T20:53:52Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "claimed"
+    }
+  ]
 }
