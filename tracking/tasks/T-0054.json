@@ -4,7 +4,7 @@
   "milestone": "M0",
   "area": "engine",
   "repo": "game",
-  "status": "review",
+  "status": "in_progress",
   "priority": 1,
   "depends_on": [],
   "paths": [
@@ -27,6 +27,11 @@
       "time": "2026-11-18T00:41:15Z",
       "agent": "claude-code-dartonx-pc",
       "event": "completed"
+    },
+    {
+      "time": "2026-11-18T00:41:47Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "claimed"
     }
   ],
   "result": {

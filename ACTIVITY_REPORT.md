@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 00:41Z** · `claude-code-dartonx-pc` · T-0054 · _claim_
+  Re-claimed: previous completion recorded before the commit existed
 - **2026-11-18 00:41Z** · `claude-code-dartonx-pc` · T-0054 · _complete_ · commits: 5e733a1
   Replaced the two one-pass 'first actor' loops in UETMInterruptionSubsystem (FindRig, BindMenuButton) with a single iterator check. Clang treats -Wunreachable-code-loop-increment as an error on Android; MSVC accepted them.
   Verified: Android arm64 Development C++ now compiles (the build reaches Gradle; Gradle then fails on Java 25, a separate toolchain issue). Editor build clean and all 78 ETM tests pass. Same branch as T-0053.
@@ -116,7 +118,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Claimed T-0046: Quest 3/3S: pin device profiles to the Quest 2 baseline and document supported headsets (P-31)
 - **2026-11-17 11:05Z** · `owner` · T-0045 · _review_
   Approved. Approved by the owner in chat on 2026-11-17 (merged all, approve T-0017 and T-0045). Recorded on the owner's behalf by claude-code-dartonx-pc.
-- **2026-11-17 11:05Z** · `owner` · T-0017 · _review_
-  Approved. Approved by the owner in chat on 2026-11-17 (merged all, approve T-0017 and T-0045). Recorded on the owner's behalf by claude-code-dartonx-pc.
 
-_34 older entries in `tracking/reports/`._
+_35 older entries in `tracking/reports/`._
