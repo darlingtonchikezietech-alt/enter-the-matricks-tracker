@@ -1,0 +1,22 @@
+{
+  "id": "T-0057",
+  "title": "Deploy the packaged build to a physical Quest 2: install, 72 Hz, tracking, input (split from T-0006)",
+  "milestone": "M1",
+  "area": "platform",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [],
+  "paths": [
+    "Build/Android/**",
+    "Config/DefaultEngine.ini"
+  ],
+  "acceptance": [
+    "APK installs and launches on a Quest 2",
+    "72 Hz holds in the sandbox range and a stand-in level, no stale frames (device log / OVR metrics)",
+    "Both controllers track; triggers, grips and menu button work"
+  ],
+  "description": "Split from T-0006 by the owner on 2026-11-18: the game already installs and runs on a Quest 3 (72/72 FPS, CPU+GPU 11.8 ms, App 4 ms), and the Quest 2 is not available yet. The bible's floor is Quest 2 (P-31), so this check is still required before the M1 gate (T-0016).",
+  "assignee": null,
+  "history": []
+}
