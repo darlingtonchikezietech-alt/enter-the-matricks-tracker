@@ -4,7 +4,7 @@
   "milestone": "M0",
   "area": "engine",
   "repo": "game",
-  "status": "todo",
+  "status": "in_progress",
   "priority": 1,
   "depends_on": [],
   "paths": [
@@ -14,6 +14,12 @@
     "Android arm64 Development build compiles with zero errors"
   ],
   "description": "Found packaging T-0006: Clang's -Wunreachable-code-loop-increment (an error on Android) rejects the 'for (...) return first;' pattern used to pick the first actor. MSVC accepts it, so the Windows editor build and tests never caught it.",
-  "assignee": null,
-  "history": []
+  "assignee": "claude-code-dartonx-pc",
+  "history": [
+    {
+      "time": "2026-11-18T00:38:40Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "claimed"
+    }
+  ]
 }

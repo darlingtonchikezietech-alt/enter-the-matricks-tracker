@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 00:38Z** · `claude-code-dartonx-pc` · T-0054 · _claim_
+  Done on the T-0053 branch
 - **2026-11-18 00:37Z** · `claude-code-dartonx-pc` · T-0006 · _claim_
   Packaging the T-0053 sandbox for the connected Quest 3; Quest 2 not attached
 - **2026-11-18 00:37Z** · `claude-code-dartonx-pc` · T-0053 · _complete_ · commits: 5e733a1
@@ -116,10 +118,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Verified: Built ETMEditor Win64 Development on UE 5.8.4, zero errors and warnings. 5 new automation tests (ETM.Encounters.Director.*) pass in a test world with the real pool, tokens, mission state, objective and rig health: caps 3/8/4 never exceeded, held-back trickle, P-13 60% and dialogue hold, unfinished phase extends, carry-over not deleted and counted, repair 260 then checkpoint, suspend on failure, retry restores phase/seed/position without a second repair, entrance validation. Pool never grows. All 25 tests on this branch pass. Enemies were plain AEnemyBase actors killed by the test, not archetypes with AI; no level, no headset.
   Remaining: No real Level 1 or Level 2 schedule yet (T-0026, T-0029). The pause flow (T-0030) must stop the director's tick. The behind-the-player limit (110 degrees) is my choice. Dialogue is a single pending flag the VO system (T-0032) must set. The boss controller (T-0021) must call CompletePhase. Branch is built from T-0018 with T-0044 and T-0045 merged in: merge those three first.
   Next: Review T-0017 and T-0045. Then T-0021 (Gatebreaker) or T-0022 (Bulwark, Lance, Siphon, Cradle) or T-0026 (Level 1 schedule).
-- **2026-11-17 10:46Z** · `claude-code-dartonx-pc` · T-0045 · _complete_ · commits: 2c5541a
-  UAttackTokenSubsystem (Source/ETM/Enemies/Base): default limit 2 (bible section 14). AEnemyBase::BeginAttack takes a token and is refused while none is free; the archetypes already retry each frame. Tokens return when the attack resolves, the enemy is staggered, dies, is parked or is destroyed (stale holders are pruned). SetMaxConcurrentAttacks changes the limit without cancelling attacks in progress; bUsesAttackToken lets a harmless attack opt out; a refusal counter helps tuning. BeginAttack now also refuses outright from states that cannot deal damage.
-  Verified: Built on main (UE 5.8.4), zero errors and warnings. New test ETM.Enemies.Base.AttackTokens passes, plus all 15 existing tests on main. Not run together with the T-0014 archetypes yet (that happens on the T-0017 branch).
-  Remaining: Every attack counts, including Shardling cuts on the objective; if that makes enemies queue too much in playtests, give objective attacks their own limit or opt them out. Branch agent/claude-code-dartonx-pc/t-0045 needs a PR into main.
-  Next: T-0017 uses this to enforce the 2-attack cap.
 
-_32 older entries in `tracking/reports/`._
+_33 older entries in `tracking/reports/`._
