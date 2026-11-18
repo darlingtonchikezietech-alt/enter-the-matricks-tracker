@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-18T00:21:18Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T00:37:00Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 23/53 done (43%) · todo: 28 · in_progress: 1 · review: 0 · blocked: 1 · done: 23
+**Progress:** 23/53 done (43%) · todo: 28 · in_progress: 0 · review: 1 · blocked: 1 · done: 23
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,11 +15,9 @@ _Generated 2026-11-18T00:21:18Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-| Task | Agent | Since | Last heartbeat | Stale? |
-|---|---|---|---|---|
-| T-0053 Sandbox game mode: rig pawn, floor and distance markers, practice encounter (first playable for VR Preview and the first APK) | claude-code-dartonx-pc | 2026-11-18T00:21:18Z | 2026-11-18T00:21:18Z |  |
+_None. Every task is free._
 
-## In Progress (1)
+## Review (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
