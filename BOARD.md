@@ -1,13 +1,13 @@
 # Task Board
 
-_Generated 2026-11-18T20:47:06Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T20:53:42Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 30/57 done (53%) · todo: 25 · in_progress: 0 · review: 1 · blocked: 1 · done: 30
+**Progress:** 30/58 done (52%) · todo: 26 · in_progress: 0 · review: 1 · blocked: 1 · done: 30
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 6 | 10 | `██████░░░░` |
-| M1 | 12 | 16 | `████████░░` |
+| M1 | 12 | 17 | `███████░░░` |
 | M2 | 10 | 15 | `███████░░░` |
 | M3 | 2 | 8 | `██░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
@@ -29,7 +29,7 @@ _None. Every task is free._
 |---|---|---|---|---|---|---|---|
 | T-0015 | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 
-## Todo (25)
+## Todo (26)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -40,6 +40,7 @@ _None. Every task is free._
 | T-0016 | 1 | M1 | qa | tracker | M1 gate: 3-minute combat test on Quest 2 (comfort, readability, perf capture) | T-0014, T-0015, T-0012, T-0010 |  |
 | T-0047 🟢 ready | 1 | M1 | qa | tracker | Verify on a physical Quest 3 or 3S: install, tracking, Touch Plus input, 72 Hz, short combat test (P-31) | T-0006, T-0046 |  |
 | T-0057 🟢 ready | 1 | M1 | platform | game | Deploy the packaged build to a physical Quest 2: install, 72 Hz, tracking, input (split from T-0006) | - |  |
+| T-0058 🟢 ready | 1 | M1 | enemies | game | Third headset test: small explosion when enemies die; Needle Drones drift around their hover point | - |  |
 | T-0025 | 1 | M2 | qa | tracker | M2 gate: vertical slice validated on hardware | T-0020, T-0021, T-0022, T-0023, T-0024, T-0019 |  |
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
 | T-0024 🟢 ready | 2 | M2 | perf | game | Performance capture tooling + 30-minute soak script | T-0006 |  |

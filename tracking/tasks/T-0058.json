@@ -1,0 +1,25 @@
+{
+  "id": "T-0058",
+  "title": "Third headset test: small explosion when enemies die; Needle Drones drift around their hover point",
+  "milestone": "M1",
+  "area": "enemies",
+  "repo": "game",
+  "status": "todo",
+  "priority": 1,
+  "depends_on": [],
+  "paths": [
+    "Source/ETM/Enemies/Base/**",
+    "Source/ETM/Enemies/Archetypes/NeedleDrone.h",
+    "Source/ETM/Enemies/Archetypes/NeedleDrone.cpp",
+    "Source/ETM/Enemies/Archetypes/Tests/**",
+    "Source/ETM/Bosses/Gatebreaker/Gatebreaker.cpp"
+  ],
+  "acceptance": [
+    "A killed enemy disappears in a short flash with debris (bosses keep their own collapse); nothing is allocated beyond the burst, which removes itself",
+    "Needle Drones, once at their hover point, keep drifting inside a zone around it (mostly sideways and up/down relative to the rig), slow enough to track; slower during the warning",
+    "All ETM tests pass; installed on the Quest 3"
+  ],
+  "description": "Owner feedback 2026-11-18: 'when they die, let them [go] in a small explosion'; drones should 'swarm around... fly around, move around gradually within that axis, so that you aim them and you shoot' instead of standing in one place.",
+  "assignee": null,
+  "history": []
+}
