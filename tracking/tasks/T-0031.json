@@ -4,7 +4,7 @@
   "milestone": "M3",
   "area": "flow",
   "repo": "game",
-  "status": "review",
+  "status": "in_progress",
   "priority": 2,
   "depends_on": [
     "T-0019"
@@ -29,6 +29,11 @@
       "time": "2026-11-18T08:43:46Z",
       "agent": "claude-code-dartonx-pc",
       "event": "completed"
+    },
+    {
+      "time": "2026-11-18T18:07:44Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "claimed"
     }
   ],
   "result": {
