@@ -14,7 +14,8 @@
     "Source/ETM/Player/XRSeatedRigPawn.h",
     "Source/ETM/UI/HUDPresenterComponent.h",
     "Source/ETM/UI/Tests/HudPresenterTest.cpp",
-    "Source/ETM/Core/Game/ETMSandboxGameMode.cpp"
+    "Source/ETM/Core/Game/ETMSandboxGameMode.cpp",
+    "Tools/HeatModelTest/**"
   ],
   "acceptance": [
     "Cannon defaults match P-34 and the balance sim; heat parity test passes at 1 ms and at 72 Hz within one frame and 1%",
