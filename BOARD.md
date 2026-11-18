@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-18T20:07:31Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T20:42:11Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 30/57 done (53%) · todo: 25 · in_progress: 0 · review: 1 · blocked: 1 · done: 30
+**Progress:** 30/57 done (53%) · todo: 25 · in_progress: 1 · review: 0 · blocked: 1 · done: 30
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,9 +15,11 @@ _Generated 2026-11-18T20:07:31Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-_None. Every task is free._
+| Task | Agent | Since | Last heartbeat | Stale? |
+|---|---|---|---|---|
+| T-0020 Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | claude-code-dartonx-pc | 2026-11-18T20:42:11Z | 2026-11-18T20:42:11Z |  |
 
-## Review (1)
+## In Progress (1)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
