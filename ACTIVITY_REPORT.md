@@ -2,6 +2,10 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 19:41Z** · `claude-code-dartonx-pc` · T-0006 · _complete_ · commits: bc6ed2d,890a0ba
+  Packaged Android build (NDK API 32, JDK 21) deployed to a physical Quest 3: installs and launches, 72/72 FPS, no stale frames, CPU+GPU 11.8 ms, tracking and input good per the owner. Quest 2 check moved to its own task at the owner's request.
+  Verified: Device install and runs on Quest 3 across four owner sessions (OVR metrics and device logs); full campaign loop played
+  Remaining: Quest 2 deploy check (new task)
 - **2026-11-18 18:55Z** · `owner` · T-0056 · _review_
   Approved. Owner checked the changes on the Quest 3 and approved in chat. Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-18 18:53Z** · `claude-code-dartonx-pc` · T-0056 · _complete_ · commits: 9be1ed2
@@ -112,7 +116,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Next: Review T-0023 and T-0051 (same branch), then the slot follow-up.
 - **2026-11-17 13:53Z** · `claude-code-dartonx-pc` · T-0051 · _claim_
   Resume entry point for T-0023, same branch
-- **2026-11-17 13:52Z** · `claude-code-dartonx-pc` · T-0023 · _claim_
-  Claimed T-0023: Save system: settings, checkpoints incl. boss presets (P-04), results
 
-_56 older entries in `tracking/reports/`._
+_57 older entries in `tracking/reports/`._
