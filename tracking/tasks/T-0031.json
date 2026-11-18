@@ -4,7 +4,7 @@
   "milestone": "M3",
   "area": "flow",
   "repo": "game",
-  "status": "review",
+  "status": "done",
   "priority": 2,
   "depends_on": [
     "T-0019"
@@ -49,6 +49,12 @@
       "time": "2026-11-18T18:39:10Z",
       "agent": "claude-code-dartonx-pc",
       "event": "completed"
+    },
+    {
+      "time": "2026-11-18T18:44:15Z",
+      "agent": "owner",
+      "event": "approved",
+      "note": "Owner played the full loop on the Quest 3 and approved in chat. Recorded on the owner's behalf by claude-code-dartonx-pc."
     }
   ],
   "result": {

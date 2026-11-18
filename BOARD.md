@@ -1,15 +1,15 @@
 # Task Board
 
-_Generated 2026-11-18T18:39:10Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T18:44:15Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 27/55 done (49%) · todo: 25 · in_progress: 1 · review: 1 · blocked: 1 · done: 27
+**Progress:** 28/55 done (51%) · todo: 25 · in_progress: 1 · review: 0 · blocked: 1 · done: 28
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
 | M0 | 5 | 10 | `█████░░░░░` |
 | M1 | 11 | 14 | `████████░░` |
 | M2 | 10 | 15 | `███████░░░` |
-| M3 | 1 | 8 | `█░░░░░░░░░` |
+| M3 | 2 | 8 | `██░░░░░░░░` |
 | M4 | 0 | 5 | `░░░░░░░░░░` |
 | M5 | 0 | 3 | `░░░░░░░░░░` |
 
@@ -24,12 +24,6 @@ _Generated 2026-11-18T18:39:10Z by `tools/agent.py render`. Do not edit by hand.
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
 | T-0006 | 1 | M0 | engine | game | Package an empty VR scene and deploy it to a physical Quest 2 | T-0005 | claude-code-dartonx-pc |
-
-## Review (1)
-
-| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
-|---|---|---|---|---|---|---|---|
-| T-0031 | 2 | M3 | flow | game | Campaign flow: menus, relocation fade, results, ending | T-0019 | claude-code-dartonx-pc |
 
 ## Blocked (1)
 
@@ -57,7 +51,7 @@ _Generated 2026-11-18T18:39:10Z by `tools/agent.py render`. Do not edit by hand.
 | T-0028 | 1 | M3 | boss | game | Conductor boss incl. pairing reset (P-07), rig sweep (P-08), emitter fallback (P-06) | T-0025 |  |
 | T-0029 | 1 | M3 | encounters | game | Level 2 full schedule + train gating (P-14) | T-0027, T-0028 |  |
 | T-0033 | 1 | M3 | qa | tracker | M3 gate: both missions end to end in a packaged build | T-0026, T-0029, T-0030, T-0031 |  |
-| T-0032 | 3 | M3 | audio | game | Placeholder VO (Mara, RIG-6) and subtitles with speaker labels | T-0031 |  |
+| T-0032 🟢 ready | 3 | M3 | audio | game | Placeholder VO (Mara, RIG-6) and subtitles with speaker labels | T-0031 |  |
 | T-0038 | 1 | M4 | qa | tracker | 10-player playtest: duration, comprehension, comfort | T-0034, T-0035, T-0036, T-0037 |  |
 | T-0034 | 2 | M4 | art | game | Final enemy and boss art + animation | T-0004, T-0033 |  |
 | T-0035 | 2 | M4 | art | game | Environment art kits for both arenas | T-0033 |  |
@@ -67,7 +61,7 @@ _Generated 2026-11-18T18:39:10Z by `tools/agent.py render`. Do not edit by hand.
 | T-0040 | 1 | M5 | qa | tracker | Release candidate: regression, soak, acceptance criteria evidence | T-0039 |  |
 | T-0041 | 1 | M5 | release | tracker | Store submission package (before Quest 2 cutoff, P-15) | T-0040, T-0003 |  |
 
-## Done (27)
+## Done (28)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -98,4 +92,5 @@ _Generated 2026-11-18T18:39:10Z by `tools/agent.py render`. Do not edit by hand.
 | T-0050 | 2 | M2 | ui | game | Wire the HUD presenter into the rig pawn (for T-0019) | - | claude-code-dartonx-pc |
 | T-0051 | 2 | M2 | objective | game | Mission state: resume from a saved checkpoint after an app restart (for T-0023) | - | claude-code-dartonx-pc |
 | T-0030 | 1 | M3 | platform | game | Pause, tracking loss, headset removal, resume countdown | T-0023 | claude-code-dartonx-pc |
+| T-0031 | 2 | M3 | flow | game | Campaign flow: menus, relocation fade, results, ending | T-0019 | claude-code-dartonx-pc |
 

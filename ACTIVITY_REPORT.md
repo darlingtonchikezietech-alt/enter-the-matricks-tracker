@@ -2,6 +2,8 @@
 
 _Brief log of what happened, newest first. Generated from `tracking/reports/`. Add entries with `tools/agent.py log` or `complete`._
 
+- **2026-11-18 18:44Z** · `owner` · T-0031 · _review_
+  Approved. Owner played the full loop on the Quest 3 and approved in chat. Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-18 18:39Z** · `claude-code-dartonx-pc` · T-0031 · _complete_ · commits: 9e22f91,909c365,a14c5ab,18f33a7
   Campaign flow (9e22f91) plus three fixes from the owner's headset tests: panel text lit (909c365), rig placed on the range instead of the Entry map's player start so panels are reachable (a14c5ab), rig on a 1 m mount with a lower objective bulk so all lanes are visible (18f33a7).
   Verified: All 83 ETM tests pass (incl. cannon reach to every button and a clear centre-lane sightline); owner on Quest 3: START button works, all lanes visible.
@@ -110,10 +112,5 @@ _Brief log of what happened, newest first. Generated from `tracking/reports/`. A
   Approved. Approved by the owner in chat on 2026-11-17 (Approve all three). Recorded on the owner's behalf by claude-code-dartonx-pc.
 - **2026-11-17 13:43Z** · `owner` · T-0022 · _review_
   Approved. Approved by the owner in chat on 2026-11-17 (Approve all three). Recorded on the owner's behalf by claude-code-dartonx-pc.
-- **2026-11-17 13:42Z** · `claude-code-dartonx-pc` · T-0050 · _complete_ · commits: 003668d
-  AXRSeatedRigPawn creates a UHUDPresenterComponent ('HUD') attached to its root.
-  Verified: Covered by the ETM.UI.Presenter tests, which use the real rig pawn's HUD; all 60 tests pass.
-  Remaining: None. Merge together with T-0019 (same branch).
-  Next: Review with T-0019.
 
-_52 older entries in `tracking/reports/`._
+_53 older entries in `tracking/reports/`._
