@@ -34,7 +34,7 @@
 ## Gotchas
 
 - Don't trust the old concept art for gameplay. It shows ammo counters, a canopy, miniguns, beams, and franchise terms. All of these are wrong.
-- Sustained dual-cannon output is about **181 dps**, not the 320 dps peak. Tune encounters against 181.
+- Sustained dual-cannon output is about **408 dps** (P-34), not the 500 dps peak. Tune encounters against 408.
 - Venting is **disabled** while a cannon is overheat-locked (P-01). This is intentional.
 - Every task lists owned `paths`. The game repo's pre-commit hook will reject files outside them.
 - On Windows the hooks call `python3`; if that is the Microsoft Store stub, put a `python3` shim that runs `py -3` on PATH.

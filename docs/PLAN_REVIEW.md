@@ -36,14 +36,15 @@ Severity: **Blocker** = the plan contradicts itself or can't ship as written · 
 | P-30 | Minor | Scoring | "Damage prevented" was undefined. | Brace-absorbed damage + damage from interrupted attacks. |
 | P-31 | Major | Platforms | **Owner decision, 2026-11-17:** make the game available on Quest 3 too. v1.1 listed Quest 3/3S as later platform work. | Quest 2, 3 and 3S ship in the first release from one build. Quest 2 stays the performance floor; Quest 3/3S use the same settings until measured. Quest 3/3S device checks added to the hardware gates and release criteria. See `docs/decisions/ADR-0003-quest-3-support.md`. |
 | P-32 | Minor | Gatebreaker (§9) | **Accepted by the owner 2026-11-17 (found in T-0021).** Phase 3 says "one telegraphed artillery attack (35 rig damage) must still be respected" but not how often it comes, how long its warning is, or whether it can be interrupted. | Implemented as: in phase 3 the boss alternates artillery and furnace attacks; artillery has a 2 s warning (barrel rises), cannot be interrupted, can be braced, and does not open the core. |
+| P-34 | Major | Weapons (§5), bosses (§9, §10) | **Owner decision, 2026-11-18, after the first headset test:** the cannons fired too slowly and overheated too soon ("let it have 100 before reload, and it should shoot fast"). | Fire rate 4 → 10 shots/s, damage 40 → 25 (the owner chose the middle option), heat per shot 9 → 1, so a cold cannon overheats after 100 shots in 9.9 s. Sustained both-cannon output rises from ≈181 to ≈408 dps, so boss cores were retuned to keep 2–3 exposures: Gatebreaker 3,000 → 6,500 HP (phase 3 at 1,950), Conductor 3,600 → 8,000 HP. Common enemies keep their HP and die moderately faster (Shardling 0.4 s, Bulwark body 2.0 s with one cannon). Burst + vent still beats holding the trigger (204 vs 169 dps per cannon), but only just. |
 | P-33 | Minor | Timing (§8) vs bosses | **Accepted by the owner 2026-11-17 (found in T-0021).** P-13 (a finished phase waits for 60% of its slot) also applies to boss phases, so a fast Gatebreaker kill waits until 81 s of its 135 s slot before the resolution beat starts. | Kept: the 60% rule applies to boss phases too. A fast kill holds the resolution beat until 60% of the boss slot; the boss collapse and narrative fill that time. |
 
 (P-20, P-21, P-23 and P-25–P-29 were checked and need no change: overheat timing ≈3 s ✔, both-cannon peak 320 dps ✔, Needle Drone killable in its 1.5 s telegraph ✔, active caps match the performance budget ✔, Level 2 population 39 ✔, the 72 Hz frame maths ✔.)
 
 ## Key numbers after the patches (from `tools/balance_sim.py`)
 
-- A cold cannon overheats after **2.75 s / 12 shots**. Overheat recovery takes **4.0 s** (passive only).
-- Sustained output per cannon: trigger held **60 dps**, burst + vent **91 dps**. Both cannons ≈ **181 dps** against a 320 dps theoretical peak. Encounter designers should plan around about 180, not 320.
+- *(Superseded by P-34.)* A cold cannon overheats after **9.9 s / 100 shots**. Overheat recovery takes **4.0 s** (passive only).
+- Sustained output per cannon (P-34): trigger held **169 dps**, burst + vent **204 dps**. Both cannons ≈ **408 dps** against a 500 dps theoretical peak. Encounter designers should plan around about 180, not 320.
 - Gatebreaker core: **~2.2 exposures** at 70% accuracy. Conductor core: **~2.7** at 70% and **~3.8** at 50% (so the P-06 fallback is needed).
 
 ## Open questions for the owner (not decided by this review)

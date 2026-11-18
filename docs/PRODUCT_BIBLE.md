@@ -1,9 +1,10 @@
 # ENTER THE MATRICKS
-### VR Game Product Bible · Version 1.3
+### VR Game Product Bible · Version 1.4
 
 > v1.1 (2026-11-16) applies the patches logged in `docs/PLAN_REVIEW.md`. Patched passages carry a `[P-xx]` tag. The original is preserved at `docs/archive/PRODUCT_BIBLE_v1.0.md`.
 > v1.2 (2026-11-17) adds P-31: Quest 3 and 3S ship in the first release, from the same build as Quest 2.
 > v1.3 (2026-11-17) adds P-32 (Gatebreaker artillery) and P-33 (early-transition rule in boss phases).
+> v1.4 (2026-11-18) adds P-34: rapid-fire cannons (10 shots/s, 25 damage, about 100 shots before overheat) and boss cores retuned to match.
 **Quest 2, 3 and 3S · Quest 2 sets the performance floor · Unreal Engine · Single-player survival shooter** **[P-31]**
 
 > **Two cannons. One evacuation. Hold until the last signal.**
@@ -221,24 +222,24 @@ These are starting values for playtesting, not final balance commitments.
 
 | Parameter | Starting value |
 |---|---:|
-| Fire rate | 4 shots/second per cannon |
-| Base damage | 40 per shot |
-| Both-cannon theoretical output | 320 damage/second |
+| Fire rate | 10 shots/second per cannon **[P-34]** |
+| Base damage | 25 per shot **[P-34]** |
+| Both-cannon theoretical output | 500 damage/second **[P-34]** |
 | Weak-point multiplier | ×2, applied to every *designated* weak point: Bulwark side nodes, Lance charge chambers, Cradle pods, boss nodes, boss charge chambers and boss cores **[P-02]** |
 | Armored-area multiplier | ×0.25 unless otherwise specified (Bulwark shield ×0.1; Gatebreaker armor immune) **[P-02]** |
 | HP convention | All HP values are raw; multipliers apply on hit **[P-02]** |
 | Effective engagement distance | 5–45 metres; trace length 60 m, no damage falloff **[P-18]** |
 | Heat capacity | 100 per cannon |
-| Heat per shot | 9 |
+| Heat per shot | 1 (about 100 shots from cold to overheat) **[P-34]** |
 | Passive cooling | 18/second after 0.4 seconds without firing |
 | Manual vent cooling | 40/second, replaces passive cooling (not additive); that cannon cannot fire **[P-01]** |
 | Overheat trigger | The shot that brings heat to ≥100 still fires; heat clamps to 100 and the cannon locks **[P-01]** |
 | Overheat recovery | Locked until heat falls to 35. **Venting is disabled while locked**; passive cooling only (≈4.0 s) **[P-01]** |
 | Ammunition | Unlimited; heat is the primary limiter |
 
-At continuous fire, a cold cannon reaches overheat after approximately three seconds. Alternating short bursts and venting should outperform holding both triggers indefinitely.
+At continuous fire, a cold cannon reaches overheat after approximately ten seconds (100 shots). **[P-34]** Alternating short bursts and venting should outperform holding both triggers indefinitely.
 
-**[P-01] Verified by `tools/balance_sim.py`:** overheat after 2.75 s (12 shots). Sustained output per cannon: trigger held = 60 dps; burst + vent before lock = 91 dps (≈181 dps for both cannons, against the 320 dps theoretical peak). In v1.0, venting during a lock let "hold until lock, then vent" reach 98 dps and beat skilled play; that is why venting is now disabled during a lock.
+**[P-01] Verified by `tools/balance_sim.py`** (numbers updated for **[P-34]**): overheat after 9.9 s (100 shots); recovery from a lock 4.0 s. Sustained output per cannon: trigger held = 169 dps; burst + vent before lock = 204 dps (≈408 dps for both cannons, against the 500 dps theoretical peak). In v1.0, venting during a lock let "hold until lock, then vent" reach 98 dps and beat skilled play; that is why venting is now disabled during a lock.
 
 ### Defensive brace
 
@@ -421,12 +422,12 @@ The transfer equipment sits **in front of and below** the player's rig in the ce
 |---|---|---|
 | **1 — Anchor** | Two shoulder shield nodes are exposed in alternating windows. Furnace attacks charge for 2 seconds. Ends when both nodes are destroyed. | Destroy both nodes; interrupt charge chambers when available. |
 | **2 — Breach** | After **every** furnace attack, the core opens: **6 s if the attack was interrupted**, 4 s if it fired. **[P-10]** | Concentrate fire, then vent during closure. |
-| **3 — Collapse** | Starts when the core falls to **≤30% (900 HP)**. The core keeps opening as in phase 2; one telegraphed artillery attack (35 rig damage) must still be respected. **[P-10]** Artillery alternates with the furnace attack; it has a 2-second warning (the barrel rises), cannot be interrupted, can be braced, and does not open the core. **[P-32]** | Finish the core while preserving rig integrity. |
+| **3 — Collapse** | Starts when the core falls to **≤30% (1,950 HP)** **[P-34]**. The core keeps opening as in phase 2; one telegraphed artillery attack (35 rig damage) must still be respected. **[P-10]** Artillery alternates with the furnace attack; it has a 2-second warning (the barrel rises), cannot be interrupted, can be braced, and does not open the core. **[P-32]** | Finish the core while preserving rig integrity. |
 
 Prototype damage pools:
 
 - Two shield nodes: **600 HP each**.
-- Furnace core: **3,000 HP** (≈2–3 exposures at 70% accuracy, per `tools/balance_sim.py`).
+- Furnace core: **6,500 HP** (≈2–3 exposures at 70% accuracy, per `tools/balance_sim.py`). **[P-34]**
 - Furnace charge chamber: **240 HP**, weak point; breaking it interrupts the attack. **[P-09]**
 - Armor outside designated targets: immune, with clear deflection feedback.
 - No hidden timed damage immunity after the core opens.
@@ -481,8 +482,8 @@ Prototype pools:
 
 - Three paired-node sets.
 - Each node: **240 HP**.
-- Central core: **3,600 HP**, damage persistent across exposures.
-- **[P-06] Fallback exposure:** after all three node sets are destroyed, every sweep warning exposes a **sweep emitter** (160 HP, weak point). Breaking it staggers the Conductor and opens the core for 5 s. Unbroken sweeps repeat about every 10 s, so the player always gets another opening. At 50% accuracy the sim needs about 4 windows, so this fallback is load-bearing.
+- Central core: **8,000 HP**, damage persistent across exposures. **[P-34]**
+- **[P-06] Fallback exposure:** after all three node sets are destroyed, every sweep warning exposes a **sweep emitter** (160 HP, weak point). Breaking it staggers the Conductor and opens the core for 5 s. Unbroken sweeps repeat about every 10 s, so the player always gets another opening. At 50% accuracy the sim needs about 3.2 windows (after P-34), so this fallback is still load-bearing.
 - No softlock if the player fails to finish during earlier openings.
 - Assisted mode extends pairing windows to **10 seconds**.
 

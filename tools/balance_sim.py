@@ -15,11 +15,11 @@ import sys
 DT = 0.001  # 1 ms simulation step
 
 # ---- Tuning (keep in sync with Content/ETM/Data and docs/PRODUCT_BIBLE.md §5) ----
-FIRE_RATE = 4.0           # shots/s per cannon
-DAMAGE = 40.0
+FIRE_RATE = 10.0          # shots/s per cannon (P-34)
+DAMAGE = 25.0             # (P-34)
 WEAK_MULT = 2.0
 HEAT_CAP = 100.0
-HEAT_PER_SHOT = 9.0
+HEAT_PER_SHOT = 1.0       # (P-34) about 100 shots from cold to overheat
 PASSIVE_COOL = 18.0       # /s
 PASSIVE_DELAY = 0.4       # s since last shot
 VENT_COOL = 40.0          # /s, replaces passive while venting (not additive)
@@ -126,13 +126,13 @@ def report():
     rec_vent = recovery_time(True)
     lines.append(f"Time to overheat from cold: {t_oh:.2f}s ({shots_oh} shots, {shots_oh*DAMAGE:.0f} dmg)")
     lines.append(f"Overheat recovery (passive): {rec_passive:.2f}s | (venting): {rec_vent:.2f}s")
-    check(2.5 <= t_oh <= 3.2, "Bible: cold cannon overheats in ~3s of continuous fire")
+    check(9.0 <= t_oh <= 11.0 and 95 <= shots_oh <= 105, "P-34: cold cannon overheats after ~100 shots / ~10 s of continuous fire")
 
     d_hold = sustained_dps("hold")
     d_hold_vent = sustained_dps("hold_vent")
     d_burst = sustained_dps("burst_vent")
     lines.append(f"Sustained DPS/cannon: hold={d_hold:.1f}  hold+vent-on-lock={d_hold_vent:.1f}  burst+vent={d_burst:.1f}")
-    lines.append(f"Theoretical both-cannon peak 320 dps vs sustained both-cannon (burst+vent): {2*d_burst:.0f} dps")
+    lines.append(f"Theoretical both-cannon peak {2*FIRE_RATE*DAMAGE:.0f} dps vs sustained both-cannon (burst+vent): {2*d_burst:.0f} dps")
     check(d_burst > d_hold, "Bible: alternating bursts + venting outperforms holding the trigger")
     check(d_burst > d_hold_vent * 1.2, "P-01: skilled burst+vent beats 'hold until lock then vent' by >20%")
 
@@ -147,13 +147,13 @@ def report():
     # Bosses (v1.1: all designated boss targets are weak points, x2)
     acc = 0.7
     gb_window = window_damage(4.0, accuracy=acc)
-    gb_core = 3000
+    gb_core = 6500  # P-34
     lines.append(f"Gatebreaker: 4s core window @70% acc both cannons = {gb_window:.0f} dmg -> "
                  f"{gb_core/gb_window:.1f} windows for {gb_core} HP core")
     check(2 <= gb_core / gb_window <= 4, "Gatebreaker core needs 2-4 exposures (not a sponge, not a one-shot)")
 
     cd_window = window_damage(5.0, accuracy=acc)
-    cd_core = 3600
+    cd_core = 8000  # P-34
     lines.append(f"Conductor: 5s core window @70% acc = {cd_window:.0f} dmg -> "
                  f"{cd_core/cd_window:.1f} windows for {cd_core} HP core (3 node sets = 3 guaranteed windows)")
     check(cd_core / cd_window <= 3.0, "Conductor core killable within its 3 guaranteed node-set exposures at 70% acc")
