@@ -4,7 +4,7 @@
   "milestone": "M2",
   "area": "level",
   "repo": "game",
-  "status": "todo",
+  "status": "in_progress",
   "priority": 2,
   "depends_on": [
     "T-0006"
@@ -26,6 +26,12 @@
     "Cooked into the packaged build and run on the Quest 3"
   ],
   "description": "Greybox of the bible section 9 layout, built by an editor Python script so the layout is reviewable and re-runnable. The sandbox game mode plays any map that has an objective and an encounter director (arena mode). Widened to the generator, game mode, flow, DefaultGame.ini (maps to cook) and ETM.uproject (enable the editor-only Python plugin).",
-  "assignee": null,
-  "history": []
+  "assignee": "claude-code-dartonx-pc",
+  "history": [
+    {
+      "time": "2026-11-18T19:43:08Z",
+      "agent": "claude-code-dartonx-pc",
+      "event": "claimed"
+    }
+  ]
 }

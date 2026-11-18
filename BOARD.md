@@ -1,8 +1,8 @@
 # Task Board
 
-_Generated 2026-11-18T19:41:38Z by `tools/agent.py render`. Do not edit by hand._
+_Generated 2026-11-18T19:43:08Z by `tools/agent.py render`. Do not edit by hand._
 
-**Progress:** 30/57 done (53%) · todo: 26 · in_progress: 0 · review: 0 · blocked: 1 · done: 30
+**Progress:** 30/57 done (53%) · todo: 25 · in_progress: 1 · review: 0 · blocked: 1 · done: 30
 
 | Milestone | Done | Total | Progress |
 |---|---:|---:|---|
@@ -15,7 +15,15 @@ _Generated 2026-11-18T19:41:38Z by `tools/agent.py render`. Do not edit by hand.
 
 ## Active claims
 
-_None. Every task is free._
+| Task | Agent | Since | Last heartbeat | Stale? |
+|---|---|---|---|---|
+| T-0020 Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | claude-code-dartonx-pc | 2026-11-18T19:43:08Z | 2026-11-18T19:43:08Z |  |
+
+## In Progress (1)
+
+| ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
+|---|---|---|---|---|---|---|---|
+| T-0020 | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 | claude-code-dartonx-pc |
 
 ## Blocked (1)
 
@@ -23,7 +31,7 @@ _None. Every task is free._
 |---|---|---|---|---|---|---|---|
 | T-0015 | 2 | M1 | vfx | game | Weapon feel: muzzle, tracer, impact, haptics, placeholder audio | T-0009 |  |
 
-## Todo (26)
+## Todo (25)
 
 | ID | P | Milestone | Area | Repo | Title | Depends on | Owner |
 |---|---|---|---|---|---|---|---|
@@ -36,7 +44,6 @@ _None. Every task is free._
 | T-0057 🟢 ready | 1 | M1 | platform | game | Deploy the packaged build to a physical Quest 2: install, 72 Hz, tracking, input (split from T-0006) | - |  |
 | T-0025 | 1 | M2 | qa | tracker | M2 gate: vertical slice validated on hardware | T-0020, T-0021, T-0022, T-0023, T-0024, T-0019 |  |
 | T-0042 | 1 | M2 | input | tracker | Measure accidental-vent rate for both control schemes in the M1 playtest and record the winner as an ADR (P-12) | T-0016 |  |
-| T-0020 🟢 ready | 2 | M2 | level | game | Level 1 arena greybox (three lanes, transfer equipment in front, P-22) | T-0006 |  |
 | T-0024 🟢 ready | 2 | M2 | perf | game | Performance capture tooling + 30-minute soak script | T-0006 |  |
 | T-0049 🟢 ready | 3 | M2 | qa | game | Test worlds: run garbage collection after destroying them, so reserved GPU memory stops climbing during the test run | - |  |
 | T-0026 | 1 | M3 | encounters | game | Level 1 full schedule (51 enemies, timeline, gating P-14) | T-0025 |  |

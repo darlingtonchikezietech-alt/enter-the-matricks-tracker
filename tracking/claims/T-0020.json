@@ -1,0 +1,8 @@
+{
+  "task": "T-0020",
+  "agent": "claude-code-dartonx-pc",
+  "claimed_at": "2026-11-18T19:43:08Z",
+  "heartbeat": "2026-11-18T19:43:08Z",
+  "branch": "agent/claude-code-dartonx-pc/t-0020",
+  "note": "Owner chose to split T-0006 and move on to the Level 1 greybox"
+}
